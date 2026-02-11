@@ -53,6 +53,65 @@ function getSap(r) {
   // soporta "Codigo SAP" y "Código SAP"
   return norm(r["Codigo SAP"] ?? r["Código SAP"]);
 }
+function getSap(r) {
+  return norm(r["Codigo SAP"] ?? r["Código SAP"]);
+}
+
+/* ===== PEGAR AQUÍ ===== */
+
+function parseCSV(text) {
+  const clean = text.replace(/\r/g, "").trim();
+  if (!clean) return [];
+
+  const firstLine = clean.split("\n")[0];
+  const sep = firstLine.includes(";") ? ";" : ",";
+
+  const lines = clean.split("\n").filter(l => l.trim().length);
+  const headers = lines[0].split(sep).map(h => h.trim());
+
+  const out = [];
+  for (let i = 1; i < lines.length; i++) {
+    const cols = lines[i].split(sep);
+    const obj = {};
+    headers.forEach((h, idx) => obj[h] = (cols[idx] ?? "").trim());
+    out.push(obj);
+  }
+  return out;
+}
+
+async function loadBOMFromRepoCSV() {
+  els.status.textContent = "Cargando BOM…";
+  if (els.dataHint) els.dataHint.textContent = "Cargando CSV…";
+
+  try {
+    const res = await fetch("data/bom.csv", { cache: "no-store" });
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    const text = await res.text();
+
+    const parsed = parseCSV(text);
+    if (!Array.isArray(parsed) || parsed.length === 0) {
+      throw new Error("CSV vacío o inválido.");
+    }
+
+    rows = parsed;
+    buildModelList();
+    renderModelList(modelList);
+
+    selectedModel = null;
+    setDataLoadedUI(true);
+
+    els.status.textContent = `Listo (${modelList.length} modelos)`;
+    if (els.dataHint) els.dataHint.textContent = "BOM cargado (CSV)";
+
+    renderBOM();
+    updateEditUI();
+
+  } catch (e) {
+    console.error(e);
+    els.status.textContent = "Error cargando BOM (CSV)";
+    setDataLoadedUI(false);
+  }
+}
 
 // ===== Tema claro/oscuro (persistente) =====
 const THEME_KEY = "bom_theme";
@@ -554,6 +613,7 @@ updateEditUI();
 renderBOM();
 
 // Arranque: auto-carga desde repo
-loadBOMFromRepo();
+loadBOMFromRepoCSV();
+
 
 
