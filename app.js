@@ -1,9 +1,11 @@
 // Buscador BOM (GitHub Pages: carga data/bom.json automáticamente)
+// Buscador BOM (GitHub Pages) - Carga automática desde data/bom.csv
+
 const els = {
   status: document.getElementById("status"),
   themeBtn: document.getElementById("themeBtn"),
 
-  // carga BOM (manual opcional)
+  // (pueden existir en tu HTML; si no existen no rompe)
   fileBOM: document.getElementById("fileBOM"),
   dataHint: document.getElementById("dataHint"),
 
@@ -53,64 +55,77 @@ function getSap(r) {
   // soporta "Codigo SAP" y "Código SAP"
   return norm(r["Codigo SAP"] ?? r["Código SAP"]);
 }
-function getSap(r) {
-  return norm(r["Codigo SAP"] ?? r["Código SAP"]);
+function getBrand(r) {
+  // soporta variaciones típicas y espacios
+  return norm(
+    r["Marca"] ??
+    r["MARCA"] ??
+    r["marca"] ??
+    r["Brand"] ??
+    r["brand"] ??
+    r["Marca "]
+  );
 }
 
-/* ===== PEGAR AQUÍ ===== */
+// ===== CSV parser (soporta comillas) =====
+function detectSeparator(firstLine) {
+  // si hay ; suele ser configuración regional ES/CL
+  if (firstLine.includes(";")) return ";";
+  return ",";
+}
 
-function parseCSV(text) {
-  const clean = text.replace(/\r/g, "").trim();
-  if (!clean) return [];
-
-  const firstLine = clean.split("\n")[0];
-  const sep = firstLine.includes(";") ? ";" : ",";
-
-  const lines = clean.split("\n").filter(l => l.trim().length);
-  const headers = lines[0].split(sep).map(h => h.trim());
-
+function splitCSVLine(line, sep) {
   const out = [];
-  for (let i = 1; i < lines.length; i++) {
-    const cols = lines[i].split(sep);
-    const obj = {};
-    headers.forEach((h, idx) => obj[h] = (cols[idx] ?? "").trim());
-    out.push(obj);
+  let cur = "";
+  let inQuotes = false;
+
+  for (let i = 0; i < line.length; i++) {
+    const ch = line[i];
+
+    if (ch === '"') {
+      // doble comilla dentro de comillas => "": se interpreta como "
+      if (inQuotes && line[i + 1] === '"') {
+        cur += '"';
+        i++;
+      } else {
+        inQuotes = !inQuotes;
+      }
+      continue;
+    }
+
+    if (!inQuotes && ch === sep) {
+      out.push(cur);
+      cur = "";
+      continue;
+    }
+
+    cur += ch;
   }
+  out.push(cur);
   return out;
 }
 
-async function loadBOMFromRepoCSV() {
-  els.status.textContent = "Cargando BOM…";
-  if (els.dataHint) els.dataHint.textContent = "Cargando CSV…";
+function parseCSV(text) {
+  const clean = String(text ?? "").replace(/\r/g, "").trim();
+  if (!clean) return [];
 
-  try {
-    const res = await fetch("data/bom.csv", { cache: "no-store" });
-    if (!res.ok) throw new Error(`HTTP ${res.status}`);
-    const text = await res.text();
+  const lines = clean.split("\n").filter(l => l.trim().length);
+  if (lines.length < 2) return [];
 
-    const parsed = parseCSV(text);
-    if (!Array.isArray(parsed) || parsed.length === 0) {
-      throw new Error("CSV vacío o inválido.");
+  const sep = detectSeparator(lines[0]);
+  const headers = splitCSVLine(lines[0], sep).map(h => norm(h));
+
+  const rowsOut = [];
+  for (let i = 1; i < lines.length; i++) {
+    const cols = splitCSVLine(lines[i], sep);
+    const obj = {};
+    for (let c = 0; c < headers.length; c++) {
+      const key = headers[c];
+      obj[key] = norm(cols[c] ?? "");
     }
-
-    rows = parsed;
-    buildModelList();
-    renderModelList(modelList);
-
-    selectedModel = null;
-    setDataLoadedUI(true);
-
-    els.status.textContent = `Listo (${modelList.length} modelos)`;
-    if (els.dataHint) els.dataHint.textContent = "BOM cargado (CSV)";
-
-    renderBOM();
-    updateEditUI();
-
-  } catch (e) {
-    console.error(e);
-    els.status.textContent = "Error cargando BOM (CSV)";
-    setDataLoadedUI(false);
+    rowsOut.push(obj);
   }
+  return rowsOut;
 }
 
 // ===== Tema claro/oscuro (persistente) =====
@@ -142,21 +157,17 @@ let dataLoaded = false;
 function setDataLoadedUI(ok) {
   dataLoaded = ok;
 
-  // habilita buscador modelos
   if (els.models) els.models.disabled = !ok;
 
-  // habilita filtros
   if (els.qModel) els.qModel.disabled = !ok;
   if (els.brand) els.brand.disabled = !ok;
   if (els.qSAP) els.qSAP.disabled = !ok;
   if (els.qNP) els.qNP.disabled = !ok;
   if (els.qPart) els.qPart.disabled = !ok;
 
-  // habilita edición (checkbox) e import
   if (els.editMode) els.editMode.disabled = !ok;
   if (els.fileImport) els.fileImport.disabled = !ok;
 
-  // si no hay datos, limpiar UI
   if (!ok) {
     selectedModel = null;
     if (els.selected) els.selected.textContent = "Ninguna bomba seleccionada";
@@ -172,8 +183,8 @@ const PATCH_KEY = "bom_patches_v1";
 const UNDO_KEY  = "bom_undo_v1";
 
 let editEnabled = false;
-let patches = loadPatches();     // { id: {field:value,...}, ... }
-let undoStack = loadUndoStack(); // [{id, prev, next, at}, ...]
+let patches = loadPatches();
+let undoStack = loadUndoStack();
 
 function loadPatches(){
   try { return JSON.parse(localStorage.getItem(PATCH_KEY) || "{}"); }
@@ -289,14 +300,14 @@ function openEditModal(raw){
   editingRaw = raw;
   const r = applyPatch(raw);
 
-  els.eDesc.value  = norm(r["Descripción"]);
-  els.eQty.value   = norm(r["Cantidad"]);
-  els.eSap.value   = norm(getSap(r));
-  els.eNp.value    = norm(r["N/P"]);
-  els.eBrand.value = norm(r["Marca"]);
-  els.eNote.value  = norm(r["Nota"]);
+  if (els.eDesc)  els.eDesc.value  = norm(r["Descripción"]);
+  if (els.eQty)   els.eQty.value   = norm(r["Cantidad"]);
+  if (els.eSap)   els.eSap.value   = norm(getSap(r));
+  if (els.eNp)    els.eNp.value    = norm(r["N/P"]);
+  if (els.eBrand) els.eBrand.value = norm(getBrand(r));
+  if (els.eNote)  els.eNote.value  = norm(r["Nota"]);
 
-  els.editDlg.showModal();
+  if (els.editDlg) els.editDlg.showModal();
 }
 
 if (els.btnCancelEdit && els.editDlg) {
@@ -314,12 +325,12 @@ if (els.editDlg) {
       if (!editingRaw) return;
 
       setPatch(editingRaw, {
-        "Descripción": els.eDesc.value,
-        "Cantidad": els.eQty.value,
-        "Codigo SAP": els.eSap.value, // sin tilde para consistencia
-        "N/P": els.eNp.value,
-        "Marca": els.eBrand.value,
-        "Nota": els.eNote.value,
+        "Descripción": els.eDesc?.value ?? "",
+        "Cantidad": els.eQty?.value ?? "",
+        "Codigo SAP": els.eSap?.value ?? "", // sin tilde para consistencia
+        "N/P": els.eNp?.value ?? "",
+        "Marca": els.eBrand?.value ?? "",
+        "Nota": els.eNote?.value ?? "",
       });
 
       els.editDlg.close();
@@ -330,6 +341,7 @@ if (els.editDlg) {
 
 // ===== Render lista modelos =====
 function renderModelList(list) {
+  if (!els.models) return;
   els.models.innerHTML = "";
   for (const m of list) {
     const opt = document.createElement("option");
@@ -341,13 +353,16 @@ function renderModelList(list) {
 
 // ===== Render marcas =====
 function renderBrandOptions(repuestos) {
+  if (!els.brand) return;
+
   const set = new Set();
-  for (const r of repuestos) {
-    const m = norm(r["Marca"]);
+  for (const raw of repuestos) {
+    const rr = applyPatch(raw);
+    const m = getBrand(rr);
     if (m) set.add(m);
   }
-  const brands = Array.from(set).sort((a, b) => a.localeCompare(b, "es"));
 
+  const brands = Array.from(set).sort((a, b) => a.localeCompare(b, "es"));
   els.brand.innerHTML =
     `<option value="">Marca: Todas</option>` +
     brands.map((b) => `<option value="${escapeHtml(b)}">${escapeHtml(b)}</option>`).join("");
@@ -367,7 +382,7 @@ function buildModelList() {
 
 // ===== Render BOM =====
 function renderBOM() {
-  els.tbody.innerHTML = "";
+  if (els.tbody) els.tbody.innerHTML = "";
 
   if (!dataLoaded) {
     if (els.selected) els.selected.textContent = "Ninguna bomba seleccionada";
@@ -385,7 +400,7 @@ function renderBOM() {
     return;
   }
 
-  els.selected.textContent = selectedModel;
+  if (els.selected) els.selected.textContent = selectedModel;
 
   const repuestos = rows.filter((r) =>
     norm(r["Nombre_modelo"]) === selectedModel &&
@@ -394,15 +409,15 @@ function renderBOM() {
 
   renderBrandOptions(repuestos);
 
-  const qText = toLower(els.qPart.value);
-  const qSap = toLower(els.qSAP.value);
-  const qNp = toLower(els.qNP.value);
-  const brandSelected = norm(els.brand.value);
+  const qText = toLower(els.qPart?.value);
+  const qSap = toLower(els.qSAP?.value);
+  const qNp = toLower(els.qNP?.value);
+  const brandSelected = norm(els.brand?.value);
 
   const filtered = repuestos.filter((r) => {
     const rr = applyPatch(r);
 
-    if (brandSelected && norm(rr["Marca"]) !== brandSelected) return false;
+    if (brandSelected && getBrand(rr) !== brandSelected) return false;
     if (qSap && !toLower(getSap(rr)).includes(qSap)) return false;
     if (qNp && !toLower(rr["N/P"]).includes(qNp)) return false;
 
@@ -411,7 +426,7 @@ function renderBOM() {
         rr["Descripción"],
         getSap(rr),
         rr["N/P"],
-        rr["Marca"],
+        getBrand(rr),
         rr["Nota"],
       ].map(toLower).join(" ");
       if (!hay.includes(qText)) return false;
@@ -428,7 +443,7 @@ function renderBOM() {
       <td>${escapeHtml(r["Cantidad"])}</td>
       <td>${escapeHtml(getSap(r))}</td>
       <td>${escapeHtml(r["N/P"])}</td>
-      <td>${escapeHtml(r["Marca"])}</td>
+      <td>${escapeHtml(getBrand(r))}</td>
       <td>${escapeHtml(r["Nota"] || "")}</td>
       <td>${editEnabled ? `<button class="btn" type="button" data-edit="1">Editar</button>` : ""}</td>
     `;
@@ -441,71 +456,26 @@ function renderBOM() {
     }
   }
 
-  els.count.textContent = `${filtered.length} ítems`;
+  if (els.count) els.count.textContent = `${filtered.length} ítems`;
   updateEditUI();
 }
 
-// ===== Cargar BOM desde archivo (manual) =====
-function loadBOMFromFile(file) {
-  els.status.textContent = "Cargando BOM…";
-  if (els.dataHint) els.dataHint.textContent = "Leyendo archivo…";
-
-  const reader = new FileReader();
-  reader.onerror = () => {
-    console.error(reader.error);
-    els.status.textContent = "Error leyendo archivo";
-    if (els.dataHint) els.dataHint.textContent = "Error leyendo archivo";
-    setDataLoadedUI(false);
-  };
-
-  reader.onload = () => {
-    try {
-      const text = String(reader.result || "");
-      const parsed = JSON.parse(text);
-
-      if (!Array.isArray(parsed)) throw new Error("El JSON debe ser un array de filas.");
-
-      rows = parsed;
-      buildModelList();
-      renderModelList(modelList);
-
-      // reset selección y filtros
-      selectedModel = null;
-      if (els.qModel) els.qModel.value = "";
-      if (els.qPart) els.qPart.value = "";
-      if (els.qSAP) els.qSAP.value = "";
-      if (els.qNP) els.qNP.value = "";
-      if (els.brand) els.brand.value = "";
-
-      setDataLoadedUI(true);
-      els.status.textContent = `Listo (${modelList.length} modelos)`;
-      if (els.dataHint) els.dataHint.textContent = `BOM cargado: ${file.name}`;
-
-      renderBOM();
-      updateEditUI();
-    } catch (e) {
-      console.error(e);
-      els.status.textContent = "Error: bom.json inválido";
-      if (els.dataHint) els.dataHint.textContent = "JSON inválido";
-      setDataLoadedUI(false);
-      alert("No se pudo cargar el archivo. Asegúrate de que sea un bom.json válido (array).");
-    }
-  };
-
-  reader.readAsText(file, "utf-8");
-}
-
-// ===== Cargar BOM desde el repo (AUTO) =====
-async function loadBOMFromRepo() {
-  els.status.textContent = "Cargando BOM…";
-  if (els.dataHint) els.dataHint.textContent = "Cargando desde servidor…";
+// ===== Carga automática desde data/bom.csv =====
+async function loadBOMFromRepoCSV() {
+  if (els.status) els.status.textContent = "Cargando BOM…";
+  if (els.dataHint) els.dataHint.textContent = "Cargando CSV…";
 
   try {
-    const res = await fetch("data/bom.json", { cache: "no-store" });
+    // cache: no-store para evitar caché “normal”
+    const res = await fetch("data/bom.csv", { cache: "no-store" });
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
 
-    const parsed = await res.json();
-    if (!Array.isArray(parsed)) throw new Error("El JSON debe ser un array de filas.");
+    const text = await res.text();
+    const parsed = parseCSV(text);
+
+    if (!Array.isArray(parsed) || parsed.length === 0) {
+      throw new Error("CSV vacío o inválido.");
+    }
 
     rows = parsed;
     buildModelList();
@@ -520,29 +490,31 @@ async function loadBOMFromRepo() {
     if (els.brand) els.brand.value = "";
 
     setDataLoadedUI(true);
-    els.status.textContent = `Listo (${modelList.length} modelos)`;
-    if (els.dataHint) els.dataHint.textContent = "BOM cargado automáticamente";
 
-    // oculta carga manual si existe (para celular)
-    // (si tu HTML lo tiene en un contenedor con id="loadBox", también lo ocultamos)
-    if (els.fileBOM) els.fileBOM.style.display = "none";
+    if (els.status) els.status.textContent = `Listo (${modelList.length} modelos)`;
+    if (els.dataHint) els.dataHint.textContent = "BOM cargado automáticamente (CSV)";
+
+    // si existe caja de carga manual, se puede ocultar
     const loadBox = document.getElementById("loadBox");
     if (loadBox) loadBox.style.display = "none";
+    if (els.fileBOM) els.fileBOM.style.display = "none";
 
     renderBOM();
     updateEditUI();
+
   } catch (e) {
     console.error(e);
-    els.status.textContent = "Error cargando BOM";
-    if (els.dataHint) els.dataHint.textContent = "No se pudo cargar data/bom.json";
-
-    // deja la opción manual disponible si existe
-    if (els.fileBOM) els.fileBOM.style.display = "";
-    const loadBox = document.getElementById("loadBox");
-    if (loadBox) loadBox.style.display = "";
 
     setDataLoadedUI(false);
-    alert("No se pudo cargar el BOM automático. Revisa que exista data/bom.json en GitHub.");
+    if (els.status) els.status.textContent = "Error cargando BOM";
+    if (els.dataHint) els.dataHint.textContent = "No se pudo cargar data/bom.csv";
+
+    // deja visible carga manual si existe (por si luego quieres reactivarla)
+    const loadBox = document.getElementById("loadBox");
+    if (loadBox) loadBox.style.display = "";
+    if (els.fileBOM) els.fileBOM.style.display = "";
+
+    alert("No se pudo cargar el BOM desde data/bom.csv. Revisa que exista en /data y que tenga encabezados.");
   }
 }
 
@@ -562,13 +534,11 @@ if (els.models) {
   });
 }
 
-// filtros
 if (els.qPart) els.qPart.addEventListener("input", renderBOM);
 if (els.brand) els.brand.addEventListener("change", renderBOM);
 if (els.qSAP) els.qSAP.addEventListener("input", renderBOM);
 if (els.qNP) els.qNP.addEventListener("input", renderBOM);
 
-// edición
 if (els.editMode) {
   els.editMode.addEventListener("change", () => {
     editEnabled = !!els.editMode.checked;
@@ -589,16 +559,6 @@ if (els.fileImport) {
   });
 }
 
-// manual: cargar BOM desde el input file (queda por si falla el automático)
-if (els.fileBOM) {
-  els.fileBOM.addEventListener("change", (e) => {
-    const f = e.target.files?.[0];
-    if (!f) return;
-    loadBOMFromFile(f);
-    e.target.value = "";
-  });
-}
-
 // ===== Service Worker (opcional) =====
 if ("serviceWorker" in navigator) {
   window.addEventListener("load", () => {
@@ -612,8 +572,13 @@ setDataLoadedUI(false);
 updateEditUI();
 renderBOM();
 
-// Arranque: auto-carga desde repo
+if (els.status) els.status.textContent = "Cargando BOM…";
+if (els.dataHint) els.dataHint.textContent = "Cargando automáticamente…";
+
+// Auto-carga
 loadBOMFromRepoCSV();
+;
+
 
 
 
