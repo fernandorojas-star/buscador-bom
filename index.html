@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Buscador BOM</title>
+
+  <link rel="manifest" href="./manifest.json">
+  <meta name="theme-color" content="#0b0c10" />
+
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <header class="top">
+    <div class="brand">
+      <img class="logo" src="./assets/capstone.png" alt="Capstone Copper" />
+      <div>
+        <h1>Buscador BOM</h1>
+        <p class="muted">Selecciona un modelo (bomba) y revisa su BOM de repuestos.</p>
+      </div>
+    </div>
+
+    <div class="right">
+      <button id="themeBtn" class="btn" type="button">🌙 Oscuro</button>
+      <span id="status" class="pill">BOM: no cargado</span>
+    </div>
+  </header>
+
+  <main class="wrap">
+
+    <!-- 0) Cargar datos (SIN servidor) -->
+    <section class="card">
+      <h2>0) Cargar datos</h2>
+      <p class="muted small">
+        Selecciona el archivo <b>bom.json</b> para cargar la base de datos (modo offline sin servidor).
+        Recomendación: deja el archivo en una carpeta fija y usa siempre el mismo.
+      </p>
+
+      <div class="toolbar">
+        <input type="file" id="fileBOM" class="input" accept="application/json" />
+        <span id="dataHint" class="pill">Esperando archivo…</span>
+      </div>
+
+      <p class="muted small">
+        Si no aparece la lista de bombas, revisa que el archivo sea JSON válido y contenga las columnas esperadas
+        (Tipo, Nombre_modelo, etc.).
+      </p>
+    </section>
+
+    <!-- 1) Buscar bomba -->
+    <section class="card">
+      <h2>1) Buscar bomba</h2>
+
+      <input id="qModel" class="input" placeholder="Buscar modelo… (ej: RM500, TK4000, ISO80)" />
+
+      <div class="listWrap">
+        <select id="models" class="select list" size="12" aria-label="Lista de modelos" disabled></select>
+      </div>
+
+      <p class="muted small">Tip: escribe parte del nombre y la lista se filtra.</p>
+    </section>
+
+    <!-- 2) BOM -->
+    <section class="card">
+      <h2>2) BOM</h2>
+
+      <div class="subhead">
+        <div id="selected" class="muted">Ninguna bomba seleccionada</div>
+      </div>
+
+      <!-- Barra de edición (Planificación) -->
+      <div class="editBar">
+        <label class="switch">
+          <input type="checkbox" id="editMode" disabled>
+          <span>Modo edición (Planificación)</span>
+        </label>
+
+        <button class="btn" id="btnUndo" type="button" disabled>↩️ Deshacer</button>
+        <button class="btn" id="btnReset" type="button" disabled>🧹 Restaurar BOM base</button>
+        <button class="btn" id="btnExport" type="button" disabled>⬇️ Exportar cambios</button>
+
+        <label class="btn fileBtn" aria-disabled="true">
+          ⬆️ Importar cambios
+          <input type="file" id="fileImport" accept="application/json" hidden disabled>
+        </label>
+      </div>
+
+      <div class="toolbar">
+        <select id="brand" class="select" aria-label="Filtro Marca" disabled>
+          <option value="">Marca: Todas</option>
+        </select>
+
+        <input id="qSAP" class="input" placeholder="Código SAP (ej: 4068815)" disabled />
+        <input id="qNP" class="input" placeholder="N/P (ej: RM500-011-12MME)" disabled />
+      </div>
+
+      <div class="toolbar">
+        <input id="qPart" class="input" placeholder="Filtrar por descripción / texto libre (ej: impulsor, rodamiento…)" disabled />
+        <span id="count" class="pill">0 ítems</span>
+      </div>
+
+      <div class="tableWrap">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Descripción</th>
+              <th>Cant.</th>
+              <th>Código SAP</th>
+              <th>N/P</th>
+              <th>Marca</th>
+              <th>Nota</th>
+              <th>Acciones</th>
+            </tr>
+          </thead>
+          <tbody id="tbody"></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <!-- Modal edición (ÚNICO) -->
+  <dialog id="editDlg">
+    <form method="dialog" class="dlg">
+      <h3>Editar repuesto</h3>
+
+      <label>Descripción
+        <input id="eDesc" class="input">
+      </label>
+
+      <label>Cantidad
+        <input id="eQty" class="input">
+      </label>
+
+      <label>Código SAP
+        <input id="eSap" class="input">
+      </label>
+
+      <label>N/P
+        <input id="eNp" class="input">
+      </label>
+
+      <label>Marca
+        <input id="eBrand" class="input">
+      </label>
+
+      <label>Nota (Planificación)
+        <textarea id="eNote" class="input" rows="3" placeholder="Ej: equivalente / revisar stock / crítico..."></textarea>
+      </label>
+
+      <menu class="dlgBtns">
+        <button class="btn" type="button" id="btnCancelEdit">Cancelar</button>
+        <button class="btn" type="submit" id="btnSaveEdit">Guardar</button>
+      </menu>
+    </form>
+  </dialog>
+
+  <!-- Un solo script -->
+  <script src="./app.js"></script>
+</body>
+</html>
+
+
+
