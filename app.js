@@ -1,5 +1,4 @@
-// Buscador BOM (GitHub Pages: carga data/bom.json automáticamente)
-// Buscador BOM (GitHub Pages) - Carga automática desde data/bom.csv
+// Buscador BOM (GitHub Pages) - Carga automática desde data/bom.csv + edición avanzada (agregar/ocultar)
 
 const els = {
   status: document.getElementById("status"),
@@ -31,7 +30,11 @@ const els = {
   btnExport: document.getElementById("btnExport"),
   fileImport: document.getElementById("fileImport"),
 
-  // modal
+  // NUEVOS botones (los agregaremos luego al HTML; si no existen, no rompe)
+  btnAddPart: document.getElementById("btnAddPart"),
+  btnAddPump: document.getElementById("btnAddPump"),
+
+  // modal edición (reutilizado para editar y para agregar repuesto)
   editDlg: document.getElementById("editDlg"),
   eDesc: document.getElementById("eDesc"),
   eQty: document.getElementById("eQty"),
@@ -52,11 +55,9 @@ function escapeHtml(s) {
   }[c]));
 }
 function getSap(r) {
-  // soporta "Codigo SAP" y "Código SAP"
   return norm(r["Codigo SAP"] ?? r["Código SAP"]);
 }
 function getBrand(r) {
-  // soporta variaciones típicas y espacios
   return norm(
     r["Marca"] ??
     r["MARCA"] ??
@@ -69,60 +70,38 @@ function getBrand(r) {
 
 // ===== CSV parser (soporta comillas) =====
 function detectSeparator(firstLine) {
-  // si hay ; suele ser configuración regional ES/CL
   if (firstLine.includes(";")) return ";";
   return ",";
 }
-
 function splitCSVLine(line, sep) {
   const out = [];
   let cur = "";
   let inQuotes = false;
-
   for (let i = 0; i < line.length; i++) {
     const ch = line[i];
-
     if (ch === '"') {
-      // doble comilla dentro de comillas => "": se interpreta como "
-      if (inQuotes && line[i + 1] === '"') {
-        cur += '"';
-        i++;
-      } else {
-        inQuotes = !inQuotes;
-      }
+      if (inQuotes && line[i + 1] === '"') { cur += '"'; i++; }
+      else { inQuotes = !inQuotes; }
       continue;
     }
-
-    if (!inQuotes && ch === sep) {
-      out.push(cur);
-      cur = "";
-      continue;
-    }
-
+    if (!inQuotes && ch === sep) { out.push(cur); cur = ""; continue; }
     cur += ch;
   }
   out.push(cur);
   return out;
 }
-
 function parseCSV(text) {
   const clean = String(text ?? "").replace(/\r/g, "").trim();
   if (!clean) return [];
-
   const lines = clean.split("\n").filter(l => l.trim().length);
   if (lines.length < 2) return [];
-
   const sep = detectSeparator(lines[0]);
   const headers = splitCSVLine(lines[0], sep).map(h => norm(h));
-
   const rowsOut = [];
   for (let i = 1; i < lines.length; i++) {
     const cols = splitCSVLine(lines[i], sep);
     const obj = {};
-    for (let c = 0; c < headers.length; c++) {
-      const key = headers[c];
-      obj[key] = norm(cols[c] ?? "");
-    }
+    for (let c = 0; c < headers.length; c++) obj[headers[c]] = norm(cols[c] ?? "");
     rowsOut.push(obj);
   }
   return rowsOut;
@@ -148,7 +127,8 @@ function initTheme() {
 }
 
 // ===== Estado =====
-let rows = [];
+let rowsBase = [];   // desde CSV
+let rows = [];       // base + agregados (y luego filtrado por deleted)
 let modelList = [];
 let selectedModel = null;
 let dataLoaded = false;
@@ -158,7 +138,6 @@ function setDataLoadedUI(ok) {
   dataLoaded = ok;
 
   if (els.models) els.models.disabled = !ok;
-
   if (els.qModel) els.qModel.disabled = !ok;
   if (els.brand) els.brand.disabled = !ok;
   if (els.qSAP) els.qSAP.disabled = !ok;
@@ -178,27 +157,27 @@ function setDataLoadedUI(ok) {
   }
 }
 
-// ===== Edición local (solo este dispositivo) =====
-const PATCH_KEY = "bom_patches_v1";
-const UNDO_KEY  = "bom_undo_v1";
+// ===== Edición local =====
+// patches: cambios a filas existentes (por rowId)
+const PATCH_KEY = "bom_patches_v2";
+const UNDO_KEY  = "bom_undo_v2";
+// added: filas nuevas
+const ADDED_KEY = "bom_added_v1";
+// deleted: ids ocultos
+const DELETED_KEY = "bom_deleted_v1";
 
 let editEnabled = false;
-let patches = loadPatches();
-let undoStack = loadUndoStack();
+let patches = loadJson(PATCH_KEY, {});
+let undoStack = loadJson(UNDO_KEY, []);
+let addedRows = loadJson(ADDED_KEY, []);            // array de objetos fila
+let deletedIds = new Set(loadJson(DELETED_KEY, [])); // array de strings
 
-function loadPatches(){
-  try { return JSON.parse(localStorage.getItem(PATCH_KEY) || "{}"); }
-  catch { return {}; }
+function loadJson(key, fallback){
+  try { return JSON.parse(localStorage.getItem(key) || JSON.stringify(fallback)); }
+  catch { return fallback; }
 }
-function savePatches(){
-  localStorage.setItem(PATCH_KEY, JSON.stringify(patches));
-}
-function loadUndoStack(){
-  try { return JSON.parse(localStorage.getItem(UNDO_KEY) || "[]"); }
-  catch { return []; }
-}
-function saveUndoStack(){
-  localStorage.setItem(UNDO_KEY, JSON.stringify(undoStack));
+function saveJson(key, value){
+  localStorage.setItem(key, JSON.stringify(value));
 }
 
 function rowId(r){
@@ -210,19 +189,43 @@ function rowId(r){
     norm(r["Descripción"]),
   ].join("|");
 }
+
 function applyPatch(raw){
   const id = rowId(raw);
   const p = patches[id];
   return p ? { ...raw, ...p } : raw;
 }
 
+function rebuildRowsFromBase() {
+  // 1) base + agregados
+  rows = [...rowsBase, ...(Array.isArray(addedRows) ? addedRows : [])];
+
+  // 2) filtra eliminados
+  rows = rows.filter(r => !deletedIds.has(rowId(r)));
+
+  // 3) modelos
+  buildModelList();
+}
+
 function updateEditUI(){
   const hasPatches = Object.keys(patches).length > 0;
+  const hasAdded = Array.isArray(addedRows) && addedRows.length > 0;
+  const hasDeleted = deletedIds.size > 0;
   const canUndo = undoStack.length > 0;
 
   if (els.btnUndo)   els.btnUndo.disabled   = !(dataLoaded && editEnabled && canUndo);
-  if (els.btnReset)  els.btnReset.disabled  = !(dataLoaded && editEnabled && hasPatches);
-  if (els.btnExport) els.btnExport.disabled = !(dataLoaded && hasPatches);
+  if (els.btnReset)  els.btnReset.disabled  = !(dataLoaded && editEnabled && (hasPatches || hasAdded || hasDeleted));
+  if (els.btnExport) els.btnExport.disabled = !(dataLoaded && (hasPatches || hasAdded || hasDeleted));
+
+  // botones nuevos
+  if (els.btnAddPart) els.btnAddPart.disabled = !(dataLoaded && editEnabled && !!selectedModel);
+  if (els.btnAddPump) els.btnAddPump.disabled = !(dataLoaded && editEnabled);
+}
+
+function pushUndo(entry){
+  undoStack.push({ ...entry, at: new Date().toISOString() });
+  if (undoStack.length > 200) undoStack.shift();
+  saveJson(UNDO_KEY, undoStack);
 }
 
 function setPatch(rawRow, nextFields){
@@ -230,73 +233,169 @@ function setPatch(rawRow, nextFields){
   const prev = patches[id] ? { ...patches[id] } : null;
 
   patches[id] = { ...(patches[id] || {}), ...nextFields };
-
   if (Object.keys(patches[id]).length === 0) delete patches[id];
 
-  undoStack.push({ id, prev, next: patches[id] ? { ...patches[id] } : null, at: new Date().toISOString() });
-  if (undoStack.length > 200) undoStack.shift();
+  pushUndo({ kind: "patch", id, prev, next: patches[id] ? { ...patches[id] } : null });
 
-  savePatches();
-  saveUndoStack();
+  saveJson(PATCH_KEY, patches);
+  updateEditUI();
+}
+
+function addRow(newRow){
+  // newRow: objeto fila completo
+  const row = { ...newRow };
+  // evita duplicar exacto por id
+  const id = rowId(row);
+  const exists = rows.some(r => rowId(r) === id);
+  if (exists) {
+    alert("Esa pieza ya existe (mismo modelo/tipo/sap/np/descripcion).");
+    return;
+  }
+
+  const prevLen = addedRows.length;
+  addedRows = [...addedRows, row];
+  saveJson(ADDED_KEY, addedRows);
+
+  pushUndo({ kind: "add", id, prevLen });
+
+  rebuildRowsFromBase();
+  renderModelList(modelList);
+  renderBOM();
+  updateEditUI();
+}
+
+function softDeleteRow(rawRow){
+  const id = rowId(rawRow);
+  if (deletedIds.has(id)) return;
+
+  deletedIds.add(id);
+  saveJson(DELETED_KEY, Array.from(deletedIds));
+
+  pushUndo({ kind: "delete", id });
+
+  rebuildRowsFromBase();
+  renderModelList(modelList);
+  renderBOM();
   updateEditUI();
 }
 
 function undoLast(){
   const last = undoStack.pop();
   if (!last) return;
+  saveJson(UNDO_KEY, undoStack);
 
-  if (last.prev == null) delete patches[last.id];
-  else patches[last.id] = last.prev;
+  if (last.kind === "patch") {
+    if (last.prev == null) delete patches[last.id];
+    else patches[last.id] = last.prev;
+    saveJson(PATCH_KEY, patches);
+  }
 
-  savePatches();
-  saveUndoStack();
-  updateEditUI();
+  if (last.kind === "add") {
+    // quita el último agregado (por longitud previa)
+    const prevLen = last.prevLen ?? 0;
+    if (Array.isArray(addedRows) && addedRows.length > prevLen) {
+      addedRows = addedRows.slice(0, prevLen);
+      saveJson(ADDED_KEY, addedRows);
+    }
+  }
+
+  if (last.kind === "delete") {
+    deletedIds.delete(last.id);
+    saveJson(DELETED_KEY, Array.from(deletedIds));
+  }
+
+  rebuildRowsFromBase();
+  renderModelList(modelList);
   renderBOM();
+  updateEditUI();
 }
 
 function resetAll(){
-  if (!confirm("¿Restaurar BOM base? Se borrarán todos los cambios locales de este dispositivo.")) return;
+  if (!confirm("¿Restaurar BOM base? Se borrarán cambios locales (ediciones, agregados y eliminados) en este dispositivo.")) return;
+
   patches = {};
   undoStack = [];
+  addedRows = [];
+  deletedIds = new Set();
+
   localStorage.removeItem(PATCH_KEY);
   localStorage.removeItem(UNDO_KEY);
-  updateEditUI();
+  localStorage.removeItem(ADDED_KEY);
+  localStorage.removeItem(DELETED_KEY);
+
+  rebuildRowsFromBase();
+  renderModelList(modelList);
   renderBOM();
+  updateEditUI();
 }
 
-function exportPatches(){
-  const blob = new Blob([JSON.stringify(patches, null, 2)], { type: "application/json" });
+function exportAllLocal(){
+  // exporta patches + agregados + eliminados en un solo json
+  const payload = {
+    __version: 1,
+    __added: Array.isArray(addedRows) ? addedRows : [],
+    __deleted: Array.from(deletedIds),
+    __patches: patches,
+  };
+
+  const blob = new Blob([JSON.stringify(payload, null, 2)], { type: "application/json" });
   const url = URL.createObjectURL(blob);
   const a = document.createElement("a");
   a.href = url;
-  a.download = "bom_patches.json";
+  a.download = "bom_local_changes.json";
   document.body.appendChild(a);
   a.click();
   a.remove();
   URL.revokeObjectURL(url);
 }
 
-async function importPatches(file){
+async function importAllLocal(file){
   const text = await file.text();
   let obj;
   try { obj = JSON.parse(text); }
   catch { alert("Archivo JSON inválido."); return; }
 
+  // Acepta el formato nuevo o el antiguo (solo patches)
+  if (obj && obj.__patches) {
+    patches = { ...patches, ...(obj.__patches || {}) };
+    const add = Array.isArray(obj.__added) ? obj.__added : [];
+    const del = Array.isArray(obj.__deleted) ? obj.__deleted : [];
+
+    addedRows = [...(Array.isArray(addedRows) ? addedRows : []), ...add];
+    del.forEach(id => deletedIds.add(id));
+
+    saveJson(PATCH_KEY, patches);
+    saveJson(ADDED_KEY, addedRows);
+    saveJson(DELETED_KEY, Array.from(deletedIds));
+
+    rebuildRowsFromBase();
+    renderModelList(modelList);
+    renderBOM();
+    updateEditUI();
+    return;
+  }
+
+  // formato antiguo (parches directos)
   if (!obj || typeof obj !== "object" || Array.isArray(obj)) {
-    alert("Formato inválido: se espera un objeto de patches.");
+    alert("Formato inválido: se espera un objeto JSON.");
     return;
   }
 
   patches = { ...patches, ...obj };
-  savePatches();
-  updateEditUI();
+  saveJson(PATCH_KEY, patches);
+
+  rebuildRowsFromBase();
+  renderModelList(modelList);
   renderBOM();
+  updateEditUI();
 }
 
-// ===== Modal edición =====
+// ===== Modal edición (reutilizado) =====
 let editingRaw = null;
+let addingMode = null; // null | "part"
 
 function openEditModal(raw){
+  addingMode = null;
   editingRaw = raw;
   const r = applyPatch(raw);
 
@@ -310,9 +409,28 @@ function openEditModal(raw){
   if (els.editDlg) els.editDlg.showModal();
 }
 
+function openAddPartModal(){
+  if (!selectedModel) {
+    alert("Primero selecciona una bomba/modelo.");
+    return;
+  }
+  addingMode = "part";
+  editingRaw = null;
+
+  if (els.eDesc)  els.eDesc.value  = "";
+  if (els.eQty)   els.eQty.value   = "1";
+  if (els.eSap)   els.eSap.value   = "";
+  if (els.eNp)    els.eNp.value    = "";
+  if (els.eBrand) els.eBrand.value = "";
+  if (els.eNote)  els.eNote.value  = "";
+
+  if (els.editDlg) els.editDlg.showModal();
+}
+
 if (els.btnCancelEdit && els.editDlg) {
   els.btnCancelEdit.addEventListener("click", () => {
     editingRaw = null;
+    addingMode = null;
     els.editDlg.close();
   });
 }
@@ -322,18 +440,45 @@ if (els.editDlg) {
   if (form) {
     form.addEventListener("submit", (e) => {
       e.preventDefault();
+
+      // 1) Agregar repuesto (fila nueva)
+      if (addingMode === "part") {
+        const newRow = {
+          "Tipo": "repuesto",
+          "Nombre_modelo": selectedModel,
+          "Descripción": els.eDesc?.value ?? "",
+          "Cantidad": els.eQty?.value ?? "",
+          "Codigo SAP": els.eSap?.value ?? "",
+          "N/P": els.eNp?.value ?? "",
+          "Marca": els.eBrand?.value ?? "",
+          "Nota": els.eNote?.value ?? "",
+        };
+
+        if (!norm(newRow["Descripción"])) {
+          alert("Falta la Descripción.");
+          return;
+        }
+        addRow(newRow);
+
+        els.editDlg.close();
+        addingMode = null;
+        return;
+      }
+
+      // 2) Editar fila existente (patch)
       if (!editingRaw) return;
 
       setPatch(editingRaw, {
         "Descripción": els.eDesc?.value ?? "",
         "Cantidad": els.eQty?.value ?? "",
-        "Codigo SAP": els.eSap?.value ?? "", // sin tilde para consistencia
+        "Codigo SAP": els.eSap?.value ?? "",
         "N/P": els.eNp?.value ?? "",
         "Marca": els.eBrand?.value ?? "",
         "Nota": els.eNote?.value ?? "",
       });
 
       els.editDlg.close();
+      editingRaw = null;
       renderBOM();
     });
   }
@@ -437,6 +582,7 @@ function renderBOM() {
   for (const raw of filtered) {
     const r = applyPatch(raw);
     const tr = document.createElement("tr");
+    const canEdit = editEnabled;
 
     tr.innerHTML = `
       <td>${escapeHtml(r["Descripción"])}</td>
@@ -445,14 +591,23 @@ function renderBOM() {
       <td>${escapeHtml(r["N/P"])}</td>
       <td>${escapeHtml(getBrand(r))}</td>
       <td>${escapeHtml(r["Nota"] || "")}</td>
-      <td>${editEnabled ? `<button class="btn" type="button" data-edit="1">Editar</button>` : ""}</td>
+      <td>
+        ${canEdit ? `<button class="btn" type="button" data-edit="1">Editar</button>` : ""}
+        ${canEdit ? `<button class="btn danger" type="button" data-del="1">Quitar</button>` : ""}
+      </td>
     `;
 
     els.tbody.appendChild(tr);
 
-    if (editEnabled) {
-      const btn = tr.querySelector('button[data-edit="1"]');
-      if (btn) btn.addEventListener("click", () => openEditModal(raw));
+    if (canEdit) {
+      const btnE = tr.querySelector('button[data-edit="1"]');
+      if (btnE) btnE.addEventListener("click", () => openEditModal(raw));
+
+      const btnD = tr.querySelector('button[data-del="1"]');
+      if (btnD) btnD.addEventListener("click", () => {
+        if (!confirm("¿Quitar esta pieza? (solo se ocultará en este dispositivo)")) return;
+        softDeleteRow(raw);
+      });
     }
   }
 
@@ -466,7 +621,6 @@ async function loadBOMFromRepoCSV() {
   if (els.dataHint) els.dataHint.textContent = "Cargando CSV…";
 
   try {
-    // cache: no-store para evitar caché “normal”
     const res = await fetch("data/bom.csv", { cache: "no-store" });
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
 
@@ -477,8 +631,9 @@ async function loadBOMFromRepoCSV() {
       throw new Error("CSV vacío o inválido.");
     }
 
-    rows = parsed;
-    buildModelList();
+    rowsBase = parsed;
+
+    rebuildRowsFromBase();
     renderModelList(modelList);
 
     // reset selección y filtros
@@ -494,7 +649,7 @@ async function loadBOMFromRepoCSV() {
     if (els.status) els.status.textContent = `Listo (${modelList.length} modelos)`;
     if (els.dataHint) els.dataHint.textContent = "BOM cargado automáticamente (CSV)";
 
-    // si existe caja de carga manual, se puede ocultar
+    // oculta caja de carga manual si existe
     const loadBox = document.getElementById("loadBox");
     if (loadBox) loadBox.style.display = "none";
     if (els.fileBOM) els.fileBOM.style.display = "none";
@@ -509,7 +664,6 @@ async function loadBOMFromRepoCSV() {
     if (els.status) els.status.textContent = "Error cargando BOM";
     if (els.dataHint) els.dataHint.textContent = "No se pudo cargar data/bom.csv";
 
-    // deja visible carga manual si existe (por si luego quieres reactivarla)
     const loadBox = document.getElementById("loadBox");
     if (loadBox) loadBox.style.display = "";
     if (els.fileBOM) els.fileBOM.style.display = "";
@@ -531,6 +685,7 @@ if (els.models) {
   els.models.addEventListener("change", () => {
     selectedModel = els.models.value || null;
     renderBOM();
+    updateEditUI();
   });
 }
 
@@ -549,13 +704,44 @@ if (els.editMode) {
 
 if (els.btnUndo) els.btnUndo.addEventListener("click", undoLast);
 if (els.btnReset) els.btnReset.addEventListener("click", resetAll);
-if (els.btnExport) els.btnExport.addEventListener("click", exportPatches);
+if (els.btnExport) els.btnExport.addEventListener("click", exportAllLocal);
 
 if (els.fileImport) {
   els.fileImport.addEventListener("change", (e) => {
     const f = e.target.files?.[0];
-    if (f) importPatches(f);
+    if (f) importAllLocal(f);
     e.target.value = "";
+  });
+}
+
+// Botones nuevos (si existen)
+if (els.btnAddPart) els.btnAddPart.addEventListener("click", openAddPartModal);
+
+if (els.btnAddPump) {
+  els.btnAddPump.addEventListener("click", () => {
+    const name = prompt("Nombre de la nueva bomba/modelo:");
+    const model = norm(name);
+    if (!model) return;
+
+    // crear una fila tipo bomba
+    const newPump = {
+      "Tipo": "bomba",
+      "Nombre_modelo": model,
+      "Descripción": "",
+      "Cantidad": "",
+      "Codigo SAP": "",
+      "N/P": "",
+      "Marca": "",
+      "Nota": "Agregado localmente",
+    };
+
+    addRow(newPump);
+
+    // selecciona esa bomba
+    selectedModel = model;
+    if (els.models) els.models.value = model;
+    renderBOM();
+    updateEditUI();
   });
 }
 
@@ -575,9 +761,9 @@ renderBOM();
 if (els.status) els.status.textContent = "Cargando BOM…";
 if (els.dataHint) els.dataHint.textContent = "Cargando automáticamente…";
 
-// Auto-carga
 loadBOMFromRepoCSV();
-;
+
+
 
 
 
