@@ -1,9 +1,9 @@
-// Buscador BOM (modo sin servidor: carga bom.json desde archivo)
+// Buscador BOM (GitHub Pages: carga data/bom.json automáticamente)
 const els = {
   status: document.getElementById("status"),
   themeBtn: document.getElementById("themeBtn"),
 
-  // NUEVO: carga BOM
+  // carga BOM (manual opcional)
   fileBOM: document.getElementById("fileBOM"),
   dataHint: document.getElementById("dataHint"),
 
@@ -100,11 +100,11 @@ function setDataLoadedUI(ok) {
   // si no hay datos, limpiar UI
   if (!ok) {
     selectedModel = null;
-    els.selected.textContent = "Ninguna bomba seleccionada";
-    els.count.textContent = "0 ítems";
-    els.models.innerHTML = "";
-    els.tbody.innerHTML = "";
-    els.brand.innerHTML = `<option value="">Marca: Todas</option>`;
+    if (els.selected) els.selected.textContent = "Ninguna bomba seleccionada";
+    if (els.count) els.count.textContent = "0 ítems";
+    if (els.models) els.models.innerHTML = "";
+    if (els.tbody) els.tbody.innerHTML = "";
+    if (els.brand) els.brand.innerHTML = `<option value="">Marca: Todas</option>`;
   }
 }
 
@@ -150,10 +150,9 @@ function updateEditUI(){
   const hasPatches = Object.keys(patches).length > 0;
   const canUndo = undoStack.length > 0;
 
-  // botones dependen de datos cargados + modo edición
-  els.btnUndo.disabled   = !(dataLoaded && editEnabled && canUndo);
-  els.btnReset.disabled  = !(dataLoaded && editEnabled && hasPatches);
-  els.btnExport.disabled = !(dataLoaded && hasPatches);
+  if (els.btnUndo)   els.btnUndo.disabled   = !(dataLoaded && editEnabled && canUndo);
+  if (els.btnReset)  els.btnReset.disabled  = !(dataLoaded && editEnabled && hasPatches);
+  if (els.btnExport) els.btnExport.disabled = !(dataLoaded && hasPatches);
 }
 
 function setPatch(rawRow, nextFields){
@@ -312,17 +311,17 @@ function renderBOM() {
   els.tbody.innerHTML = "";
 
   if (!dataLoaded) {
-    els.selected.textContent = "Ninguna bomba seleccionada";
-    els.count.textContent = "0 ítems";
-    els.brand.innerHTML = `<option value="">Marca: Todas</option>`;
+    if (els.selected) els.selected.textContent = "Ninguna bomba seleccionada";
+    if (els.count) els.count.textContent = "0 ítems";
+    if (els.brand) els.brand.innerHTML = `<option value="">Marca: Todas</option>`;
     updateEditUI();
     return;
   }
 
   if (!selectedModel) {
-    els.selected.textContent = "Ninguna bomba seleccionada";
-    els.count.textContent = "0 ítems";
-    els.brand.innerHTML = `<option value="">Marca: Todas</option>`;
+    if (els.selected) els.selected.textContent = "Ninguna bomba seleccionada";
+    if (els.count) els.count.textContent = "0 ítems";
+    if (els.brand) els.brand.innerHTML = `<option value="">Marca: Todas</option>`;
     updateEditUI();
     return;
   }
@@ -387,7 +386,7 @@ function renderBOM() {
   updateEditUI();
 }
 
-// ===== Cargar BOM desde archivo (SIN servidor) =====
+// ===== Cargar BOM desde archivo (manual) =====
 function loadBOMFromFile(file) {
   els.status.textContent = "Cargando BOM…";
   if (els.dataHint) els.dataHint.textContent = "Leyendo archivo…";
@@ -437,6 +436,57 @@ function loadBOMFromFile(file) {
   reader.readAsText(file, "utf-8");
 }
 
+// ===== Cargar BOM desde el repo (AUTO) =====
+async function loadBOMFromRepo() {
+  els.status.textContent = "Cargando BOM…";
+  if (els.dataHint) els.dataHint.textContent = "Cargando desde servidor…";
+
+  try {
+    const res = await fetch("data/bom.json", { cache: "no-store" });
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+
+    const parsed = await res.json();
+    if (!Array.isArray(parsed)) throw new Error("El JSON debe ser un array de filas.");
+
+    rows = parsed;
+    buildModelList();
+    renderModelList(modelList);
+
+    // reset selección y filtros
+    selectedModel = null;
+    if (els.qModel) els.qModel.value = "";
+    if (els.qPart) els.qPart.value = "";
+    if (els.qSAP) els.qSAP.value = "";
+    if (els.qNP) els.qNP.value = "";
+    if (els.brand) els.brand.value = "";
+
+    setDataLoadedUI(true);
+    els.status.textContent = `Listo (${modelList.length} modelos)`;
+    if (els.dataHint) els.dataHint.textContent = "BOM cargado automáticamente";
+
+    // oculta carga manual si existe (para celular)
+    // (si tu HTML lo tiene en un contenedor con id="loadBox", también lo ocultamos)
+    if (els.fileBOM) els.fileBOM.style.display = "none";
+    const loadBox = document.getElementById("loadBox");
+    if (loadBox) loadBox.style.display = "none";
+
+    renderBOM();
+    updateEditUI();
+  } catch (e) {
+    console.error(e);
+    els.status.textContent = "Error cargando BOM";
+    if (els.dataHint) els.dataHint.textContent = "No se pudo cargar data/bom.json";
+
+    // deja la opción manual disponible si existe
+    if (els.fileBOM) els.fileBOM.style.display = "";
+    const loadBox = document.getElementById("loadBox");
+    if (loadBox) loadBox.style.display = "";
+
+    setDataLoadedUI(false);
+    alert("No se pudo cargar el BOM automático. Revisa que exista data/bom.json en GitHub.");
+  }
+}
+
 // ===== Eventos UI =====
 if (els.qModel) {
   els.qModel.addEventListener("input", () => {
@@ -480,7 +530,7 @@ if (els.fileImport) {
   });
 }
 
-// NUEVO: cargar BOM desde el input file
+// manual: cargar BOM desde el input file (queda por si falla el automático)
 if (els.fileBOM) {
   els.fileBOM.addEventListener("change", (e) => {
     const f = e.target.files?.[0];
@@ -491,8 +541,6 @@ if (els.fileBOM) {
 }
 
 // ===== Service Worker (opcional) =====
-// Nota: En modo file:// muchos navegadores no registran service worker.
-// Lo dejamos sin romper nada.
 if ("serviceWorker" in navigator) {
   window.addEventListener("load", () => {
     navigator.serviceWorker.register("./service-worker.js").catch(() => {});
@@ -501,10 +549,11 @@ if ("serviceWorker" in navigator) {
 
 // ===== Init =====
 initTheme();
-setDataLoadedUI(false); // al inicio: no hay BOM cargado
+setDataLoadedUI(false);
 updateEditUI();
 renderBOM();
 
-// Mensaje inicial
-els.status.textContent = "BOM: no cargado";
-if (els.dataHint) els.dataHint.textContent = "Selecciona bom.json para comenzar";
+// Arranque: auto-carga desde repo
+loadBOMFromRepo();
+
+
