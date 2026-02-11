@@ -735,7 +735,9 @@ async function loadBOMFromRepoCSV() {
 
   try {
     const CSV_VER = "31"; // <-- cambia este número cada vez que actualices la base
+const CSV_VER = "31"; // <-- cambia este número cada vez que actualices la base
 const res = await fetch(`data/bom.csv?v=${CSV_VER}`, { cache: "no-store" });
+
 
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
 
@@ -897,6 +899,7 @@ if (els.status) els.status.textContent = "Cargando BOM…";
 if (els.dataHint) els.dataHint.textContent = "Cargando automáticamente…";
 
 loadBOMFromRepoCSV();
+
 
 
 
