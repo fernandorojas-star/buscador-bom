@@ -1,12 +1,16 @@
 // Buscador BOM (GitHub Pages) - Carga automática desde data/bom.csv + edición avanzada (agregar/ocultar)
 
+// Buscador BOM (GitHub Pages)
+// - Carga automática desde data/bom.csv
+// - Edición local: editar/agregar/quitar, borrar y renombrar bombas (todo localStorage)
+// - Export/Import: bom_local_changes.json
+
 const els = {
   status: document.getElementById("status"),
   themeBtn: document.getElementById("themeBtn"),
 
-  // (pueden existir en tu HTML; si no existen no rompe)
-  fileBOM: document.getElementById("fileBOM"),
   dataHint: document.getElementById("dataHint"),
+  fileBOM: document.getElementById("fileBOM"), // opcional si aún existe en tu HTML
 
   // buscador modelos
   qModel: document.getElementById("qModel"),
@@ -30,11 +34,13 @@ const els = {
   btnExport: document.getElementById("btnExport"),
   fileImport: document.getElementById("fileImport"),
 
-  // NUEVOS botones (los agregaremos luego al HTML; si no existen, no rompe)
+  // NUEVOS botones (si existen en HTML)
   btnAddPart: document.getElementById("btnAddPart"),
   btnAddPump: document.getElementById("btnAddPump"),
+  btnDelPump: document.getElementById("btnDelPump"),
+  btnRenamePump: document.getElementById("btnRenamePump"),
 
-  // modal edición (reutilizado para editar y para agregar repuesto)
+  // modal
   editDlg: document.getElementById("editDlg"),
   eDesc: document.getElementById("eDesc"),
   eQty: document.getElementById("eQty"),
@@ -42,7 +48,6 @@ const els = {
   eNp: document.getElementById("eNp"),
   eBrand: document.getElementById("eBrand"),
   eNote: document.getElementById("eNote"),
-  btnSaveEdit: document.getElementById("btnSaveEdit"),
   btnCancelEdit: document.getElementById("btnCancelEdit"),
 };
 
@@ -67,55 +72,42 @@ function getBrand(r) {
     r["Marca "]
   );
 }
-function getPumpModelsByBrand(brand) {
-  const set = new Set();
-
-  for (const r of rows) {
-    const tipo = toLower(r["Tipo"]);
-    if (!tipo.includes("repuesto")) continue;
-
-    const rr = applyPatch(r);
-    if (getBrand(rr) !== brand) continue;
-
-    const model = norm(rr["Nombre_modelo"]);
-    if (model) set.add(model);
-  }
-
-  return Array.from(set).sort((a, b) =>
-    a.localeCompare(b, "es")
-  );
-}
-
 
 // ===== CSV parser (soporta comillas) =====
 function detectSeparator(firstLine) {
-  if (firstLine.includes(";")) return ";";
-  return ",";
+  return firstLine.includes(";") ? ";" : ",";
 }
 function splitCSVLine(line, sep) {
   const out = [];
   let cur = "";
   let inQuotes = false;
+
   for (let i = 0; i < line.length; i++) {
     const ch = line[i];
+
     if (ch === '"') {
       if (inQuotes && line[i + 1] === '"') { cur += '"'; i++; }
-      else { inQuotes = !inQuotes; }
+      else inQuotes = !inQuotes;
       continue;
     }
+
     if (!inQuotes && ch === sep) { out.push(cur); cur = ""; continue; }
     cur += ch;
   }
+
   out.push(cur);
   return out;
 }
 function parseCSV(text) {
   const clean = String(text ?? "").replace(/\r/g, "").trim();
   if (!clean) return [];
+
   const lines = clean.split("\n").filter(l => l.trim().length);
   if (lines.length < 2) return [];
+
   const sep = detectSeparator(lines[0]);
   const headers = splitCSVLine(lines[0], sep).map(h => norm(h));
+
   const rowsOut = [];
   for (let i = 1; i < lines.length; i++) {
     const cols = splitCSVLine(lines[i], sep);
@@ -145,51 +137,24 @@ function initTheme() {
   }
 }
 
-// ===== Estado =====
-let rowsBase = [];   // desde CSV
-let rows = [];       // base + agregados (y luego filtrado por deleted)
+// ===== Estado base =====
+let rowsBase = [];    // desde CSV
+let rows = [];        // base + agregados - eliminados
 let modelList = [];
 let selectedModel = null;
 let dataLoaded = false;
 
-// ===== Habilitar/Deshabilitar UI hasta cargar BOM =====
-function setDataLoadedUI(ok) {
-  dataLoaded = ok;
-
-  if (els.models) els.models.disabled = !ok;
-  if (els.qModel) els.qModel.disabled = !ok;
-  if (els.brand) els.brand.disabled = !ok;
-  if (els.qSAP) els.qSAP.disabled = !ok;
-  if (els.qNP) els.qNP.disabled = !ok;
-  if (els.qPart) els.qPart.disabled = !ok;
-
-  if (els.editMode) els.editMode.disabled = !ok;
-  if (els.fileImport) els.fileImport.disabled = !ok;
-
-  if (!ok) {
-    selectedModel = null;
-    if (els.selected) els.selected.textContent = "Ninguna bomba seleccionada";
-    if (els.count) els.count.textContent = "0 ítems";
-    if (els.models) els.models.innerHTML = "";
-    if (els.tbody) els.tbody.innerHTML = "";
-    if (els.brand) els.brand.innerHTML = `<option value="">Marca: Todas</option>`;
-  }
-}
-
-// ===== Edición local =====
-// patches: cambios a filas existentes (por rowId)
-const PATCH_KEY = "bom_patches_v2";
-const UNDO_KEY  = "bom_undo_v2";
-// added: filas nuevas
-const ADDED_KEY = "bom_added_v1";
-// deleted: ids ocultos
-const DELETED_KEY = "bom_deleted_v1";
+// ===== Persistencia local =====
+const PATCH_KEY   = "bom_patches_v2";     // edits por rowId
+const ADDED_KEY   = "bom_added_v1";       // filas nuevas
+const DELETED_KEY = "bom_deleted_v1";     // ids ocultos
+const UNDO_KEY    = "bom_undo_v3";        // undo stack
 
 let editEnabled = false;
 let patches = loadJson(PATCH_KEY, {});
+let addedRows = loadJson(ADDED_KEY, []);
+let deletedIds = new Set(loadJson(DELETED_KEY, []));
 let undoStack = loadJson(UNDO_KEY, []);
-let addedRows = loadJson(ADDED_KEY, []);            // array de objetos fila
-let deletedIds = new Set(loadJson(DELETED_KEY, [])); // array de strings
 
 function loadJson(key, fallback){
   try { return JSON.parse(localStorage.getItem(key) || JSON.stringify(fallback)); }
@@ -215,15 +180,86 @@ function applyPatch(raw){
   return p ? { ...raw, ...p } : raw;
 }
 
+// ===== UI enable/disable =====
+function setDataLoadedUI(ok) {
+  dataLoaded = ok;
+
+  if (els.models) els.models.disabled = !ok;
+  if (els.qModel) els.qModel.disabled = !ok;
+
+  if (els.brand) els.brand.disabled = !ok;
+  if (els.qSAP) els.qSAP.disabled = !ok;
+  if (els.qNP) els.qNP.disabled = !ok;
+  if (els.qPart) els.qPart.disabled = !ok;
+
+  if (els.editMode) els.editMode.disabled = !ok;
+  if (els.fileImport) els.fileImport.disabled = !ok;
+
+  if (!ok) {
+    selectedModel = null;
+    if (els.selected) els.selected.textContent = "Ninguna bomba seleccionada";
+    if (els.count) els.count.textContent = "0 ítems";
+    if (els.models) els.models.innerHTML = "";
+    if (els.tbody) els.tbody.innerHTML = "";
+    if (els.brand) els.brand.innerHTML = `<option value="">Marca: Todas</option>`;
+  }
+}
+
+// ===== Undo helpers =====
+function pushUndo(entry){
+  undoStack.push({ ...entry, at: new Date().toISOString() });
+  if (undoStack.length > 120) undoStack.shift();
+  saveJson(UNDO_KEY, undoStack);
+}
+function pushSnapshotUndo(label){
+  pushUndo({
+    kind: "snapshot",
+    label,
+    prev: {
+      patches: { ...patches },
+      addedRows: Array.isArray(addedRows) ? [...addedRows] : [],
+      deletedIds: Array.from(deletedIds),
+      selectedModel,
+    }
+  });
+}
+function restoreSnapshot(prev){
+  patches = prev.patches || {};
+  addedRows = prev.addedRows || [];
+  deletedIds = new Set(prev.deletedIds || []);
+
+  saveJson(PATCH_KEY, patches);
+  saveJson(ADDED_KEY, addedRows);
+  saveJson(DELETED_KEY, Array.from(deletedIds));
+}
+
+// ===== Rebuild rows/model list =====
 function rebuildRowsFromBase() {
-  // 1) base + agregados
   rows = [...rowsBase, ...(Array.isArray(addedRows) ? addedRows : [])];
-
-  // 2) filtra eliminados
   rows = rows.filter(r => !deletedIds.has(rowId(r)));
-
-  // 3) modelos
   buildModelList();
+}
+
+function buildModelList() {
+  const set = new Set();
+  for (const r of rows) {
+    const tipo = toLower(r["Tipo"]);
+    const model = norm(r["Nombre_modelo"]);
+    if (!model) continue;
+    if (tipo === "bomba") set.add(model);
+  }
+  modelList = Array.from(set).sort((a, b) => a.localeCompare(b, "es"));
+}
+
+function renderModelList(list) {
+  if (!els.models) return;
+  els.models.innerHTML = "";
+  for (const m of list) {
+    const opt = document.createElement("option");
+    opt.value = m;
+    opt.textContent = m;
+    els.models.appendChild(opt);
+  }
 }
 
 function updateEditUI(){
@@ -236,17 +272,13 @@ function updateEditUI(){
   if (els.btnReset)  els.btnReset.disabled  = !(dataLoaded && editEnabled && (hasPatches || hasAdded || hasDeleted));
   if (els.btnExport) els.btnExport.disabled = !(dataLoaded && (hasPatches || hasAdded || hasDeleted));
 
-  // botones nuevos
-  if (els.btnAddPart) els.btnAddPart.disabled = !(dataLoaded && editEnabled && !!selectedModel);
-  if (els.btnAddPump) els.btnAddPump.disabled = !(dataLoaded && editEnabled);
+  if (els.btnAddPump)     els.btnAddPump.disabled     = !(dataLoaded && editEnabled);
+  if (els.btnAddPart)     els.btnAddPart.disabled     = !(dataLoaded && editEnabled && !!selectedModel);
+  if (els.btnDelPump)     els.btnDelPump.disabled     = !(dataLoaded && editEnabled && !!selectedModel);
+  if (els.btnRenamePump)  els.btnRenamePump.disabled  = !(dataLoaded && editEnabled && !!selectedModel);
 }
 
-function pushUndo(entry){
-  undoStack.push({ ...entry, at: new Date().toISOString() });
-  if (undoStack.length > 200) undoStack.shift();
-  saveJson(UNDO_KEY, undoStack);
-}
-
+// ===== Patches (editar fila existente) =====
 function setPatch(rawRow, nextFields){
   const id = rowId(rawRow);
   const prev = patches[id] ? { ...patches[id] } : null;
@@ -255,27 +287,21 @@ function setPatch(rawRow, nextFields){
   if (Object.keys(patches[id]).length === 0) delete patches[id];
 
   pushUndo({ kind: "patch", id, prev, next: patches[id] ? { ...patches[id] } : null });
-
   saveJson(PATCH_KEY, patches);
   updateEditUI();
 }
 
+// ===== Add row / Delete row =====
 function addRow(newRow){
-  // newRow: objeto fila completo
   const row = { ...newRow };
-  // evita duplicar exacto por id
   const id = rowId(row);
   const exists = rows.some(r => rowId(r) === id);
-  if (exists) {
-    alert("Esa pieza ya existe (mismo modelo/tipo/sap/np/descripcion).");
-    return;
-  }
+  if (exists) { alert("Ya existe una fila igual (mismo modelo/tipo/sap/np/descripcion)."); return; }
 
-  const prevLen = addedRows.length;
-  addedRows = [...addedRows, row];
+  pushUndo({ kind: "add", prevLen: Array.isArray(addedRows) ? addedRows.length : 0 });
+
+  addedRows = [...(Array.isArray(addedRows) ? addedRows : []), row];
   saveJson(ADDED_KEY, addedRows);
-
-  pushUndo({ kind: "add", id, prevLen });
 
   rebuildRowsFromBase();
   renderModelList(modelList);
@@ -287,10 +313,10 @@ function softDeleteRow(rawRow){
   const id = rowId(rawRow);
   if (deletedIds.has(id)) return;
 
+  pushUndo({ kind: "delete", id });
+
   deletedIds.add(id);
   saveJson(DELETED_KEY, Array.from(deletedIds));
-
-  pushUndo({ kind: "delete", id });
 
   rebuildRowsFromBase();
   renderModelList(modelList);
@@ -298,10 +324,85 @@ function softDeleteRow(rawRow){
   updateEditUI();
 }
 
+// ===== Export/Import =====
+function exportAllLocal(){
+  const payload = {
+    __version: 1,
+    __added: Array.isArray(addedRows) ? addedRows : [],
+    __deleted: Array.from(deletedIds),
+    __patches: patches,
+  };
+  const blob = new Blob([JSON.stringify(payload, null, 2)], { type: "application/json" });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = "bom_local_changes.json";
+  document.body.appendChild(a);
+  a.click();
+  a.remove();
+  URL.revokeObjectURL(url);
+}
+
+async function importAllLocal(file){
+  const text = await file.text();
+  let obj;
+  try { obj = JSON.parse(text); }
+  catch { alert("Archivo JSON inválido."); return; }
+
+  // formato nuevo
+  if (obj && obj.__patches) {
+    pushSnapshotUndo("import");
+
+    patches = { ...patches, ...(obj.__patches || {}) };
+    const add = Array.isArray(obj.__added) ? obj.__added : [];
+    const del = Array.isArray(obj.__deleted) ? obj.__deleted : [];
+
+    addedRows = [...(Array.isArray(addedRows) ? addedRows : []), ...add];
+    del.forEach(id => deletedIds.add(id));
+
+    saveJson(PATCH_KEY, patches);
+    saveJson(ADDED_KEY, addedRows);
+    saveJson(DELETED_KEY, Array.from(deletedIds));
+
+    rebuildRowsFromBase();
+    renderModelList(modelList);
+    renderBOM();
+    updateEditUI();
+    return;
+  }
+
+  // formato antiguo (solo patches)
+  if (!obj || typeof obj !== "object" || Array.isArray(obj)) {
+    alert("Formato inválido.");
+    return;
+  }
+
+  pushSnapshotUndo("import_old");
+  patches = { ...patches, ...obj };
+  saveJson(PATCH_KEY, patches);
+
+  rebuildRowsFromBase();
+  renderModelList(modelList);
+  renderBOM();
+  updateEditUI();
+}
+
+// ===== Undo / Reset =====
 function undoLast(){
   const last = undoStack.pop();
   if (!last) return;
   saveJson(UNDO_KEY, undoStack);
+
+  if (last.kind === "snapshot") {
+    restoreSnapshot(last.prev || {});
+    rebuildRowsFromBase();
+    renderModelList(modelList);
+    selectedModel = last.prev?.selectedModel || null;
+    if (els.models) els.models.value = selectedModel || "";
+    renderBOM();
+    updateEditUI();
+    return;
+  }
 
   if (last.kind === "patch") {
     if (last.prev == null) delete patches[last.id];
@@ -310,7 +411,6 @@ function undoLast(){
   }
 
   if (last.kind === "add") {
-    // quita el último agregado (por longitud previa)
     const prevLen = last.prevLen ?? 0;
     if (Array.isArray(addedRows) && addedRows.length > prevLen) {
       addedRows = addedRows.slice(0, prevLen);
@@ -330,86 +430,27 @@ function undoLast(){
 }
 
 function resetAll(){
-  if (!confirm("¿Restaurar BOM base? Se borrarán cambios locales (ediciones, agregados y eliminados) en este dispositivo.")) return;
+  if (!confirm("¿Restaurar BOM base? Se borrarán cambios locales (ediciones/agregados/eliminados) en este dispositivo.")) return;
 
   patches = {};
-  undoStack = [];
   addedRows = [];
   deletedIds = new Set();
+  undoStack = [];
 
   localStorage.removeItem(PATCH_KEY);
-  localStorage.removeItem(UNDO_KEY);
   localStorage.removeItem(ADDED_KEY);
   localStorage.removeItem(DELETED_KEY);
+  localStorage.removeItem(UNDO_KEY);
 
   rebuildRowsFromBase();
   renderModelList(modelList);
+  selectedModel = null;
+  if (els.models) els.models.value = "";
   renderBOM();
   updateEditUI();
 }
 
-function exportAllLocal(){
-  // exporta patches + agregados + eliminados en un solo json
-  const payload = {
-    __version: 1,
-    __added: Array.isArray(addedRows) ? addedRows : [],
-    __deleted: Array.from(deletedIds),
-    __patches: patches,
-  };
-
-  const blob = new Blob([JSON.stringify(payload, null, 2)], { type: "application/json" });
-  const url = URL.createObjectURL(blob);
-  const a = document.createElement("a");
-  a.href = url;
-  a.download = "bom_local_changes.json";
-  document.body.appendChild(a);
-  a.click();
-  a.remove();
-  URL.revokeObjectURL(url);
-}
-
-async function importAllLocal(file){
-  const text = await file.text();
-  let obj;
-  try { obj = JSON.parse(text); }
-  catch { alert("Archivo JSON inválido."); return; }
-
-  // Acepta el formato nuevo o el antiguo (solo patches)
-  if (obj && obj.__patches) {
-    patches = { ...patches, ...(obj.__patches || {}) };
-    const add = Array.isArray(obj.__added) ? obj.__added : [];
-    const del = Array.isArray(obj.__deleted) ? obj.__deleted : [];
-
-    addedRows = [...(Array.isArray(addedRows) ? addedRows : []), ...add];
-    del.forEach(id => deletedIds.add(id));
-
-    saveJson(PATCH_KEY, patches);
-    saveJson(ADDED_KEY, addedRows);
-    saveJson(DELETED_KEY, Array.from(deletedIds));
-
-    rebuildRowsFromBase();
-    renderModelList(modelList);
-    renderBOM();
-    updateEditUI();
-    return;
-  }
-
-  // formato antiguo (parches directos)
-  if (!obj || typeof obj !== "object" || Array.isArray(obj)) {
-    alert("Formato inválido: se espera un objeto JSON.");
-    return;
-  }
-
-  patches = { ...patches, ...obj };
-  saveJson(PATCH_KEY, patches);
-
-  rebuildRowsFromBase();
-  renderModelList(modelList);
-  renderBOM();
-  updateEditUI();
-}
-
-// ===== Modal edición (reutilizado) =====
+// ===== Modal editar/agregar repuesto =====
 let editingRaw = null;
 let addingMode = null; // null | "part"
 
@@ -429,10 +470,8 @@ function openEditModal(raw){
 }
 
 function openAddPartModal(){
-  if (!selectedModel) {
-    alert("Primero selecciona una bomba/modelo.");
-    return;
-  }
+  if (!selectedModel) { alert("Primero selecciona una bomba/modelo."); return; }
+
   addingMode = "part";
   editingRaw = null;
 
@@ -460,7 +499,7 @@ if (els.editDlg) {
     form.addEventListener("submit", (e) => {
       e.preventDefault();
 
-      // 1) Agregar repuesto (fila nueva)
+      // Agregar repuesto (fila nueva)
       if (addingMode === "part") {
         const newRow = {
           "Tipo": "repuesto",
@@ -473,10 +512,7 @@ if (els.editDlg) {
           "Nota": els.eNote?.value ?? "",
         };
 
-        if (!norm(newRow["Descripción"])) {
-          alert("Falta la Descripción.");
-          return;
-        }
+        if (!norm(newRow["Descripción"])) { alert("Falta la Descripción."); return; }
         addRow(newRow);
 
         els.editDlg.close();
@@ -484,7 +520,7 @@ if (els.editDlg) {
         return;
       }
 
-      // 2) Editar fila existente (patch)
+      // Editar fila existente
       if (!editingRaw) return;
 
       setPatch(editingRaw, {
@@ -503,19 +539,25 @@ if (els.editDlg) {
   }
 }
 
-// ===== Render lista modelos =====
-function renderModelList(list) {
-  if (!els.models) return;
-  els.models.innerHTML = "";
-  for (const m of list) {
-    const opt = document.createElement("option");
-    opt.value = m;
-    opt.textContent = m;
-    els.models.appendChild(opt);
+// ===== Marca => bombas por marca =====
+function getPumpModelsByBrand(brand) {
+  const set = new Set();
+
+  for (const r of rows) {
+    const tipo = toLower(r["Tipo"]);
+    if (!tipo.includes("repuesto")) continue;
+
+    const rr = applyPatch(r);
+    if (getBrand(rr) !== brand) continue;
+
+    const model = norm(rr["Nombre_modelo"]);
+    if (model) set.add(model);
   }
+
+  return Array.from(set).sort((a, b) => a.localeCompare(b, "es"));
 }
 
-// ===== Render marcas =====
+// ===== Render marcas (según repuestos del modelo seleccionado) =====
 function renderBrandOptions(repuestos) {
   if (!els.brand) return;
 
@@ -530,18 +572,6 @@ function renderBrandOptions(repuestos) {
   els.brand.innerHTML =
     `<option value="">Marca: Todas</option>` +
     brands.map((b) => `<option value="${escapeHtml(b)}">${escapeHtml(b)}</option>`).join("");
-}
-
-// ===== Construir modelos desde rows =====
-function buildModelList() {
-  const set = new Set();
-  for (const r of rows) {
-    const tipo = toLower(r["Tipo"]);
-    const model = norm(r["Nombre_modelo"]);
-    if (!model) continue;
-    if (tipo === "bomba") set.add(model);
-  }
-  modelList = Array.from(set).sort((a, b) => a.localeCompare(b, "es"));
 }
 
 // ===== Render BOM =====
@@ -578,7 +608,7 @@ function renderBOM() {
   const qNp = toLower(els.qNP?.value);
   const brandSelected = norm(els.brand?.value);
 
-  const filtered = repuestos.filter((r) => {
+  let filtered = repuestos.filter((r) => {
     const rr = applyPatch(r);
 
     if (brandSelected && getBrand(rr) !== brandSelected) return false;
@@ -634,7 +664,71 @@ function renderBOM() {
   updateEditUI();
 }
 
-// ===== Carga automática desde data/bom.csv =====
+// ===== Acciones bomba (borrar / renombrar) =====
+function deleteSelectedPump() {
+  if (!editEnabled) return;
+  if (!selectedModel) { alert("Primero selecciona una bomba/modelo."); return; }
+
+  const model = selectedModel;
+  if (!confirm(`¿Borrar (ocultar) la bomba "${model}" y TODOS sus repuestos en este dispositivo?`)) return;
+
+  // esto hará varios undo (uno por fila) -> OK
+  const toDelete = rows.filter(r => norm(r["Nombre_modelo"]) === model);
+  for (const r of toDelete) softDeleteRow(r);
+
+  selectedModel = null;
+  if (els.models) els.models.value = "";
+  renderBOM();
+  updateEditUI();
+}
+
+function renameSelectedPump() {
+  if (!editEnabled) return;
+  if (!selectedModel) { alert("Primero selecciona una bomba/modelo."); return; }
+
+  const oldName = selectedModel;
+  const newName = norm(prompt(`Nuevo nombre para la bomba:\n\nActual: ${oldName}`, oldName));
+  if (!newName || newName === oldName) return;
+
+  if (modelList.some(m => norm(m) === newName)) {
+    alert("Ya existe una bomba con ese nombre.");
+    return;
+  }
+
+  // Undo de todo como snapshot (más seguro)
+  pushSnapshotUndo("rename_pump");
+
+  // 1) ocultar filas base del modelo antiguo
+  const baseToMove = rowsBase.filter(r => norm(r["Nombre_modelo"]) === oldName);
+  for (const r of baseToMove) deletedIds.add(rowId(r));
+
+  // 2) crear copias del base con nombre nuevo como agregados
+  const movedCopies = baseToMove.map(r => ({ ...r, "Nombre_modelo": newName }));
+
+  // 3) renombrar agregados existentes del modelo
+  addedRows = (Array.isArray(addedRows) ? addedRows : []).map(r => {
+    if (norm(r["Nombre_modelo"]) !== oldName) return r;
+    return { ...r, "Nombre_modelo": newName };
+  });
+
+  // 4) sumar copias
+  addedRows = [...addedRows, ...movedCopies];
+
+  // guardar
+  saveJson(ADDED_KEY, addedRows);
+  saveJson(DELETED_KEY, Array.from(deletedIds));
+
+  rebuildRowsFromBase();
+  renderModelList(modelList);
+
+  selectedModel = newName;
+  if (els.models) els.models.value = newName;
+
+  renderBOM();
+  updateEditUI();
+}
+
+// ===== Cargar desde repo CSV =====
 async function loadBOMFromRepoCSV() {
   if (els.status) els.status.textContent = "Cargando BOM…";
   if (els.dataHint) els.dataHint.textContent = "Cargando CSV…";
@@ -645,17 +739,13 @@ async function loadBOMFromRepoCSV() {
 
     const text = await res.text();
     const parsed = parseCSV(text);
-
-    if (!Array.isArray(parsed) || parsed.length === 0) {
-      throw new Error("CSV vacío o inválido.");
-    }
+    if (!Array.isArray(parsed) || parsed.length === 0) throw new Error("CSV vacío o inválido.");
 
     rowsBase = parsed;
 
     rebuildRowsFromBase();
     renderModelList(modelList);
 
-    // reset selección y filtros
     selectedModel = null;
     if (els.qModel) els.qModel.value = "";
     if (els.qPart) els.qPart.value = "";
@@ -668,24 +758,19 @@ async function loadBOMFromRepoCSV() {
     if (els.status) els.status.textContent = `Listo (${modelList.length} modelos)`;
     if (els.dataHint) els.dataHint.textContent = "BOM cargado automáticamente (CSV)";
 
-    // oculta caja de carga manual si existe
+    // si existe caja de carga manual vieja, la escondemos
     const loadBox = document.getElementById("loadBox");
     if (loadBox) loadBox.style.display = "none";
     if (els.fileBOM) els.fileBOM.style.display = "none";
 
     renderBOM();
     updateEditUI();
-
   } catch (e) {
     console.error(e);
 
     setDataLoadedUI(false);
     if (els.status) els.status.textContent = "Error cargando BOM";
     if (els.dataHint) els.dataHint.textContent = "No se pudo cargar data/bom.csv";
-
-    const loadBox = document.getElementById("loadBox");
-    if (loadBox) loadBox.style.display = "";
-    if (els.fileBOM) els.fileBOM.style.display = "";
 
     alert("No se pudo cargar el BOM desde data/bom.csv. Revisa que exista en /data y que tenga encabezados.");
   }
@@ -695,7 +780,7 @@ async function loadBOMFromRepoCSV() {
 if (els.qModel) {
   els.qModel.addEventListener("input", () => {
     const q = toLower(els.qModel.value);
-    const filtered = !q ? modelList : modelList.filter((m) => toLower(m).includes(q));
+    const filtered = !q ? modelList : modelList.filter(m => toLower(m).includes(q));
     renderModelList(filtered);
   });
 }
@@ -709,6 +794,10 @@ if (els.models) {
 }
 
 if (els.qPart) els.qPart.addEventListener("input", renderBOM);
+if (els.qSAP)  els.qSAP.addEventListener("input", renderBOM);
+if (els.qNP)   els.qNP.addEventListener("input", renderBOM);
+
+// ✅ Marca: si seleccionas marca, la lista de bombas cambia a “bombas con esa marca”
 if (els.brand) {
   els.brand.addEventListener("change", () => {
     const brandSelected = norm(els.brand.value);
@@ -724,15 +813,12 @@ if (els.brand) {
       return;
     }
 
-    // Si vuelve a "todas"
+    // volver a todas
     renderModelList(modelList);
     renderBOM();
     updateEditUI();
   });
 }
-
-if (els.qSAP) els.qSAP.addEventListener("input", renderBOM);
-if (els.qNP) els.qNP.addEventListener("input", renderBOM);
 
 if (els.editMode) {
   els.editMode.addEventListener("change", () => {
@@ -742,8 +828,8 @@ if (els.editMode) {
   });
 }
 
-if (els.btnUndo) els.btnUndo.addEventListener("click", undoLast);
-if (els.btnReset) els.btnReset.addEventListener("click", resetAll);
+if (els.btnUndo)   els.btnUndo.addEventListener("click", undoLast);
+if (els.btnReset)  els.btnReset.addEventListener("click", resetAll);
 if (els.btnExport) els.btnExport.addEventListener("click", exportAllLocal);
 
 if (els.fileImport) {
@@ -754,16 +840,21 @@ if (els.fileImport) {
   });
 }
 
-// Botones nuevos (si existen)
 if (els.btnAddPart) els.btnAddPart.addEventListener("click", openAddPartModal);
 
 if (els.btnAddPump) {
   els.btnAddPump.addEventListener("click", () => {
+    if (!editEnabled) return;
+
     const name = prompt("Nombre de la nueva bomba/modelo:");
     const model = norm(name);
     if (!model) return;
 
-    // crear una fila tipo bomba
+    if (modelList.some(m => norm(m) === model)) {
+      alert("Esa bomba ya existe.");
+      return;
+    }
+
     const newPump = {
       "Tipo": "bomba",
       "Nombre_modelo": model,
@@ -777,13 +868,15 @@ if (els.btnAddPump) {
 
     addRow(newPump);
 
-    // selecciona esa bomba
     selectedModel = model;
     if (els.models) els.models.value = model;
     renderBOM();
     updateEditUI();
   });
 }
+
+if (els.btnDelPump) els.btnDelPump.addEventListener("click", deleteSelectedPump);
+if (els.btnRenamePump) els.btnRenamePump.addEventListener("click", renameSelectedPump);
 
 // ===== Service Worker (opcional) =====
 if ("serviceWorker" in navigator) {
@@ -802,6 +895,7 @@ if (els.status) els.status.textContent = "Cargando BOM…";
 if (els.dataHint) els.dataHint.textContent = "Cargando automáticamente…";
 
 loadBOMFromRepoCSV();
+
 
 
 
