@@ -67,6 +67,25 @@ function getBrand(r) {
     r["Marca "]
   );
 }
+function getPumpModelsByBrand(brand) {
+  const set = new Set();
+
+  for (const r of rows) {
+    const tipo = toLower(r["Tipo"]);
+    if (!tipo.includes("repuesto")) continue;
+
+    const rr = applyPatch(r);
+    if (getBrand(rr) !== brand) continue;
+
+    const model = norm(rr["Nombre_modelo"]);
+    if (model) set.add(model);
+  }
+
+  return Array.from(set).sort((a, b) =>
+    a.localeCompare(b, "es")
+  );
+}
+
 
 // ===== CSV parser (soporta comillas) =====
 function detectSeparator(firstLine) {
@@ -690,7 +709,28 @@ if (els.models) {
 }
 
 if (els.qPart) els.qPart.addEventListener("input", renderBOM);
-if (els.brand) els.brand.addEventListener("change", renderBOM);
+if (els.brand) {
+  els.brand.addEventListener("change", () => {
+    const brandSelected = norm(els.brand.value);
+
+    if (brandSelected) {
+      const modelsByBrand = getPumpModelsByBrand(brandSelected);
+      renderModelList(modelsByBrand);
+
+      selectedModel = null;
+      if (els.models) els.models.value = "";
+      renderBOM();
+      updateEditUI();
+      return;
+    }
+
+    // Si vuelve a "todas"
+    renderModelList(modelList);
+    renderBOM();
+    updateEditUI();
+  });
+}
+
 if (els.qSAP) els.qSAP.addEventListener("input", renderBOM);
 if (els.qNP) els.qNP.addEventListener("input", renderBOM);
 
@@ -762,6 +802,7 @@ if (els.status) els.status.textContent = "Cargando BOM…";
 if (els.dataHint) els.dataHint.textContent = "Cargando automáticamente…";
 
 loadBOMFromRepoCSV();
+
 
 
 
