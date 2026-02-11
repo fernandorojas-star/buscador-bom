@@ -240,16 +240,44 @@ function rebuildRowsFromBase() {
   buildModelList();
 }
 
+function getTipo(r){
+  return toLower(
+    r["Tipo"] ??
+    r["TIPO"] ??
+    r["tipo"] ??
+    r["Tipo "] ??
+    r["TIPO "] ??
+    ""
+  );
+}
+
+function getModelo(r){
+  return norm(
+    r["Nombre_modelo"] ??
+    r["Nombre modelo"] ??
+    r["NOMBRE_MODELO"] ??
+    r["Modelo"] ??
+    r["MODELO"] ??
+    r["Nombre_modelo "] ??
+    ""
+  );
+}
+
 function buildModelList() {
   const set = new Set();
+
   for (const r of rows) {
-    const tipo = toLower(r["Tipo"]);
-    const model = norm(r["Nombre_modelo"]);
+    const tipo = getTipo(r);
+    const model = getModelo(r);
     if (!model) continue;
-    if (tipo === "bomba") set.add(model);
+
+    // acepta "bomba", "bomba ..." y mayúsculas
+    if (tipo.includes("bomba")) set.add(model);
   }
+
   modelList = Array.from(set).sort((a, b) => a.localeCompare(b, "es"));
 }
+
 
 function renderModelList(list) {
   if (!els.models) return;
@@ -597,8 +625,10 @@ function renderBOM() {
   if (els.selected) els.selected.textContent = selectedModel;
 
   const repuestos = rows.filter((r) =>
-    norm(r["Nombre_modelo"]) === selectedModel &&
-    toLower(r["Tipo"]).includes("repuesto")
+     getModelo(r) === selectedModel
+ &&
+   getTipo(r).includes("repuesto")
+
   );
 
   renderBrandOptions(repuestos);
@@ -900,6 +930,7 @@ if (els.status) els.status.textContent = "Cargando BOM…";
 if (els.dataHint) els.dataHint.textContent = "Cargando automáticamente…";
 
 loadBOMFromRepoCSV();
+
 
 
 
