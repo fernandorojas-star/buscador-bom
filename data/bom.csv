@@ -1,0 +1,1163 @@
+﻿Marca;Item;Equipo;Descripción;N/P;Codigo SAP;Cantidad;Tipo;Kit;ID;Nombre_modelo;Repuesto 
+FLS;1;;Bomba RM500/Slurrymax 20x18;RA500-E53-26052_PU 2001/2002;4124469;3;Bomba;;;Bomba RM500/Slurrymax 20x18;n
+FLS;2;;Carcasa lateral de la glándula;RM500-011-12MME;4068815;1;Repuesto bomba;;;Bomba RM500/Slurrymax 20x18;Repuesto
+FLS;3;;Revestimiento de la carcasa lateral de la glándula;RM500-013-26001;4093839;1;Repuesto bomba;;;Bomba RM500/Slurrymax 20x18;Repuesto
+FLS;4;;Arandela plana M30;mm250-434-10012;4068823;54;Repuesto bomba;;;Bomba RM500/Slurrymax 20x18;Repuesto
+FLS;5;;Revestimiento de la carcasa del lado de succión;RM500-014-26001;4093840;1;Repuesto bomba;;;Bomba RM500/Slurrymax 20x18;Repuesto
+FLS;6;;Revestimiento de succión;RM500-042-26001;4093836;1;Repuesto bomba;;;Bomba RM500/Slurrymax 20x18;Repuesto
+FLS;7;;Carcasa lateral de succión;RM500-012-26001;4068816;1;Repuesto bomba;;;Bomba RM500/Slurrymax 20x18;Repuesto
+FLS;8;;Arandela de pernos de carcasa;mm05-H08-42;4068824;30;Repuesto bomba;;;Bomba RM500/Slurrymax 20x18;Repuesto
+FLS;9;;Perno de la carcasa;MM00-L08180424H;4068825;15;Repuesto bomba;;;Bomba RM500/Slurrymax 20x18;Repuesto
+FLS;10;;Tuerca hexagonal de la carcasa;mm01-L08-424H;4068826;15;Repuesto bomba;;;Bomba RM500/Slurrymax 20x18;Repuesto
+FLS;11;;Placa de succión DIN;RM500-505-12052;4068817;1;Repuesto bomba;;;Bomba RM500/Slurrymax 20x18;Repuesto
+FLS;12;;Revestimiento de placa de succión;RM500-542-26001;4093837;1;Repuesto bomba;;;Bomba RM500/Slurrymax 20x18;Repuesto
+FLS;13;;Placa de succión/Perno de pedestal;mm350-334-10079;4068827;30;Repuesto bomba;;;Bomba RM500/Slurrymax 20x18;Repuesto
+FLS;14;;Tuerca hexagonal M30;mm250-534-10012;4068828;24;Repuesto bomba;;;Bomba RM500/Slurrymax 20x18;Repuesto
+FLS;15;;Collar de liberación;MME-239-10001;4068803;1;Repuesto bomba;;;Bomba RM500/Slurrymax 20x18;Repuesto
+FLS;16;;Seguidor de glándula dividida;mm500-044-10069;4062209;1;Repuesto bomba;;;Bomba RM500/Slurrymax 20x18;Repuesto
+FLS;17;;Arandela de tornillo de prensa estopas;mm350-145-16001;4068829;6;Repuesto bomba;;;Bomba RM500/Slurrymax 20x18;Repuesto
+FLS;18;;Espárrago de la glándula;mm500-045-16001;4068830;4;Repuesto bomba;;;Bomba RM500/Slurrymax 20x18;Repuesto
+FLS;19;;Impulsor - 5 paletas;RM500-547-00MME;4068804;1;Repuesto bomba;;;Bomba RM500/Slurrymax 20x18;Repuesto
+FLS;20;;Junta del impulsor;mm500-018-29073;4068805;2;Repuesto bomba;;;Bomba RM500/Slurrymax 20x18;Repuesto
+FLS;21;;Lantern bush;mm500-118-00069;4068806;1;Repuesto bomba;;;Bomba RM500/Slurrymax 20x18;Repuesto
+FLS;22;;Espaciador de manguito;mm500-179-10MME;4068814;1;Repuesto bomba;;;Bomba RM500/Slurrymax 20x18;Repuesto
+FLS;;;;;4068813;;Repuesto bomba;;;Bomba RM500/Slurrymax 20x18;Repuesto
+FLS;23;;Junta espaciador de manguito;mm500-108-29069;4068807;1;Repuesto bomba;;;Bomba RM500/Slurrymax 20x18;Repuesto
+FLS;24;;Prensaestopas;RM500-078-12MME;4068808;1;Repuesto bomba;;;Bomba RM500/Slurrymax 20x18;Repuesto
+FLS;25;;Anillo de desgaste;RM500-083-26001;4093838;1;Repuesto bomba;;;Bomba RM500/Slurrymax 20x18;Repuesto
+FLS;26;;Empaquetadura;mm500-111-43104;4068810;1;Repuesto bomba;;;Bomba RM500/Slurrymax 20x18;Repuesto
+FLS;27;;Manguito del eje;mm600-175-18094;4068811;1;Repuesto bomba;;;Bomba RM500/Slurrymax 20x18;Repuesto
+FLS;28;;Arandela de revestimiento de succión;mm150-134-10001;4068831;4;Repuesto bomba;;;Bomba RM500/Slurrymax 20x18;Repuesto
+FLS;29;;Tuerca de revestimiento de succión;mm350-240-10022;4068832;4;Repuesto bomba;;;Bomba RM500/Slurrymax 20x18;Repuesto
+FLS;30;;Tornillo de anillo de desgaste;mm500-084-16101;4068833;4;Repuesto bomba;;;Bomba RM500/Slurrymax 20x18;Repuesto
+FLS;31;;Espárrago de anillo de desgaste;mm250-040-16037;4068834;2;Repuesto bomba;;;Bomba RM500/Slurrymax 20x18;Repuesto
+FLS;32;;Perno de tornillo de anillo de desgaste;mm150-534-16016;4068835;2;Repuesto bomba;;;Bomba RM500/Slurrymax 20x18;Repuesto
+FLS;33;;Pasador de rollo de carcasa;RM400-634-10001;4068836;2;Repuesto bomba;;;Bomba RM500/Slurrymax 20x18;Repuesto
+FLS;34;;Tuerca seguidora de glándula;mm350-245-16001;4068837;4;Repuesto bomba;;;Bomba RM500/Slurrymax 20x18;Repuesto
+FLS;35;;Sellos de labio de marco MME Power;MME-500-10100;4062222;1;Repuesto bomba;;;Bomba RM500/Slurrymax 20x18;Repuesto
+FLS;36;;Conjunto de protección del eje;MME-562-10300;4062221;1;Repuesto bomba;;;Bomba RM500/Slurrymax 20x18;Repuesto
+FLS;37;;Cuerpo portarodamiento;PAMME-500-10100;;1;Repuesto bomba;;;Bomba RM500/Slurrymax 20x18;Repuesto
+KOSLAN;1;;Bomba de Alimentación TK4000/SLOW 350-450B;PU-3001/3002;4108765;2;Bomba;;;Bomba de Alimentación TK4000/SLOW 350-450B;n
+KOSLAN;2;;Impulsor 1Cr13Ni Bba Gapl Slow350-450B;800860;4068340;1;Repuesto  bomba;;;Bomba de Alimentación TK4000/SLOW 350-450B;Repuesto
+KOSLAN;3;;Rodamientos Ntn Bba Gapl Slow350-450B;800861;4068341;1;Repuesto  bomba;;;Bomba de Alimentación TK4000/SLOW 350-450B;Repuesto
+KOSLAN;4;;Anillo Desgaste 1Cr13Ni Bba Gapl Slow350-450B;800862;4068342;1;Repuesto  bomba;;;Bomba de Alimentación TK4000/SLOW 350-450B;Repuesto
+KOSLAN;5;;Camisa Eje 1Cr13Ni Bba Gapl Slow350-450B;800863;4068343;1;Repuesto  bomba;;;Bomba de Alimentación TK4000/SLOW 350-450B;Repuesto
+KOSLAN;6;;Eje Aisi420 Bba Gapl Slow350-450B;800864;4068344;1;Repuesto  bomba;;;Bomba de Alimentación TK4000/SLOW 350-450B;Repuesto
+KOSLAN;7;;Set O-Ring Bba Gapl Slow350-450B;800865;4068345;2;Repuesto  bomba;;;Bomba de Alimentación TK4000/SLOW 350-450B;Repuesto
+KOSLAN;8;;Pr. Estopa Fc 2Kg Bba Gapl Slow350-450B;800866;4068346;2;Repuesto  bomba;;;Bomba de Alimentación TK4000/SLOW 350-450B;Repuesto
+KOSLAN;9;;Acople Flexible Bba Gapl Slow350-450B;800867;4068347;1;Repuesto  bomba;;;Bomba de Alimentación TK4000/SLOW 350-450B;Repuesto
+KOSLAN;10;;Carcasa Bba Gapl Slow350-450B En 1Cr13Ni;801457;4073031;1;Repuesto  bomba;;;Bomba de Alimentación TK4000/SLOW 350-450B;Repuesto
+KOSLAN;11;;Tapa Cuerpo Bba Gapl Slow350-450B En 1Cr13Ni;801458;4073032;1;Repuesto  bomba;;;Bomba de Alimentación TK4000/SLOW 350-450B;Repuesto
+KOSLAN;12;;Cuerpo Rodamiento Bba Gapl Slow350-450B;801459;4073033;1;Repuesto  bomba;;;Bomba de Alimentación TK4000/SLOW 350-450B;Repuesto
+KOSLAN;13;;Casquillo Del Cojinete Bba Gapl Slow350-450B;801460;4073034;1;Repuesto  bomba;;;Bomba de Alimentación TK4000/SLOW 350-450B;Repuesto
+KOSLAN;14;;Bomba Eje Libre Gapl Slow 350-450B;800868;4072868;1;Repuesto  bomba;;;Bomba de Alimentación TK4000/SLOW 350-450B;Repuesto
+KOSLAN;;;;;4108765;;Repuesto  bomba;;;Bomba de Alimentación TK4000/SLOW 350-450B;Repuesto
+KOSLAN;;;;;4068540;;Repuesto  bomba;;;Bomba de Alimentación TK4000/SLOW 350-450B;Repuesto
+KOSLAN;15;;Motor Electrico Gapl 250Kw 4P 380V 50Hz;800869;;1;Repuesto  bomba;;;Bomba de Alimentación TK4000/SLOW 350-450B;Repuesto
+KOSLAN;16;;Bomba Centrifuga Horizontal Carcasa Partida Marca Gapl Modelo Slow;;;;Repuesto  bomba;;;Bomba de Alimentación TK4000/SLOW 350-450B;Repuesto
+"350-450B Con Motor 340Hp""";800855;4072869;1;Repuesto;;;Repuesto  bomba;;;Bomba de Alimentación TK4000/SLOW 350-450B;Repuesto
+KOSLAN;17;;Bomba de Alimentación TK2000/IS80-50-200;PU-3003/3004;4068541;2;Bomba;;;Bomba de Alimentación TK2000/IS80-50-200;n
+KOSLAN;18;;Impulsor Ss304 Bba Gapl Is80-50-200;800870;4068348;1;Repuesto bomba;;;Bomba de Alimentación TK2000/IS80-50-200;Repuesto
+KOSLAN;19;;Rodamientos Ntn Bba Gapl Is80-50-200;800871;4068349;1;Repuesto bomba;;;Bomba de Alimentación TK2000/IS80-50-200;Repuesto
+KOSLAN;20;;Anillo Desgaste Ss304 Bba Gapl Is80-50-200;800872;4068350;1;Repuesto bomba;;;Bomba de Alimentación TK2000/IS80-50-200;Repuesto
+KOSLAN;21;;Tuerca Impulsor Ss304 Bba Gapl Is80-50-200;800873;4068351;1;Repuesto bomba;;;Bomba de Alimentación TK2000/IS80-50-200;Repuesto
+KOSLAN;22;;Eje Aisi420 Bba Gapl Is80-50-200;800874;4068352;1;Repuesto bomba;;;Bomba de Alimentación TK2000/IS80-50-200;Repuesto
+KOSLAN;23;;Set O-Ring Bba Gapl Is80-50-200;800875;4068353;2;Repuesto bomba;;;Bomba de Alimentación TK2000/IS80-50-200;Repuesto
+KOSLAN;24;;Pr. Estopa Fc 2Kg Bba Gapl Is80-50-200;800876;4068354;2;Repuesto bomba;;;Bomba de Alimentación TK2000/IS80-50-200;Repuesto
+KOSLAN;25;;Acople Flexible Bba Gapl Is80-50-200;800877;4068355;1;Repuesto bomba;;;Bomba de Alimentación TK2000/IS80-50-200;Repuesto
+KOSLAN;26;;Carcasa Bba Gapl Is80-50-200 En Ss304;801461;4073035;1;Repuesto bomba;;;Bomba de Alimentación TK2000/IS80-50-200;Repuesto
+KOSLAN;27;;Tapa Cuerpo Bba Gapl Is80-50-200 En Ss304;801462;4073036;1;Repuesto bomba;;;Bomba de Alimentación TK2000/IS80-50-200;Repuesto
+KOSLAN;28;;Cuerpo Rodamiento Bba Gapl Is80-50-200;801463;4073037;1;Repuesto bomba;;;Bomba de Alimentación TK2000/IS80-50-200;Repuesto
+KOSLAN;29;;Casquillo Del Cojinete Bba Gapl Is80-50-200;801464;4073038;1;Repuesto bomba;;;Bomba de Alimentación TK2000/IS80-50-200;Repuesto
+KOSLAN;30;;Bomba Eje Libre Gapl Is80-50-200;800878;4068541;1;Repuesto bomba;;;Bomba de Alimentación TK2000/IS80-50-200;Repuesto
+KOSLAN;31;;Motor Electrico Gapl 15Kw 2P 400V 50Hz;800879;4108578;1;Repuesto bomba;;;Bomba de Alimentación TK2000/IS80-50-200;Repuesto
+KOSLAN;32;;Bomba Centrifuga Horizontal End-Suction Marca Gapl Modelo Is80-50-200 Con Motor 20Hp;800856;4072870;1;Bomba;;;Bomba Centrifuga Horizontal End-Suction Marca Gapl Modelo Is80-50-200 Con Motor 20Hp;n
+KOSLAN;33;;Agua Fresca para Sello de Bombas de Pulpa;PU-3005/3006;4072871;2;Repuesto bomba;;;Bomba Centrifuga Horizontal End-Suction Marca Gapl Modelo Is80-50-200 Con Motor 20Hp;Repuesto
+KOSLAN;34;;Impulsor Ss304 Bba Gapl Is80-50-315C;800880;4068356;1;Repuesto bomba;;;Bomba Centrifuga Horizontal End-Suction Marca Gapl Modelo Is80-50-200 Con Motor 20Hp;Repuesto
+KOSLAN;35;;Rodamientos Ntn Bba Gapl Is80-50-315C;800881;4068357;1;Repuesto bomba;;;Bomba Centrifuga Horizontal End-Suction Marca Gapl Modelo Is80-50-200 Con Motor 20Hp;Repuesto
+KOSLAN;36;;Anillo Desgaste Ss304 Bba Gapl Is80-50-315C;800882;4068358;1;Repuesto bomba;;;Bomba Centrifuga Horizontal End-Suction Marca Gapl Modelo Is80-50-200 Con Motor 20Hp;Repuesto
+KOSLAN;37;;Tuerca Impulsor Ss304 Bba Gapl Is80-50-315C;800883;4068359;1;Repuesto bomba;;;Bomba Centrifuga Horizontal End-Suction Marca Gapl Modelo Is80-50-200 Con Motor 20Hp;Repuesto
+KOSLAN;38;;Eje Aisi420 Bba Gapl Is80-50-315C;800884;4068360;1;Repuesto bomba;;;Bomba Centrifuga Horizontal End-Suction Marca Gapl Modelo Is80-50-200 Con Motor 20Hp;Repuesto
+KOSLAN;39;;Set O-Ring Bba Gapl Is80-50-315C;800885;4068361;2;Repuesto bomba;;;Bomba Centrifuga Horizontal End-Suction Marca Gapl Modelo Is80-50-200 Con Motor 20Hp;Repuesto
+KOSLAN;40;;Pr. Estopa Fc 2Kg Bba Gapl Is80-50-315C;800886;4068362;2;Repuesto bomba;;;Bomba Centrifuga Horizontal End-Suction Marca Gapl Modelo Is80-50-200 Con Motor 20Hp;Repuesto
+KOSLAN;41;;Acople Flexible Bba Gapl Is80-50-315C;800887;4068363;1;Repuesto bomba;;;Bomba Centrifuga Horizontal End-Suction Marca Gapl Modelo Is80-50-200 Con Motor 20Hp;Repuesto
+KOSLAN;42;;Carcasa Bba Gapl Is80-50-315C En Ss304;801465;4073039;1;Repuesto bomba;;;Bomba Centrifuga Horizontal End-Suction Marca Gapl Modelo Is80-50-200 Con Motor 20Hp;Repuesto
+KOSLAN;43;;Tapa Cuerpo Bba Gapl Is80-50-315C En Ss304;801466;4073040;1;Repuesto bomba;;;Bomba Centrifuga Horizontal End-Suction Marca Gapl Modelo Is80-50-200 Con Motor 20Hp;Repuesto
+KOSLAN;44;;Cuerpo Rodamiento Bba Gapl Is80-50-315C;801467;4073041;1;Repuesto bomba;;;Bomba Centrifuga Horizontal End-Suction Marca Gapl Modelo Is80-50-200 Con Motor 20Hp;Repuesto
+KOSLAN;45;;Casquillo Del Cojinete Bba Gapl Is80-50-315C;801468;4073042;1;Repuesto bomba;;;Bomba Centrifuga Horizontal End-Suction Marca Gapl Modelo Is80-50-200 Con Motor 20Hp;Repuesto
+KOSLAN;46;;Bomba Eje Libre Gapl Is80-50-315C;800888;4068542;1;Repuesto bomba;;;Bomba Centrifuga Horizontal End-Suction Marca Gapl Modelo Is80-50-200 Con Motor 20Hp;Repuesto
+KOSLAN;47;;Motor Electrico Gapl 22Kw 2P 400V 50Hz;800889;;1;Repuesto bomba;;;Bomba Centrifuga Horizontal End-Suction Marca Gapl Modelo Is80-50-200 Con Motor 20Hp;Repuesto
+KOSLAN;48;;Bomba Centrifuga Horizontal End-Suction Marca Gapl Modelo Is80-50-315C Con Motor 30Hp;800857;4072871;1;Bomba;;;Bomba Centrifuga Horizontal End-Suction Marca Gapl Modelo Is80-50-315C Con Motor 30Hp;n
+KOSLAN;49;;Bba.Alimentación Agua Clasif. Primaria;PU-3007/3008;4068543;2;Repuesto bomba;;;Bomba Centrifuga Horizontal End-Suction Marca Gapl Modelo Is80-50-315C Con Motor 30Hp;Repuesto
+KOSLAN;50;;Impulsor 1Cr13Ni Bba Gapl Slow125-380A;800890;4068364;1;Repuesto bomba;;;Bomba Centrifuga Horizontal End-Suction Marca Gapl Modelo Is80-50-315C Con Motor 30Hp;Repuesto
+KOSLAN;51;;Rodamientos Ntn Bba Gapl Slow125-380A;800891;4068365;1;Repuesto bomba;;;Bomba Centrifuga Horizontal End-Suction Marca Gapl Modelo Is80-50-315C Con Motor 30Hp;Repuesto
+KOSLAN;52;;Anillo Desgaste 1Cr13Ni Bba Gapl Slow125-380A;800892;4068366;1;Repuesto bomba;;;Bomba Centrifuga Horizontal End-Suction Marca Gapl Modelo Is80-50-315C Con Motor 30Hp;Repuesto
+KOSLAN;53;;Camisa Eje 1Cr13Ni Bba Gapl Slow125-380A;800893;4068367;1;Repuesto bomba;;;Bomba Centrifuga Horizontal End-Suction Marca Gapl Modelo Is80-50-315C Con Motor 30Hp;Repuesto
+KOSLAN;54;;Eje Aisi420 Bba Gapl Slow125-380A;800894;4068368;1;Repuesto bomba;;;Bomba Centrifuga Horizontal End-Suction Marca Gapl Modelo Is80-50-315C Con Motor 30Hp;Repuesto
+KOSLAN;55;;Set O-Ring Bba Gapl Slow125-380A;800895;4068369;2;Repuesto bomba;;;Bomba Centrifuga Horizontal End-Suction Marca Gapl Modelo Is80-50-315C Con Motor 30Hp;Repuesto
+KOSLAN;56;;Pr. Estopa Fc 2Kg Bba Gapl Slow125-380A;800896;4068370;2;Repuesto bomba;;;Bomba Centrifuga Horizontal End-Suction Marca Gapl Modelo Is80-50-315C Con Motor 30Hp;Repuesto
+KOSLAN;57;;Acople Flexible Bba Gapl Slow125-380A;800897;4068371;1;Repuesto bomba;;;Bomba Centrifuga Horizontal End-Suction Marca Gapl Modelo Is80-50-315C Con Motor 30Hp;Repuesto
+KOSLAN;58;;Carcasa Bba Gapl Slow125-380A En 1Cr13Ni;801469;4073043;1;Repuesto bomba;;;Bomba Centrifuga Horizontal End-Suction Marca Gapl Modelo Is80-50-315C Con Motor 30Hp;Repuesto
+KOSLAN;59;;Tapa Cuerpo Bba Gapl Slow125-380A En 1Cr13Ni;801470;4073044;1;Repuesto bomba;;;Bomba Centrifuga Horizontal End-Suction Marca Gapl Modelo Is80-50-315C Con Motor 30Hp;Repuesto
+KOSLAN;60;;Cuerpo Rodamiento Bba Gapl Slow125-380A;801471;4073045;1;Repuesto bomba;;;Bomba Centrifuga Horizontal End-Suction Marca Gapl Modelo Is80-50-315C Con Motor 30Hp;Repuesto
+KOSLAN;61;;Casquillo Del Cojinete Bba Gapl Slow125-380A;801472;4073046;1;Repuesto bomba;;;Bomba Centrifuga Horizontal End-Suction Marca Gapl Modelo Is80-50-315C Con Motor 30Hp;Repuesto
+KOSLAN;62;;Bomba Eje Libre Gapl Slow 125-380A;800898;4068543;1;Repuesto bomba;;;Bomba Centrifuga Horizontal End-Suction Marca Gapl Modelo Is80-50-315C Con Motor 30Hp;Repuesto
+KOSLAN;63;;Motor Electrico Gapl 45Kw 4P 380V 50Hz;800899;;1;Repuesto bomba;;;Bomba Centrifuga Horizontal End-Suction Marca Gapl Modelo Is80-50-315C Con Motor 30Hp;Repuesto
+KOSLAN;64;;Bomba Centrifuga Horizontal Carcasa Partida Marca Gapl;;;;Bomba;;;Bomba Centrifuga Horizontal Carcasa Partida Marca Gapl;n
+"Modelo Slow 125-380A Con Motor 60Hp""";800858;4072872;1;Repuesto;;;Repuesto  bomba;;;Bomba Centrifuga Horizontal Carcasa Partida Marca Gapl;Repuesto
+KOSLAN;65;;Distribución de agua de proceso en Clasificación Secundaria;PU-3009/3010;4068544;2;Repuesto  bomba;;;Bomba Centrifuga Horizontal Carcasa Partida Marca Gapl;Repuesto
+KOSLAN;66;;Impulsor 1Cr13Ni Bba Gapl Slow125-300Ib;800900;4068372;1;Repuesto  bomba;;;Bomba Centrifuga Horizontal Carcasa Partida Marca Gapl;Repuesto
+KOSLAN;67;;Rodamientos Ntn Bba Gapl Slow125-300Ib;800901;4068373;1;Repuesto  bomba;;;Bomba Centrifuga Horizontal Carcasa Partida Marca Gapl;Repuesto
+KOSLAN;68;;Anillo Desgaste 1Cr13Ni Bba Gapl Slow125-300Ib;800902;4068374;1;Repuesto  bomba;;;Bomba Centrifuga Horizontal Carcasa Partida Marca Gapl;Repuesto
+KOSLAN;69;;Camisa Eje 1Cr13Ni Bba Gapl Slow125-300Ib;800903;4068375;1;Repuesto  bomba;;;Bomba Centrifuga Horizontal Carcasa Partida Marca Gapl;Repuesto
+KOSLAN;70;;Eje Aisi420 Bba Gapl Slow125-300Ib;800904;4068376;1;Repuesto  bomba;;;Bomba Centrifuga Horizontal Carcasa Partida Marca Gapl;Repuesto
+KOSLAN;71;;Set O-Ring Bba Gapl Slow125-300Ib;800905;4068377;2;Repuesto  bomba;;;Bomba Centrifuga Horizontal Carcasa Partida Marca Gapl;Repuesto
+KOSLAN;72;;Pr. Estopa Fc 2Kg Bba Gapl Slow125-300Ib;800906;4068378;2;Repuesto  bomba;;;Bomba Centrifuga Horizontal Carcasa Partida Marca Gapl;Repuesto
+KOSLAN;73;;Acople Flexible Bba Gapl Slow125-300Ib;800907;4068379;1;Repuesto  bomba;;;Bomba Centrifuga Horizontal Carcasa Partida Marca Gapl;Repuesto
+KOSLAN;74;;Carcasa Bba Gapl Slow125-300(I)B En 1Cr13Ni;801473;4073047;1;Repuesto  bomba;;;Bomba Centrifuga Horizontal Carcasa Partida Marca Gapl;Repuesto
+KOSLAN;75;;Tapa Cuerpo Bba Gapl Slow125-300(I)B En 1Cr13Ni;801474;4073048;1;Repuesto  bomba;;;Bomba Centrifuga Horizontal Carcasa Partida Marca Gapl;Repuesto
+KOSLAN;76;;Cuerpo Rodamiento Bba Gapl Slow125-300(I)B;801475;4073049;1;Repuesto  bomba;;;Bomba Centrifuga Horizontal Carcasa Partida Marca Gapl;Repuesto
+KOSLAN;77;;Casquillo Del Cojinete Bba Gapl Slow125-300(I)B;801476;4073050;1;Repuesto  bomba;;;Bomba Centrifuga Horizontal Carcasa Partida Marca Gapl;Repuesto
+KOSLAN;78;;Bomba Eje Libre Gapl Slow 125-300Ib;800908;4068544;1;Repuesto  bomba;;;Bomba Centrifuga Horizontal Carcasa Partida Marca Gapl;Repuesto
+KOSLAN;79;;Motor Electrico Gapl 18.5Kw 4P 380V 50Hz;800909;;1;Repuesto  bomba;;;Bomba Centrifuga Horizontal Carcasa Partida Marca Gapl;Repuesto
+KOSLAN;80;;Bomba Centrifuga Horizontal Carcasa Partida Marca Gapl Modelo Slow;;;;Repuesto  bomba;;;Bomba Centrifuga Horizontal Carcasa Partida Marca Gapl;Repuesto
+KOSLAN;800859;4072873;1;Repuesto;;;Repuesto  bomba;;;Bomba Centrifuga Horizontal Carcasa Partida Marca Gapl;Repuesto
+NAIPU;1;MOLIENDA L2;Bombas transferencia flotación/300NS;PU 2003/2004;;2;Bomba;;;Bombas transferencia flotación/300NS;n
+NAIPU;2;300NS-NZJAH-MR;Conjunto Porta rodamiento;3T103J00-NSB;4061955;1;Repuesto bomba;PORMR300NS;;Bombas transferencia flotación/300NS;Repuesto
+NAIPU;3;300NS-NZJAH-MR;Golilla sujeción porta rodamiento;4T104J02-NS;4061997;4;Repuesto bomba;PORMR300NS;;Bombas transferencia flotación/300NS;Repuesto
+NAIPU;4;300NS-NZJAH-MR;Perno hexagonal parte porta rodamiento;M30x220;4061998;4;Repuesto bomba;PORMR300NS;;Bombas transferencia flotación/300NS;Repuesto
+NAIPU;5;300NS-NZJAH-MR;Tuerca parte porta rodamiento;M30;4061994;4;Repuesto bomba;PORMR300NS;;Bombas transferencia flotación/300NS;Repuesto
+NAIPU;6;300NS-NZJAH-MR;Base Porta Rodamiento/frame;3T104J01-NST;4061952;1;Repuesto bomba;PORMR300NS;;Bombas transferencia flotación/300NS;Repuesto
+NAIPU;7;300NS-NZJAH-MR;Perno cuadrado parte caja empaquetadura;M20x85;4062001;4;Repuesto bomba;STUMR300NS;;Bombas transferencia flotación/300NS;Repuesto
+NAIPU;8;300NS-NZJAH-MR;Tuerca parte  caja empaquetadura;M20;4061999;4;Repuesto bomba;STUMR300NS;;Bombas transferencia flotación/300NS;Repuesto
+NAIPU;9;300NS-NZJAH-MR;Golilla parte  caja empaquetadura;20;;4;Repuesto bomba;STUMR300NS;;Bombas transferencia flotación/300NS;Repuesto
+NAIPU;10;300NS-NZJAH-MR;Caja de empaquetadura;3T102J04-NG;4061934;1;Repuesto bomba;STUMR300NS;;Bombas transferencia flotación/300NS;Repuesto
+NAIPU;11;300NS-NZJAH-MR;Anillo linterna;4T102J05-NG;4061935;1;Repuesto bomba;STUMR300NS;;Bombas transferencia flotación/300NS;Repuesto
+NAIPU;12;300NS-NZJAH-MR;Prensa estopa;4T102J06-NG;4061936;1;Repuesto bomba;STUMR300NS;;Bombas transferencia flotación/300NS;Repuesto
+NAIPU;13;300NS-NZJAH-MR;Oring;G122;4061929;1;Repuesto bomba;STUMR300NS;;Bombas transferencia flotación/300NS;Repuesto
+NAIPU;14;300NS-NZJAH-MR;Empaquetadura;G111;4061931;4;Repuesto bomba;STUMR300NS;;Bombas transferencia flotación/300NS;Repuesto
+NAIPU;15;300NS-NZJAH-MR;Oring;CSC210;4061930;3;Repuesto bomba;STUMR300NS;;Bombas transferencia flotación/300NS;Repuesto
+NAIPU;16;300NS-NZJAH-MR;Camisa de eje;4T102J02-NSA;4061937;1;Repuesto bomba;WETMR300NS;;Bombas transferencia flotación/300NS;Repuesto
+NAIPU;17;300NS-NZJAH-MR;Impeller reléase collar;4T103J09-NS;4061938;1;Repuesto bomba;WETMR300NS;;Bombas transferencia flotación/300NS;Repuesto
+NAIPU;18;300NS-NZJAH-MR;Disco succión;3AH300-01R03;4061957;1;Repuesto bomba;WETMR300NS;;Bombas transferencia flotación/300NS;Repuesto
+NAIPU;19;300NS-NZJAH-MR;Disco prensa;3A300-01R05;4061956;1;Repuesto bomba;WETMR300NS;;Bombas transferencia flotación/300NS;Repuesto
+NAIPU;20;300NS-NZJAH-MR;Impulsor metálico;3AH300-011J01;4061958;1;Repuesto bomba;WETMR300NS;;Bombas transferencia flotación/300NS;Repuesto
+NAIPU;21;300NS-NZJAH-MR;Revestimiento succión;3AH300-01R06;4061960;1;Repuesto bomba;WETMR300NS;;Bombas transferencia flotación/300NS;Repuesto
+NAIPU;22;300NS-NZJAH-MR;Revestimiento prensa;3AH300-01R07;4061963;1;Repuesto bomba;WETMR300NS;;Bombas transferencia flotación/300NS;Repuesto
+NAIPU;23;300NS-NZJAH-MR;Intake joint;4A300-01R10;4061932;1;Repuesto bomba;WETMR300NS;;Bombas transferencia flotación/300NS;Repuesto
+NAIPU;24;300NS-NZJAH-MR;Sello de revestimiento;4A300-01R12;4061933;2;Repuesto bomba;WETMR300NS;;Bombas transferencia flotación/300NS;Repuesto
+NAIPU;25;300NS-NZJAH-MR;Tuerca de discos;M20;4061999;8;Repuesto bomba;WETMR300NS;;Bombas transferencia flotación/300NS;Repuesto
+NAIPU;26;300NS-NZJAH-MR;Esparrago de discos;M20x70;4061964;8;Repuesto bomba;WETMR300NS;;Bombas transferencia flotación/300NS;Repuesto
+NAIPU;27;300NS-NZJAH-MR;Golilla de discos;20;;8;Repuesto bomba;WETMR300NS;;Bombas transferencia flotación/300NS;Repuesto
+NAIPU;28;300NS-NZJAH-MR;Tuerca de revestimientos;M16;4061995;12;Repuesto bomba;WETMR300NS;;Bombas transferencia flotación/300NS;Repuesto
+NAIPU;29;300NS-NZJAH-MR;Esparrago de revestimientos;M16x70;4062013;12;Repuesto bomba;WETMR300NS;;Bombas transferencia flotación/300NS;Repuesto
+NAIPU;30;300NS-NZJAH-MR;Golilla de revestimientos;16;4061996;12;Repuesto bomba;WETMR300NS;;Bombas transferencia flotación/300NS;Repuesto
+NAIPU;31;300NS-NZJAH-MR;Carcasa prensa;2AH300-011J08;4061962;1;Repuesto bomba;CARMR300NS;;Bombas transferencia flotación/300NS;Repuesto
+NAIPU;32;300NS-NZJAH-MR;Carcasa succión;2AH300-011J09;4061959;1;Repuesto bomba;CARMR300NS;;Bombas transferencia flotación/300NS;Repuesto
+NAIPU;33;300NS-NZJAH-MR;Esparrago carcasa prensa;M42x450;4061951;3;Repuesto bomba;CARMR300NS;;Bombas transferencia flotación/300NS;Repuesto
+NAIPU;34;300NS-NZJAH-MR;Tuerca carcasa prensa;M42;4062002;6;Repuesto bomba;CARMR300NS;;Bombas transferencia flotación/300NS;Repuesto
+NAIPU;35;300NS-NZJAH-MR;Esparrago carcasa succión;4AH300-01J34;4061961;8;Repuesto bomba;CARMR300NS;;Bombas transferencia flotación/300NS;Repuesto
+NAIPU;36;300NS-NZJAH-MR;Tuerca carcasa succión;M48;;16;Repuesto bomba;CARMR300NS;;Bombas transferencia flotación/300NS;Repuesto
+NAIPU;37;300NS-NZJAH-MR;Esparrago de ajuste;4T104J03-M30x350;4062006;1;Repuesto bomba;CARMR300NS;;Bombas transferencia flotación/300NS;Repuesto
+NAIPU;38;300NS-NZJAH-MR;Tuerca de ajuste;M30;4061994;3;Repuesto bomba;CARMR300NS;;Bombas transferencia flotación/300NS;Repuesto
+NAIPU;39;300NS-NZJAH-MR;Golilla de ajuste;30;;2;Repuesto bomba;CARMR300NS;;Bombas transferencia flotación/300NS;Repuesto
+NAIPU;40;300NS-NZJAH-MR;Tuerca de revestimientos;M16;4061995;6;Repuesto bomba;CARMR300NS;;Bombas transferencia flotación/300NS;Repuesto
+NAIPU;41;300NS-NZJAH-MR;Esparrago de revestimientos;M16x70;4062013;6;Repuesto bomba;CARMR300NS;;Bombas transferencia flotación/300NS;Repuesto
+NAIPU;42;300NS-NZJAH-MR;Golilla de revestimientos;16;4061996;6;Repuesto bomba;CARMR300NS;;Bombas transferencia flotación/300NS;Repuesto
+NAIPU;43;ESPESAMIENTO RELAVES L2;Bombas clasificación alimentación primaria/250NS;PU 3013/3014/3015;;3;Bomba;;;Bombas clasificación alimentación primaria/250NS;n
+NAIPU;44;250NS-NZJA-MR;Base Porta Rodamiento/frame;3T104J01-NST;4061952;1;Repuesto bomba;PORMR250NS;;Bombas clasificación alimentación primaria/250NS;Repuesto
+NAIPU;45;250NS-NZJA-MR;Conjunto porta rodamiento;3T103J00-NSA;4061952;1;Repuesto bomba;PORMR250NS;;Bombas clasificación alimentación primaria/250NS;Repuesto
+NAIPU;46;250NS-NZJA-MR;Golilla sujeción porta rodamiento;4T104J02-NS;4061997;4;Repuesto bomba;PORMR250NS;;Bombas clasificación alimentación primaria/250NS;Repuesto
+NAIPU;47;250NS-NZJA-MR;Esparrago de ajuste;M30x350;4062006;1;Repuesto bomba;PORMR250NS;;Bombas clasificación alimentación primaria/250NS;Repuesto
+NAIPU;48;250NS-NZJA-MR;Perno hexagonal;M30x220;4061998;4;Repuesto bomba;PORMR250NS;;Bombas clasificación alimentación primaria/250NS;Repuesto
+NAIPU;49;250NS-NZJA-MR;Tuerca;M30;4061994;4;Repuesto bomba;PORMR250NS;;Bombas clasificación alimentación primaria/250NS;Repuesto
+NAIPU;50;250NS-NZJA-MR;Tuerca de Ajuste;M30;4061994;3;Repuesto bomba;PORMR250NS;;Bombas clasificación alimentación primaria/250NS;Repuesto
+NAIPU;51;250NS-NZJA-MR;Golilla de ajuste;30;;2;Repuesto bomba;PORMR250NS;;Bombas clasificación alimentación primaria/250NS;Repuesto
+NAIPU;52;250NS-NZJA-MR;Caja de empaquetadura;3T102J04-NG;4061934;1;Repuesto bomba;STUMR250NS;;Bombas clasificación alimentación primaria/250NS;Repuesto
+NAIPU;53;250NS-NZJA-MR;Anillo linterna;4T102J05-NG;4061935;1;Repuesto bomba;STUMR250NS;;Bombas clasificación alimentación primaria/250NS;Repuesto
+NAIPU;54;250NS-NZJA-MR;Prensa estopa;4T102J06-NG;4061936;1;Repuesto bomba;STUMR250NS;;Bombas clasificación alimentación primaria/250NS;Repuesto
+NAIPU;55;250NS-NZJA-MR;Perno cuadrado parte caja empaquetadura;M20x85;4062001;4;Repuesto bomba;STUMR250NS;;Bombas clasificación alimentación primaria/250NS;Repuesto
+NAIPU;56;250NS-NZJA-MR;Tuerca parte  caja empaquetadura;M20;4061999;4;Repuesto bomba;STUMR250NS;;Bombas clasificación alimentación primaria/250NS;Repuesto
+NAIPU;57;250NS-NZJA-MR;Golilla parte  caja empaquetadura;20;;4;Repuesto bomba;STUMR250NS;;Bombas clasificación alimentación primaria/250NS;Repuesto
+NAIPU;58;250NS-NZJA-MR;Oring;G122;4061929;1;Repuesto bomba;STUMR250NS;;Bombas clasificación alimentación primaria/250NS;Repuesto
+NAIPU;59;250NS-NZJA-MR;Oring;CSC210;4061930;3;Repuesto bomba;STUMR250NS;;Bombas clasificación alimentación primaria/250NS;Repuesto
+NAIPU;60;250NS-NZJA-MR;Empaquetadura;G111;4061931;4;Repuesto bomba;STUMR250NS;;Bombas clasificación alimentación primaria/250NS;Repuesto
+NAIPU;61;250NS-NZJA-MR;Camisa de eje;4T102J02-NSA;4061937;1;Repuesto bomba;WETMR250NS;;Bombas clasificación alimentación primaria/250NS;Repuesto
+NAIPU;62;250NS-NZJA-MR;Impeller reléase collar;4T103J09-NS;4061938;1;Repuesto bomba;WETMR250NS;;Bombas clasificación alimentación primaria/250NS;Repuesto
+NAIPU;63;250NS-NZJA-MR;Impulsor metálico;3A250-01J01;4061988;1;Repuesto bomba;WETMR250NS;;Bombas clasificación alimentación primaria/250NS;Repuesto
+NAIPU;64;250NS-NZJA-MR;Revestimiento succión;3A250-01R06;4061985;1;Repuesto bomba;WETMR250NS;;Bombas clasificación alimentación primaria/250NS;Repuesto
+NAIPU;65;250NS-NZJA-MR;Disco succión;4A250-01R03;4061987;1;Repuesto bomba;WETMR250NS;;Bombas clasificación alimentación primaria/250NS;Repuesto
+NAIPU;66;250NS-NZJA-MR;Revestimiento prensa;3A250-01R07;4061984;1;Repuesto bomba;WETMR250NS;;Bombas clasificación alimentación primaria/250NS;Repuesto
+NAIPU;67;250NS-NZJA-MR;Disco prensa;4A250-01R05;4061983;1;Repuesto bomba;WETMR250NS;;Bombas clasificación alimentación primaria/250NS;Repuesto
+NAIPU;68;250NS-NZJA-MR;Intake jointe;4A250-01R10;4061941;1;Repuesto bomba;WETMR250NS;;Bombas clasificación alimentación primaria/250NS;Repuesto
+NAIPU;69;250NS-NZJA-MR;Sello de revestimiento;4A250-01R12;4061942;2;Repuesto bomba;WETMR250NS;;Bombas clasificación alimentación primaria/250NS;Repuesto
+NAIPU;70;250NS-NZJA-MR;Esparrago revestimientos;M16x70;4062013;12;Repuesto bomba;WETMR250NS;;Bombas clasificación alimentación primaria/250NS;Repuesto
+NAIPU;71;250NS-NZJA-MR;Tuerca revestimientos;M16;4061995;12;Repuesto bomba;WETMR250NS;;Bombas clasificación alimentación primaria/250NS;Repuesto
+NAIPU;72;250NS-NZJA-MR;Golilla revestimientos;16;4061996;12;Repuesto bomba;WETMR250NS;;Bombas clasificación alimentación primaria/250NS;Repuesto
+NAIPU;73;250NS-NZJA-MR;Esparrago revestimientos;M16x60;4062005;6;Repuesto bomba;WETMR250NS;;Bombas clasificación alimentación primaria/250NS;Repuesto
+NAIPU;74;250NS-NZJA-MR;Tuerca revestimientos;M16;4061995;6;Repuesto bomba;WETMR250NS;;Bombas clasificación alimentación primaria/250NS;Repuesto
+NAIPU;75;250NS-NZJA-MR;Golilla revestimientos;16;4061996;6;Repuesto bomba;WETMR250NS;;Bombas clasificación alimentación primaria/250NS;Repuesto
+NAIPU;76;250NS-NZJA-MR;Esparrago disco succión;M16x70;4062013;8;Repuesto bomba;WETMR250NS;;Bombas clasificación alimentación primaria/250NS;Repuesto
+NAIPU;77;250NS-NZJA-MR;Tuerca disco succión;M16;4061995;8;Repuesto bomba;WETMR250NS;;Bombas clasificación alimentación primaria/250NS;Repuesto
+NAIPU;78;250NS-NZJA-MR;Golilla disco succión;16;4061996;8;Repuesto bomba;WETMR250NS;;Bombas clasificación alimentación primaria/250NS;Repuesto
+NAIPU;79;250NS-NZJA-MR;Perno hexagonal para carcasa succión;M42x320;4062007;8;Repuesto bomba;WETMR250NS;;Bombas clasificación alimentación primaria/250NS;Repuesto
+NAIPU;80;250NS-NZJA-MR;Tuerca para carcasa succión;M42;4062002;8;Repuesto bomba;WETMR250NS;;Bombas clasificación alimentación primaria/250NS;Repuesto
+NAIPU;81;250NS-NZJA-MR;Golilla para carcasa succión;42;4062003;8;Repuesto bomba;WETMR250NS;;Bombas clasificación alimentación primaria/250NS;Repuesto
+NAIPU;82;250NS-NZJA-MR;Carcasa succión;1A250-01J09;4061986;1;Repuesto bomba;CARMR250NS;;Bombas clasificación alimentación primaria/250NS;Repuesto
+NAIPU;83;250NS-NZJA-MR;Carcasa prensa;1A250-01J08;4061989;1;Repuesto bomba;CARMR250NS;;Bombas clasificación alimentación primaria/250NS;Repuesto
+NAIPU;84;250NS-NZJA-MR;Esparrago de carcasa prensa;M42x450;4061951;3;Repuesto bomba;CARMR250NS;;Bombas clasificación alimentación primaria/250NS;Repuesto
+NAIPU;85;250NS-NZJA-MR;Tuerca de carcasa prensa;M42;4062002;6;Repuesto bomba;CARMR250NS;;Bombas clasificación alimentación primaria/250NS;Repuesto
+NAIPU;86;250NS-NZJA-MR;Perno hexagonal para carcasa succión;M42x320;4062007;8;Repuesto bomba;CARMR250NS;;Bombas clasificación alimentación primaria/250NS;Repuesto
+NAIPU;87;250NS-NZJA-MR;Tuerca para carcasa succión;M42;4062002;8;Repuesto bomba;CARMR250NS;;Bombas clasificación alimentación primaria/250NS;Repuesto
+NAIPU;88;250NS-NZJA-MR;Golilla para carcasa succión;42;4062003;8;Repuesto bomba;CARMR250NS;;Bombas clasificación alimentación primaria/250NS;Repuesto
+NAIPU;89;MOLIENDA L1;Bombas transferencia flotación/200NS;PU 1003/1004;;2;Bomba;;;Bombas transferencia flotación/200NS;n
+NAIPU;90;200NS-NZJA-MR;Conjunto porta rodamiento;3T103J00-NSA;4061944;1;Repuesto bomba;PORMR200NS;;Bombas transferencia flotación/200NS;Repuesto
+NAIPU;91;200NS-NZJA-MR;Perno hexagonal;M30x220;4061998;4;Repuesto bomba;PORMR200NS;;Bombas transferencia flotación/200NS;Repuesto
+NAIPU;92;200NS-NZJA-MR;Tuerca;M30;4061994;4;Repuesto bomba;PORMR200NS;;Bombas transferencia flotación/200NS;Repuesto
+NAIPU;93;200NS-NZJA-MR;Golilla sujeción porta rodamiento;4T104J02-NS;4061997;4;Repuesto bomba;PORMR200NS;;Bombas transferencia flotación/200NS;Repuesto
+NAIPU;94;200NS-NZJA-MR;Base Porta Rodamiento/frame;3T104J01-NST;4061952;1;Repuesto bomba;PORMR200NS;;Bombas transferencia flotación/200NS;Repuesto
+NAIPU;95;200NS-NZJA-MR;Caja de empaquetadura;3T102J04-NG;4061934;1;Repuesto bomba;STUMR200NS;;Bombas transferencia flotación/200NS;Repuesto
+NAIPU;96;200NS-NZJA-MR;Anillo linterna;4T102J05-NG;4061935;1;Repuesto bomba;STUMR200NS;;Bombas transferencia flotación/200NS;Repuesto
+NAIPU;97;200NS-NZJA-MR;Prensa estopa;4T102J06-NG;4061936;1;Repuesto bomba;STUMR200NS;;Bombas transferencia flotación/200NS;Repuesto
+NAIPU;98;200NS-NZJA-MR;Perno cuadrado parte caja empaquetadura;M20x85;4062001;4;Repuesto bomba;STUMR200NS;;Bombas transferencia flotación/200NS;Repuesto
+NAIPU;99;200NS-NZJA-MR;Tuerca parte  caja empaquetadura;M20;4061999;4;Repuesto bomba;STUMR200NS;;Bombas transferencia flotación/200NS;Repuesto
+NAIPU;100;200NS-NZJA-MR;Golilla parte  caja empaquetadura;20;;4;Repuesto bomba;STUMR200NS;;Bombas transferencia flotación/200NS;Repuesto
+NAIPU;101;200NS-NZJA-MR;Oring;G122;4061929;1;Repuesto bomba;STUMR200NS;;Bombas transferencia flotación/200NS;Repuesto
+NAIPU;102;200NS-NZJA-MR;Oring;CSC210;4061930;3;Repuesto bomba;STUMR200NS;;Bombas transferencia flotación/200NS;Repuesto
+NAIPU;103;200NS-NZJA-MR;Empaquetadura;G111;4061931;4;Repuesto bomba;STUMR200NS;;Bombas transferencia flotación/200NS;Repuesto
+NAIPU;104;200NS-NZJA-MR;Camisa de eje;4T102J02-NSA;4061937;1;Repuesto bomba;WETMR200NS;;Bombas transferencia flotación/200NS;Repuesto
+NAIPU;105;200NS-NZJA-MR;Impeller reléase collar;4T103J09-NS;4061938;1;Repuesto bomba;WETMR200NS;;Bombas transferencia flotación/200NS;Repuesto
+NAIPU;106;200NS-NZJA-MR;Impulsor metálico;3A200-01J01;4061947;1;Repuesto bomba;WETMR200NS;;Bombas transferencia flotación/200NS;Repuesto
+NAIPU;107;200NS-NZJA-MR;Revestimiento succión;3A200-01R06;4061946;1;Repuesto bomba;WETMR200NS;;Bombas transferencia flotación/200NS;Repuesto
+NAIPU;108;200NS-NZJA-MR;Revestimiento prensa;3A200-01R07;4061945;1;Repuesto bomba;WETMR200NS;;Bombas transferencia flotación/200NS;Repuesto
+NAIPU;109;200NS-NZJA-MR;Disco succión;3A200-01R03;4061948;1;Repuesto bomba;WETMR200NS;;Bombas transferencia flotación/200NS;Repuesto
+NAIPU;110;200NS-NZJA-MR;Intake joint;4A200-01R10;4061939;1;Repuesto bomba;WETMR200NS;;Bombas transferencia flotación/200NS;Repuesto
+NAIPU;111;200NS-NZJA-MR;Esparrago revestimientos;M16x40;4062014;12;Repuesto bomba;WETMR200NS;;Bombas transferencia flotación/200NS;Repuesto
+NAIPU;112;200NS-NZJA-MR;Tuerca revestimientos;M16;4062005;12;Repuesto bomba;WETMR200NS;;Bombas transferencia flotación/200NS;Repuesto
+NAIPU;113;200NS-NZJA-MR;Golilla revestimientos;16;4061996;12;Repuesto bomba;WETMR200NS;;Bombas transferencia flotación/200NS;Repuesto
+NAIPU;114;200NS-NZJA-MR;Esparrago discos;M16x60;4062005;4;Repuesto bomba;WETMR200NS;;Bombas transferencia flotación/200NS;Repuesto
+NAIPU;115;200NS-NZJA-MR;Tuerca discos;M16;4061995;4;Repuesto bomba;WETMR200NS;;Bombas transferencia flotación/200NS;Repuesto
+NAIPU;116;200NS-NZJA-MR;Golilla discos;16;4061996;4;Repuesto bomba;WETMR200NS;;Bombas transferencia flotación/200NS;Repuesto
+NAIPU;117;200NS-NZJA-MR;Perno hexagonal carcasa succión;M42x320;4062007;8;Repuesto bomba;WETMR200NS;;Bombas transferencia flotación/200NS;Repuesto
+NAIPU;118;200NS-NZJA-MR;Tuerca carcasa succión;M42;4062002;8;Repuesto bomba;WETMR200NS;;Bombas transferencia flotación/200NS;Repuesto
+NAIPU;119;200NS-NZJA-MR;Golilla de ajuste carcasa succión;42;4062003;8;Repuesto bomba;WETMR200NS;;Bombas transferencia flotación/200NS;Repuesto
+NAIPU;120;200NS-NZJA-MR;Carcasa succión;2A200-01J09;4061949;1;Repuesto bomba;CARMR200NS;;Bombas transferencia flotación/200NS;Repuesto
+NAIPU;121;200NS-NZJA-MR;Carcasa prensa;2A200-01J08;4061950;1;Repuesto bomba;CARMR200NS;;Bombas transferencia flotación/200NS;Repuesto
+NAIPU;122;200NS-NZJA-MR;Esparrago carcasa prensa;M42x450;4061951;3;Repuesto bomba;CARMR200NS;;Bombas transferencia flotación/200NS;Repuesto
+NAIPU;123;200NS-NZJA-MR;Tuerca carcasa prensa;M42;4062002;6;Repuesto bomba;CARMR200NS;;Bombas transferencia flotación/200NS;Repuesto
+NAIPU;124;200NS-NZJA-MR;Esparrago de ajuste;M30x350;4062006;1;Repuesto bomba;CARMR200NS;;Bombas transferencia flotación/200NS;Repuesto
+NAIPU;125;200NS-NZJA-MR;Tuerca de Ajuste;M30;4061944;3;Repuesto bomba;CARMR200NS;;Bombas transferencia flotación/200NS;Repuesto
+NAIPU;126;200NS-NZJA-MR;Golilla de ajuste;30;;2;Repuesto bomba;CARMR200NS;;Bombas transferencia flotación/200NS;Repuesto
+NAIPU;127;200NS-NZJA-MR;Perno hexagonal carcasa succión;M42x320;4062007;8;Repuesto bomba;CARMR200NS;;Bombas transferencia flotación/200NS;Repuesto
+NAIPU;128;200NS-NZJA-MR;Tuerca carcasa succión;M42;4062002;8;Repuesto bomba;CARMR200NS;;Bombas transferencia flotación/200NS;Repuesto
+NAIPU;129;200NS-NZJA-MR;Golilla de ajuste carcasa succión;42;4062003;8;Repuesto bomba;CARMR200NS;;Bombas transferencia flotación/200NS;Repuesto
+NAIPU;130;FLOTACION ROUGHER L2/FLOTACION COLUMNAR;Bomba de alimentación a cajon de molienda/Bomba alimentación flotación limpieza/150NE-R;PU 3001/3003/3005;;4;Bomba;;;Bomba de alimentación a cajon de molienda/Bomba alimentación flotación limpieza/150NE-R;n
+NAIPU;131;150NE-NZJAH-R;Base Porta Rodamiento/frame;3T104J01-NE;4061979;1;Repuesto bomba;PORTA150NE;;Bomba de alimentación a cajon de molienda/Bomba alimentación flotación limpieza/150NE-R;Repuesto
+NAIPU;132;150NE-NZJAH-R;Conjunto porta rodamiento;3T103J00-NEA;4061966;1;Repuesto bomba;PORTA150NE;;Bomba de alimentación a cajon de molienda/Bomba alimentación flotación limpieza/150NE-R;Repuesto
+NAIPU;;;;;4121277;;;;;Bomba de alimentación a cajon de molienda/Bomba alimentación flotación limpieza/150NE-R;Repuesto
+NAIPU;133;150NE-NZJAH-R;golilla sujeción porta rodamiento;E011;4062012;4;Repuesto bomba;PORTA150NE;;Bomba de alimentación a cajon de molienda/Bomba alimentación flotación limpieza/150NE-R;Repuesto
+NAIPU;134;150NE-NZJAH-R;Esparrago de ajuste;M24x240;4061980;1;Repuesto bomba;PORTA150NE;;Bomba de alimentación a cajon de molienda/Bomba alimentación flotación limpieza/150NE-R;Repuesto
+NAIPU;135;150NE-NZJAH-R;Tuerca de Ajuste;M24;4062010;3;Repuesto bomba;PORTA150NE;;Bomba de alimentación a cajon de molienda/Bomba alimentación flotación limpieza/150NE-R;Repuesto
+NAIPU;136;150NE-NZJAH-R;Golilla de ajuste;24;4062011;2;Repuesto bomba;PORTA150NE;;Bomba de alimentación a cajon de molienda/Bomba alimentación flotación limpieza/150NE-R;Repuesto
+NAIPU;137;150NE-NZJAH-R;Perno hexagonal;M30x180;4061967;4;Repuesto bomba;PORTA150NE;;Bomba de alimentación a cajon de molienda/Bomba alimentación flotación limpieza/150NE-R;Repuesto
+NAIPU;138;150NE-NZJAH-R;Tuerca;M30;4061994;4;Repuesto bomba;PORTA150NE;;Bomba de alimentación a cajon de molienda/Bomba alimentación flotación limpieza/150NE-R;Repuesto
+NAIPU;139;150NE-NZJAH-R;Caja de empaquetadura;3T102J04-NEA;4061916;1;Repuesto bomba;STUFF150NE;;Bomba de alimentación a cajon de molienda/Bomba alimentación flotación limpieza/150NE-R;Repuesto
+NAIPU;140;150NE-NZJAH-R;Camisa espaciadora;4T102J03-NEA;4061917;1;Repuesto bomba;STUFF150NE;;Bomba de alimentación a cajon de molienda/Bomba alimentación flotación limpieza/150NE-R;Repuesto
+NAIPU;141;150NE-NZJAH-R;Anillo linterna;4T102J05-NE;4061918;1;Repuesto bomba;STUFF150NE;;Bomba de alimentación a cajon de molienda/Bomba alimentación flotación limpieza/150NE-R;Repuesto
+NAIPU;142;150NE-NZJAH-R;Prensa estopa;4T102J06-NE;4061919;1;Repuesto bomba;STUFF150NE;;Bomba de alimentación a cajon de molienda/Bomba alimentación flotación limpieza/150NE-R;Repuesto
+NAIPU;143;150NE-NZJAH-R;Perno cuadrado parte caja empaquetadura;M16x55;4061977;2;Repuesto bomba;STUFF150NE;;Bomba de alimentación a cajon de molienda/Bomba alimentación flotación limpieza/150NE-R;Repuesto
+NAIPU;144;150NE-NZJAH-R;Tuerca parte  caja empaquetadura;M16;4061995;2;Repuesto bomba;STUFF150NE;;Bomba de alimentación a cajon de molienda/Bomba alimentación flotación limpieza/150NE-R;Repuesto
+NAIPU;145;150NE-NZJAH-R;Golilla parte  caja empaquetadura;16;4061996;2;Repuesto bomba;STUFF150NE;;Bomba de alimentación a cajon de molienda/Bomba alimentación flotación limpieza/150NE-R;Repuesto
+NAIPU;146;150NE-NZJAH-R;Oring;E109;4061912;2;Repuesto bomba;STUFF150NE;;Bomba de alimentación a cajon de molienda/Bomba alimentación flotación limpieza/150NE-R;Repuesto
+NAIPU;147;150NE-NZJAH-R;Oring;F064;4061913;1;Repuesto bomba;STUFF150NE;;Bomba de alimentación a cajon de molienda/Bomba alimentación flotación limpieza/150NE-R;Repuesto
+NAIPU;148;150NE-NZJAH-R;Empaquetadura;E111;4061914;4;Repuesto bomba;STUFF150NE;;Bomba de alimentación a cajon de molienda/Bomba alimentación flotación limpieza/150NE-R;Repuesto
+NAIPU;149;150NE-NZJAH-R;Camisa de eje;4T102J01-NE;4061920;1;Repuesto bomba;WETEN150NE;;Bomba de alimentación a cajon de molienda/Bomba alimentación flotación limpieza/150NE-R;Repuesto
+NAIPU;150;150NE-NZJAH-R;Impulsor caucho;3A150-01R01;4061974;1;Repuesto bomba;WETEN150NE;;Bomba de alimentación a cajon de molienda/Bomba alimentación flotación limpieza/150NE-R;Repuesto
+NAIPU;151;150NE-NZJAH-R;Revestimiento succión;3AH150-01R06;4061972;1;Repuesto bomba;WETEN150NE;;Bomba de alimentación a cajon de molienda/Bomba alimentación flotación limpieza/150NE-R;Repuesto
+NAIPU;152;150NE-NZJAH-R;Revestimiento prensa;3AH150-01R07;4061969;1;Repuesto bomba;WETEN150NE;;Bomba de alimentación a cajon de molienda/Bomba alimentación flotación limpieza/150NE-R;Repuesto
+NAIPU;153;150NE-NZJAH-R;Disco succión;3AH150-01R03;4061973;1;Repuesto bomba;WETEN150NE;;Bomba de alimentación a cajon de molienda/Bomba alimentación flotación limpieza/150NE-R;Repuesto
+NAIPU;154;150NE-NZJAH-R;Intake joint;4A150-01R10;4061915;1;Repuesto bomba;WETEN150NE;;Bomba de alimentación a cajon de molienda/Bomba alimentación flotación limpieza/150NE-R;Repuesto
+NAIPU;155;150NE-NZJAH-R;Tuerca revestimiento prensa;M16;4061995;4;Repuesto bomba;WETEN150NE;;Bomba de alimentación a cajon de molienda/Bomba alimentación flotación limpieza/150NE-R;Repuesto
+NAIPU;156;150NE-NZJAH-R;Esparrago revestimiento prensa;M16x120;4061968;4;Repuesto bomba;WETEN150NE;;Bomba de alimentación a cajon de molienda/Bomba alimentación flotación limpieza/150NE-R;Repuesto
+NAIPU;157;150NE-NZJAH-R;Golilla revestimiento prensa;16;4061996;4;Repuesto bomba;WETEN150NE;;Bomba de alimentación a cajon de molienda/Bomba alimentación flotación limpieza/150NE-R;Repuesto
+NAIPU;158;150NE-NZJAH-R;Esparrago disco succión;M12x60;4061968;4;Repuesto bomba;WETEN150NE;;Bomba de alimentación a cajon de molienda/Bomba alimentación flotación limpieza/150NE-R;Repuesto
+NAIPU;159;150NE-NZJAH-R;Tuerca disco succión;M12;4062008;4;Repuesto bomba;WETEN150NE;;Bomba de alimentación a cajon de molienda/Bomba alimentación flotación limpieza/150NE-R;Repuesto
+NAIPU;160;150NE-NZJAH-R;Golilla disco succión;12;4062009;4;Repuesto bomba;WETEN150NE;;Bomba de alimentación a cajon de molienda/Bomba alimentación flotación limpieza/150NE-R;Repuesto
+NAIPU;161;150NE-NZJAH-R;Carcasa prensa;2AH150-01J08;4061970;1;Repuesto bomba;CARCA150NE;;Bomba de alimentación a cajon de molienda/Bomba alimentación flotación limpieza/150NE-R;Repuesto
+NAIPU;162;150NE-NZJAH-R;Esparrago de carcasa prensa;M24x295;4061978;3;Repuesto bomba;CARCA150NE;;Bomba de alimentación a cajon de molienda/Bomba alimentación flotación limpieza/150NE-R;Repuesto
+NAIPU;163;150NE-NZJAH-R;Tuerca de carcasa prensa;M24;4062010;6;Repuesto bomba;CARCA150NE;;Bomba de alimentación a cajon de molienda/Bomba alimentación flotación limpieza/150NE-R;Repuesto
+NAIPU;164;150NE-NZJAH-R;Esparrago de carcasa succión;4AH150-01J34;4061976;6;Repuesto bomba;CARCA150NE;;Bomba de alimentación a cajon de molienda/Bomba alimentación flotación limpieza/150NE-R;Repuesto
+NAIPU;165;150NE-NZJAH-R;Tuerca de carcasa succión;M30;4061994;12;Repuesto bomba;CARCA150NE;;Bomba de alimentación a cajon de molienda/Bomba alimentación flotación limpieza/150NE-R;Repuesto
+NAIPU;166;150NE-NZJAH-R;Carcasa succión;2AH150-01J09;4061971;1;Repuesto bomba;CARCA150NE;;Bomba de alimentación a cajon de molienda/Bomba alimentación flotación limpieza/150NE-R;Repuesto
+NAIPU;167;150NE-NZJAH-R;Esparrago disco succión;M12x60;4061968;4;Repuesto bomba;CARCA150NE;;Bomba de alimentación a cajon de molienda/Bomba alimentación flotación limpieza/150NE-R;Repuesto
+NAIPU;168;150NE-NZJAH-R;Tuerca disco succión;M12;4062008;4;Repuesto bomba;CARCA150NE;;Bomba de alimentación a cajon de molienda/Bomba alimentación flotación limpieza/150NE-R;Repuesto
+NAIPU;169;150NE-NZJAH-R;Golilla disco succión;12;4062009;4;Repuesto bomba;CARCA150NE;;Bomba de alimentación a cajon de molienda/Bomba alimentación flotación limpieza/150NE-R;Repuesto
+NAIPU;170;CLASIFICACION RELAVES;Bomba de alimentación espesador de relaves/150NE-MR;PU 3016/3017;;2;Bomba;;;Bomba de alimentación espesador de relaves/150NE-MR;n
+NAIPU;171;150NE-NZJAH-MR;Base Porta Rodamiento/frame;3T104J01-NE;4061979;1;Repuesto bomba;PORTA150NE;;Bomba de alimentación espesador de relaves/150NE-MR;Repuesto
+NAIPU;172;150NE-NZJAH-MR;Conjunto porta rodamiento;3T103J00-NEA;4061966;1;Repuesto bomba;PORTA150NE;;Bomba de alimentación espesador de relaves/150NE-MR;Repuesto
+NAIPU;;150NE-NZJAH-MR;Conjunto porta rodamiento;3T103J00-NEA;4121277;;Repuesto bomba;PORTA150NE;;Bomba de alimentación espesador de relaves/150NE-MR;Repuesto
+NAIPU;173;150NE-NZJAH-MR;golilla sujeción porta rodamiento;E011;4062012;4;Repuesto bomba;PORTA150NE;;Bomba de alimentación espesador de relaves/150NE-MR;Repuesto
+NAIPU;174;150NE-NZJAH-MR;Esparrago de ajuste;M24x240;4061980;1;Repuesto bomba;PORTA150NE;;Bomba de alimentación espesador de relaves/150NE-MR;Repuesto
+NAIPU;175;150NE-NZJAH-MR;Tuerca de Ajuste;M24;4062010;3;Repuesto bomba;PORTA150NE;;Bomba de alimentación espesador de relaves/150NE-MR;Repuesto
+NAIPU;176;150NE-NZJAH-MR;Golilla de ajuste;24;4062011;2;Repuesto bomba;PORTA150NE;;Bomba de alimentación espesador de relaves/150NE-MR;Repuesto
+NAIPU;177;150NE-NZJAH-MR;Perno hexagonal;M30x180;4061967;4;Repuesto bomba;PORTA150NE;;Bomba de alimentación espesador de relaves/150NE-MR;Repuesto
+NAIPU;178;150NE-NZJAH-MR;Tuerca;M30;4061994;4;Repuesto bomba;PORTA150NE;;Bomba de alimentación espesador de relaves/150NE-MR;Repuesto
+NAIPU;179;150NE-NZJAH-MR;Caja de empaquetadura;3T102J04-NEA;4061916;1;Repuesto bomba;STUFF150NE;;Bomba de alimentación espesador de relaves/150NE-MR;Repuesto
+NAIPU;180;150NE-NZJAH-MR;Camisa espaciadora;4T102J03-NEA;4061917;1;Repuesto bomba;STUFF150NE;;Bomba de alimentación espesador de relaves/150NE-MR;Repuesto
+NAIPU;181;150NE-NZJAH-MR;Anillo linterna;4T102J05-NE;4061918;1;Repuesto bomba;STUFF150NE;;Bomba de alimentación espesador de relaves/150NE-MR;Repuesto
+NAIPU;182;150NE-NZJAH-MR;Prensa estopa;4T102J06-NE;4061919;1;Repuesto bomba;STUFF150NE;;Bomba de alimentación espesador de relaves/150NE-MR;Repuesto
+NAIPU;183;150NE-NZJAH-MR;Perno cuadrado parte caja empaquetadura;M16x55;4061977;2;Repuesto bomba;STUFF150NE;;Bomba de alimentación espesador de relaves/150NE-MR;Repuesto
+NAIPU;184;150NE-NZJAH-MR;Tuerca parte  caja empaquetadura;M16;4061995;2;Repuesto bomba;STUFF150NE;;Bomba de alimentación espesador de relaves/150NE-MR;Repuesto
+NAIPU;185;150NE-NZJAH-MR;Golilla parte  caja empaquetadura;16;4061996;2;Repuesto bomba;STUFF150NE;;Bomba de alimentación espesador de relaves/150NE-MR;Repuesto
+NAIPU;186;150NE-NZJAH-MR;Oring;E109;4061912;2;Repuesto bomba;STUFF150NE;;Bomba de alimentación espesador de relaves/150NE-MR;Repuesto
+NAIPU;187;150NE-NZJAH-MR;Oring;F064;4061913;1;Repuesto bomba;STUFF150NE;;Bomba de alimentación espesador de relaves/150NE-MR;Repuesto
+NAIPU;188;150NE-NZJAH-MR;Empaquetadura;E111;4061914;4;Repuesto bomba;STUFF150NE;;Bomba de alimentación espesador de relaves/150NE-MR;Repuesto
+NAIPU;189;150NE-NZJAH-MR;Camisa de eje;4T102J01-NE;4061920;1;Repuesto bomba;WETMR150NE;;Bomba de alimentación espesador de relaves/150NE-MR;Repuesto
+NAIPU;190;150NE-NZJAH-MR;Impulsor METALICO;3A150-01J01;4061991;1;Repuesto bomba;WETMR150NE;;Bomba de alimentación espesador de relaves/150NE-MR;Repuesto
+NAIPU;191;150NE-NZJAH-MR;Revestimiento succión;3AH150-01R06;4061972;1;Repuesto bomba;WETMR150NE;;Bomba de alimentación espesador de relaves/150NE-MR;Repuesto
+NAIPU;192;150NE-NZJAH-MR;Revestimiento prensa;3AH150-01R07;4061969;1;Repuesto bomba;WETMR150NE;;Bomba de alimentación espesador de relaves/150NE-MR;Repuesto
+NAIPU;193;150NE-NZJAH-MR;Disco succión;3AH150-01R03;4061973;1;Repuesto bomba;WETMR150NE;;Bomba de alimentación espesador de relaves/150NE-MR;Repuesto
+NAIPU;194;150NE-NZJAH-MR;Intake joint;4A150-01R10;4061915;1;Repuesto bomba;WETMR150NE;;Bomba de alimentación espesador de relaves/150NE-MR;Repuesto
+NAIPU;195;150NE-NZJAH-MR;Tuerca revestimiento prensa;M16;4061995;4;Repuesto bomba;WETMR150NE;;Bomba de alimentación espesador de relaves/150NE-MR;Repuesto
+NAIPU;196;150NE-NZJAH-MR;Esparrago revestimiento prensa;M16x120;4061968;4;Repuesto bomba;WETMR150NE;;Bomba de alimentación espesador de relaves/150NE-MR;Repuesto
+NAIPU;197;150NE-NZJAH-MR;Golilla revestimiento prensa;16;4061996;4;Repuesto bomba;WETMR150NE;;Bomba de alimentación espesador de relaves/150NE-MR;Repuesto
+NAIPU;198;150NE-NZJAH-MR;Esparrago disco succión;M12x60;4061968;4;Repuesto bomba;WETMR150NE;;Bomba de alimentación espesador de relaves/150NE-MR;Repuesto
+NAIPU;199;150NE-NZJAH-MR;Tuerca disco succión;M12;4062008;4;Repuesto bomba;WETMR150NE;;Bomba de alimentación espesador de relaves/150NE-MR;Repuesto
+NAIPU;200;150NE-NZJAH-MR;Golilla disco succión;12;4062009;4;Repuesto bomba;WETMR150NE;;Bomba de alimentación espesador de relaves/150NE-MR;Repuesto
+NAIPU;201;150NE-NZJAH-MR;Carcasa prensa;2AH150-01J08;4061970;1;Repuesto bomba;CARMR150NE;;Bomba de alimentación espesador de relaves/150NE-MR;Repuesto
+NAIPU;202;150NE-NZJAH-MR;Esparrago de carcasa prensa;M24x295;4061978;3;Repuesto bomba;CARMR150NE;;Bomba de alimentación espesador de relaves/150NE-MR;Repuesto
+NAIPU;203;150NE-NZJAH-MR;Tuerca de carcasa prensa;M24;4062010;6;Repuesto bomba;CARMR150NE;;Bomba de alimentación espesador de relaves/150NE-MR;Repuesto
+NAIPU;204;150NE-NZJAH-MR;Esparrago de carcasa succión;4AH150-01J34;4061976;6;Repuesto bomba;CARMR150NE;;Bomba de alimentación espesador de relaves/150NE-MR;Repuesto
+NAIPU;205;150NE-NZJAH-MR;Tuerca de carcasa succión;M30;4061994;12;Repuesto bomba;CARMR150NE;;Bomba de alimentación espesador de relaves/150NE-MR;Repuesto
+NAIPU;206;150NE-NZJAH-MR;Carcasa succión;2AH150-01J09;4061971;1;Repuesto bomba;CARMR150NE;;Bomba de alimentación espesador de relaves/150NE-MR;Repuesto
+NAIPU;207;150NE-NZJAH-MR;Esparrago disco succión;M12x60;4061968;4;Repuesto bomba;CARMR150NE;;Bomba de alimentación espesador de relaves/150NE-MR;Repuesto
+NAIPU;208;150NE-NZJAH-MR;Tuerca disco succión;M12;4062008;4;Repuesto bomba;CARMR150NE;;Bomba de alimentación espesador de relaves/150NE-MR;Repuesto
+NAIPU;209;150NE-NZJAH-MR;Golilla disco succión;12;4062009;4;Repuesto bomba;CARMR150NE;;Bomba de alimentación espesador de relaves/150NE-MR;Repuesto
+KSB;1;;Bomba transferencia Marcy's/GIW LCC M 200 LCC 8X10;;4082068;2;Bomba;;M200-610.4B;Bomba transferencia Marcy's/GIW LCC M 200 LCC 8X10;n
+KSB;;;;;4063678;;;;;Bomba transferencia Marcy's/GIW LCC M 200 LCC 8X10;Repuesto
+KSB;;;;;41211291;;;;;Bomba transferencia Marcy's/GIW LCC M 200 LCC 8X10;Repuesto
+KSB;2;;Plato desgaste succión;;4067944;1;Repuesto bomba;;16.3;Bomba transferencia Marcy's/GIW LCC M 200 LCC 8X10;Repuesto
+KSB;3;;Carcasa bomba;3780D-00-0028G / 101;4067945;1;Repuesto bomba;;101;Bomba transferencia Marcy's/GIW LCC M 200 LCC 8X10;Repuesto
+KSB;4;;Impulsor;;4067946;1;Repuesto bomba;;230;Bomba transferencia Marcy's/GIW LCC M 200 LCC 8X10;Repuesto
+KSB;5;;Kit camisa de eje;;4067949;1;Repuesto bomba;;;Bomba transferencia Marcy's/GIW LCC M 200 LCC 8X10;Repuesto
+KSB;6;;Camisa Sola;;4068050;1;Repuesto bomba;;524;Bomba transferencia Marcy's/GIW LCC M 200 LCC 8X10;Repuesto
+KSB;7;;Kit de sello de camisa;;4068051;1;Repuesto bomba;;;Bomba transferencia Marcy's/GIW LCC M 200 LCC 8X10;Repuesto
+KSB;8;;Esparrago ajuste impulsor;;4067960;1;Repuesto bomba;;909;Bomba transferencia Marcy's/GIW LCC M 200 LCC 8X10;Repuesto
+KSB;9;;Tuerca fijación ajuste impulsor;;4067961;1;Repuesto bomba;;924;Bomba transferencia Marcy's/GIW LCC M 200 LCC 8X10;Repuesto
+KSB;10;;Chaveta eje;;4067950;1;Repuesto bomba;;940;Bomba transferencia Marcy's/GIW LCC M 200 LCC 8X10;Repuesto
+KSB;11;;O-Ring camisa eje;;4067947;1;Repuesto bomba;;412.30;Bomba transferencia Marcy's/GIW LCC M 200 LCC 8X10;Repuesto
+KSB;12;;Caja de prensa estopa;;4067957;1;Repuesto bomba;;451;Bomba transferencia Marcy's/GIW LCC M 200 LCC 8X10;Repuesto
+KSB;13;;Prensa estopa;;4068053;1;Repuesto bomba;;452;Bomba transferencia Marcy's/GIW LCC M 200 LCC 8X10;Repuesto
+KSB;14;;Anillo linterna;;4068054;1;Repuesto bomba;;458;Bomba transferencia Marcy's/GIW LCC M 200 LCC 8X10;Repuesto
+KSB;15;;Set de anillo empaquetadura;;4068055;1;Repuesto bomba;;461;Bomba transferencia Marcy's/GIW LCC M 200 LCC 8X10;Repuesto
+KSB;16;;Kit sujetadores caja prensa;;4068056;1;Repuesto bomba;;;Bomba transferencia Marcy's/GIW LCC M 200 LCC 8X10;Repuesto
+KSB;17;;Conjunto completo porta rodamientos;;4067963;1;Repuesto bomba;;99.25;Bomba transferencia Marcy's/GIW LCC M 200 LCC 8X10;Repuesto
+KSB;18;;Eje bomba;;4067948;1;Repuesto bomba;;210;Bomba transferencia Marcy's/GIW LCC M 200 LCC 8X10;Repuesto
+KSB;19;;Rodamiento radial lado bomba;;4067952;1;Repuesto bomba;;322;Bomba transferencia Marcy's/GIW LCC M 200 LCC 8X10;Repuesto
+KSB;20;;Rodamiento axial lado motor;;4067951;1;Repuesto bomba;;324;Bomba transferencia Marcy's/GIW LCC M 200 LCC 8X10;Repuesto
+KSB;21;;Tapa rodamiento lado bomba;;4067953;1;Repuesto bomba;;361.50;Bomba transferencia Marcy's/GIW LCC M 200 LCC 8X10;Repuesto
+KSB;22;;Tapa rodamiento lado motor;;4067954;1;Repuesto bomba;;361.70;Bomba transferencia Marcy's/GIW LCC M 200 LCC 8X10;Repuesto
+KSB;23;;Sello laberinto lado bomba;;4067955;1;Repuesto bomba;;420.50;Bomba transferencia Marcy's/GIW LCC M 200 LCC 8X10;Repuesto
+KSB;24;;Sello laberinto lado motor;;4067956;1;Repuesto bomba;;420.70;Bomba transferencia Marcy's/GIW LCC M 200 LCC 8X10;Repuesto
+KSB;25;;CPR;;4067962;1;Repuesto bomba;;350;Bomba transferencia Marcy's/GIW LCC M 200 LCC 8X10;Repuesto
+KSB;26;;Kit esparragos - Tuerca y golillas WET END;;4067958;1;Repuesto bomba;;;Bomba transferencia Marcy's/GIW LCC M 200 LCC 8X10;Repuesto
+KSB;27;;Soporte pedestal bomba;;4068057;1;Repuesto bomba;;18.2;Bomba transferencia Marcy's/GIW LCC M 200 LCC 8X10;Repuesto
+KSB;28;;Kit esparragos - Tuerca y golillas pedestal;;4068058;1;Repuesto bomba;;;Bomba transferencia Marcy's/GIW LCC M 200 LCC 8X10;Repuesto
+KSB;29;;Caja de prensa estopa;;4068052;1;Repuesto bomba;;451;Bomba transferencia Marcy's/GIW LCC M 200 LCC 8X10;Repuesto
+KSB;30;;Kit empaquetadura WET END;;4067959;1;Repuesto bomba;;;Bomba transferencia Marcy's/GIW LCC M 200 LCC 8X10;Repuesto
+KSB;31;;Bomba alimentación flotación Scavengher/GIW LCC H 8X6;;4114296;2;Bomba;;186699-141106;Bomba alimentación flotación Scavengher/GIW LCC H 8X6;n
+KSB;;;;;4114297;;;;;Bomba alimentación flotación Scavengher/GIW LCC H 8X6;Repuesto
+KSB;32;;Anillo linterna;;4007260;1;Repuesto bomba;;458;Bomba alimentación flotación Scavengher/GIW LCC H 8X6;Repuesto
+KSB;33;;Camisa del eje;;4007261;1;Repuesto bomba;;524;Bomba alimentación flotación Scavengher/GIW LCC H 8X6;Repuesto
+KSB;34;;Carcasa;;4011419;1;Repuesto bomba;;101;Bomba alimentación flotación Scavengher/GIW LCC H 8X6;Repuesto
+KSB;35;;Carcasa KSB;;4011428;1;Repuesto bomba;;350;Bomba alimentación flotación Scavengher/GIW LCC H 8X6;Repuesto
+KSB;36;;Chaveta;;4011423;1;Repuesto bomba;;940;Bomba alimentación flotación Scavengher/GIW LCC H 8X6;Repuesto
+KSB;37;;Conjunto caja prensa;;4007262;1;Repuesto bomba;;99-24;Bomba alimentación flotación Scavengher/GIW LCC H 8X6;Repuesto
+KSB;38;;Cubierta;;4011429;1;Repuesto bomba;;361.50;Bomba alimentación flotación Scavengher/GIW LCC H 8X6;Repuesto
+KSB;39;;Cubierta;;4011430;1;Repuesto bomba;;361.70;Bomba alimentación flotación Scavengher/GIW LCC H 8X6;Repuesto
+KSB;40;;Porta Rodamientos Completo;;4011426;1;Repuesto bomba;;99-25;Bomba alimentación flotación Scavengher/GIW LCC H 8X6;Repuesto
+KSB;41;;Empaquetadura;;4011434;1;Repuesto bomba;;99-9;Bomba alimentación flotación Scavengher/GIW LCC H 8X6;Repuesto
+KSB;42;;Empaquetadura KSB;;4011435;1;Repuesto bomba;;99-9;Bomba alimentación flotación Scavengher/GIW LCC H 8X6;Repuesto
+KSB;43;;Espaciador KSB;;4010331;;Repuesto bomba;;;Bomba alimentación flotación Scavengher/GIW LCC H 8X6;Repuesto
+KSB;44;;Espárrago;;4011425;2;Repuesto bomba;;904.32;Bomba alimentación flotación Scavengher/GIW LCC H 8X6;Repuesto
+KSB;45;;"Impulsor 20""";;4007704;1;Repuesto bomba;;230;Bomba alimentación flotación Scavengher/GIW LCC H 8X6;Repuesto
+KSB;46;;SBA Fastener Kit;;4007263;1;Repuesto bomba;;99-4;Bomba alimentación flotación Scavengher/GIW LCC H 8X6;Repuesto
+KSB;47;;Pedestal Fastener Kit;;4007265;1;Repuesto bomba;;18.2;Bomba alimentación flotación Scavengher/GIW LCC H 8X6;Repuesto
+KSB;48;;CBA Gasket Kit;;4007264;1;Repuesto bomba;;99-9;Bomba alimentación flotación Scavengher/GIW LCC H 8X6;Repuesto
+KSB;49;;Manometro;;4011431;1;Repuesto bomba;;692;Bomba alimentación flotación Scavengher/GIW LCC H 8X6;Repuesto
+KSB;50;;Perno Ajuste;;4011421;1;Repuesto bomba;;909;Bomba alimentación flotación Scavengher/GIW LCC H 8X6;Repuesto
+KSB;51;;Perno;;4011424;4;Repuesto bomba;;901.31;Bomba alimentación flotación Scavengher/GIW LCC H 8X6;Repuesto
+KSB;52;;Plato de succión;;4011420;1;Repuesto bomba;;16.1;Bomba alimentación flotación Scavengher/GIW LCC H 8X6;Repuesto
+KSB;53;;Rodamiento lado machon;;4011427;1;Repuesto bomba;;324;Bomba alimentación flotación Scavengher/GIW LCC H 8X6;Repuesto
+KSB;54;;Rodamiento lado bomba;;4007266;1;Repuesto bomba;;322;Bomba alimentación flotación Scavengher/GIW LCC H 8X6;Repuesto
+KSB;55;;Inpro Seal, 100Mm Cba, Radial End, Vbxx;;4007702;1;Repuesto bomba;;420.50;Bomba alimentación flotación Scavengher/GIW LCC H 8X6;Repuesto
+KSB;56;;Inpro Seal, 100Mm Cba, Radial End, Vbx;;4007703;1;Repuesto bomba;;420.70;Bomba alimentación flotación Scavengher/GIW LCC H 8X6;Repuesto
+KSB;57;;Sello rodamiento;;4006797;1;Repuesto bomba;;380;Bomba alimentación flotación Scavengher/GIW LCC H 8X6;Repuesto
+KSB;58;;Sellos;;4011433;1;Repuesto bomba;;99-4;Bomba alimentación flotación Scavengher/GIW LCC H 8X6;Repuesto
+KSB;59;;Sujetadores;;4011432;1;Repuesto bomba;;99-4;Bomba alimentación flotación Scavengher/GIW LCC H 8X6;Repuesto
+KSB;60;;Tuerca KSB;;4011422;1;Repuesto bomba;;924;Bomba alimentación flotación Scavengher/GIW LCC H 8X6;Repuesto
+KSB;61;;Tuerca Rodamiento;;4007267;1;Repuesto bomba;;923;Bomba alimentación flotación Scavengher/GIW LCC H 8X6;Repuesto
+KSB;62;;Visor Aceite;;4010332;1;Repuesto bomba;;642;Bomba alimentación flotación Scavengher/GIW LCC H 8X6;Repuesto
+KSB;63;;Prensa estopa;;4068053;1;Repuesto bomba;;452;Bomba alimentación flotación Scavengher/GIW LCC H 8X6;Repuesto
+KSB;64;;Caja de prensa estopa;;4067957;1;Repuesto bomba;;451;Bomba alimentación flotación Scavengher/GIW LCC H 8X6;Repuesto
+KSB;65;;Set Empaquetadura prensa estopa;;;1;Repuesto bomba;;461;Bomba alimentación flotación Scavengher/GIW LCC H 8X6;Repuesto
+KSB;66;;Liner de succión;;;1;Repuesto bomba;;13-19;Bomba alimentación flotación Scavengher/GIW LCC H 8X6;Repuesto
+KSB;67;;Bomba alimentación y agua lavado Filtro Out 2/GIW 3X2 LCC-M 50-230.2;;;4;Bomba;;;Bomba alimentación y agua lavado Filtro Out 2/GIW 3X2 LCC-M 50-230.2;n
+KSB;68;;Plato desgaste succión;;4068958;1;Repuesto bomba;;16.3;Bomba alimentación y agua lavado Filtro Out 2/GIW 3X2 LCC-M 50-230.2;Repuesto
+KSB;69;;Carcasa bomba;;4068959;1;Repuesto bomba;;101;Bomba alimentación y agua lavado Filtro Out 2/GIW 3X2 LCC-M 50-230.2;Repuesto
+KSB;70;;Impulsor;;4068960;1;Repuesto bomba;;230;Bomba alimentación y agua lavado Filtro Out 2/GIW 3X2 LCC-M 50-230.2;Repuesto
+KSB;71;;Kit apriete carcasa;;4068961;1;Repuesto bomba;;;Bomba alimentación y agua lavado Filtro Out 2/GIW 3X2 LCC-M 50-230.2;Repuesto
+KSB;72;;Camisa Sola;;4068962;1;Repuesto bomba;;524;Bomba alimentación y agua lavado Filtro Out 2/GIW 3X2 LCC-M 50-230.2;Repuesto
+KSB;73;;Kit de sello de camisa;;4068963;1;Repuesto bomba;;;Bomba alimentación y agua lavado Filtro Out 2/GIW 3X2 LCC-M 50-230.2;Repuesto
+KSB;74;;Esparrago ajuste impulsor;;4068964;1;Repuesto bomba;;909;Bomba alimentación y agua lavado Filtro Out 2/GIW 3X2 LCC-M 50-230.2;Repuesto
+KSB;75;;Tuerca fijación ajuste impulsor;;4068965;1;Repuesto bomba;;924;Bomba alimentación y agua lavado Filtro Out 2/GIW 3X2 LCC-M 50-230.2;Repuesto
+KSB;76;;Chaveta Eje;;4068966;1;Repuesto bomba;;940;Bomba alimentación y agua lavado Filtro Out 2/GIW 3X2 LCC-M 50-230.2;Repuesto
+KSB;77;;Conjunto de sellado del eje;;4068967;1;Repuesto bomba;;;Bomba alimentación y agua lavado Filtro Out 2/GIW 3X2 LCC-M 50-230.2;Repuesto
+KSB;78;;O-Ring camisa eje;;4068968;1;Repuesto bomba;;412.30;Bomba alimentación y agua lavado Filtro Out 2/GIW 3X2 LCC-M 50-230.2;Repuesto
+KSB;79;;Caja de prensa estopa;;4068969;1;Repuesto bomba;;451;Bomba alimentación y agua lavado Filtro Out 2/GIW 3X2 LCC-M 50-230.2;Repuesto
+KSB;80;;Prensa estopa;;4068970;1;Repuesto bomba;;452;Bomba alimentación y agua lavado Filtro Out 2/GIW 3X2 LCC-M 50-230.2;Repuesto
+KSB;81;;Anillo linterna;;4068971;1;Repuesto bomba;;458;Bomba alimentación y agua lavado Filtro Out 2/GIW 3X2 LCC-M 50-230.2;Repuesto
+KSB;82;;Set anillo empaquetadura;;4068972;1;Repuesto bomba;;461;Bomba alimentación y agua lavado Filtro Out 2/GIW 3X2 LCC-M 50-230.2;Repuesto
+KSB;83;;Kit esparragos - tuercas stuffing box;;4068973;1;Repuesto bomba;;;Bomba alimentación y agua lavado Filtro Out 2/GIW 3X2 LCC-M 50-230.2;Repuesto
+KSB;84;;Kit sujetadores porta rodamientos;;4068974;1;Repuesto bomba;;;Bomba alimentación y agua lavado Filtro Out 2/GIW 3X2 LCC-M 50-230.2;Repuesto
+KSB;85;;Conjunto completo porta rodamientos;;4068975;1;Repuesto bomba;;99.25;Bomba alimentación y agua lavado Filtro Out 2/GIW 3X2 LCC-M 50-230.2;Repuesto
+KSB;;;;;4121284;;;;;Bomba alimentación y agua lavado Filtro Out 2/GIW 3X2 LCC-M 50-230.2;Repuesto
+KSB;86;;Eje bomba;;4068976;1;Repuesto bomba;;210;Bomba alimentación y agua lavado Filtro Out 2/GIW 3X2 LCC-M 50-230.2;Repuesto
+KSB;87;;Rodamiento radial lado bomba;;4068977;1;Repuesto bomba;;322;Bomba alimentación y agua lavado Filtro Out 2/GIW 3X2 LCC-M 50-230.2;Repuesto
+KSB;88;;Rodamiento axial lado motor;;4068978;1;Repuesto bomba;;324;Bomba alimentación y agua lavado Filtro Out 2/GIW 3X2 LCC-M 50-230.2;Repuesto
+KSB;89;;Tapa rodamiento lado bomba;;4068979;1;Repuesto bomba;;361.50;Bomba alimentación y agua lavado Filtro Out 2/GIW 3X2 LCC-M 50-230.2;Repuesto
+KSB;90;;Tapa rodamiento lado motor;;4068980;1;Repuesto bomba;;361.70;Bomba alimentación y agua lavado Filtro Out 2/GIW 3X2 LCC-M 50-230.2;Repuesto
+KSB;91;;Sello laberinto lado bomba;;4068981;1;Repuesto bomba;;420.50;Bomba alimentación y agua lavado Filtro Out 2/GIW 3X2 LCC-M 50-230.2;Repuesto
+KSB;92;;Sello laberinto lado motor;;4068982;1;Repuesto bomba;;420.70;Bomba alimentación y agua lavado Filtro Out 2/GIW 3X2 LCC-M 50-230.2;Repuesto
+KSB;93;;Cuerpo del portarodamientos;;4068983;1;Repuesto bomba;;350;Bomba alimentación y agua lavado Filtro Out 2/GIW 3X2 LCC-M 50-230.2;Repuesto
+KSB;94;;Soporte pedestal bomba;;4068984;1;Repuesto bomba;;;Bomba alimentación y agua lavado Filtro Out 2/GIW 3X2 LCC-M 50-230.2;Repuesto
+KSB;95;;Kit Esparragos - Tuercas pedestal;;4068985;1;Repuesto bomba;;;Bomba alimentación y agua lavado Filtro Out 2/GIW 3X2 LCC-M 50-230.2;Repuesto
+KSB;96;;GIW 10X8 LSA 32/25;;;2;Bomba;;;GIW 10X8 LSA 32/25;n
+KSB;97;;Gasket B;;4000320;1;Repuesto bomba;;400.11;GIW 10X8 LSA 32/25;Repuesto
+KSB;98;;Gland;;4000323;1;Repuesto bomba;;452;GIW 10X8 LSA 32/25;Repuesto
+KSB;99;;Suction Liner;;4000332;1;Repuesto bomba;;13-19;GIW 10X8 LSA 32/25;Repuesto
+KSB;100;;Impulsor;;4000803;1;Repuesto bomba;;230;GIW 10X8 LSA 32/25;Repuesto
+KSB;101;;Suction Plate;;4000805;1;Repuesto bomba;;16.1;GIW 10X8 LSA 32/25;Repuesto
+KSB;102;;Retaining ring oil seal;;4000808;1;Repuesto bomba;;38-2;GIW 10X8 LSA 32/25;Repuesto
+KSB;103;;O-Ring;;4000809;1;Repuesto bomba;;458;GIW 10X8 LSA 32/25;Repuesto
+KSB;104;;Sello;;4000811;1;Repuesto bomba;;474;GIW 10X8 LSA 32/25;Repuesto
+KSB;105;;Carcasa;;4001706;1;Repuesto bomba;;101;GIW 10X8 LSA 32/25;Repuesto
+KSB;106;;Shaft sleeve kit;;4004885;1;Repuesto bomba;;524;GIW 10X8 LSA 32/25;Repuesto
+KSB;107;;Suction Plate;;4004950;1;Repuesto bomba;;16.1;GIW 10X8 LSA 32/25;Repuesto
+KSB;108;;Shaft;;4006794;1;Repuesto bomba;;210;GIW 10X8 LSA 32/25;Repuesto
+KSB;109;;Prensa;;4010048;1;Repuesto bomba;;99-24;GIW 10X8 LSA 32/25;Repuesto
+KSB;110;;Porta Rodamientos;;4010961;1;Repuesto bomba;;99-25;GIW 10X8 LSA 32/25;Repuesto
+KSB;111;;Wear Plate;;4061410;1;Repuesto bomba;;135;GIW 10X8 LSA 32/25;Repuesto
+KSB;112;;Empaqutadura;;4010082;1;Repuesto bomba;;461;GIW 10X8 LSA 32/25;Repuesto
+KSB;113;;Wear plate 5.06 SP;;4000807;1;Repuesto bomba;;135;GIW 10X8 LSA 32/25;Repuesto
+KSB;114;;Tapon carcasa;;4121249;1;Repuesto bomba;;;GIW 10X8 LSA 32/25;Repuesto
+KSB;115;;GIW 10X10 LSA 32;;;2;Bomba;;;GIW 10X10 LSA 32;n
+KSB;116;;Coraza tapa aspiración;;4000325;1;Repuesto bomba;;13-19;GIW 10X10 LSA 32;Repuesto
+KSB;117;;Carcasa;210-1015D-00-0028G;4000331;1;Repuesto bomba;;101;GIW 10X10 LSA 32;Repuesto
+KSB;118;;Impulsor;420-0835C-00-0028G;4000802;1;Repuesto bomba;;230;GIW 10X10 LSA 32;Repuesto
+KSB;119;;Tapa succión bomba;500-0369B-00-0FABS;4000804;1;Repuesto bomba;;16.1;GIW 10X10 LSA 32;Repuesto
+KSB;120;;Coraza;PL.37863;4000806;1;Repuesto bomba;;135;GIW 10X10 LSA 32;Repuesto
+KSB;121;;O-Ring 624-7710P;624-7710P-03-04RUP;4000810;1;Repuesto bomba;;412.30;GIW 10X10 LSA 32;Repuesto
+KSB;122;;Eje 652;652-0568B-00-415OS;4000812;1;Repuesto bomba;;210;GIW 10X10 LSA 32;Repuesto
+KSB;123;;Camisa;654-9747P-06-0000K;4000813;1;Repuesto bomba;;524;GIW 10X10 LSA 32;Repuesto
+KSB;124;;Sello Oil;;4000828;1;Repuesto bomba;;38-2;GIW 10X10 LSA 32;Repuesto
+KSB;125;;Rodamiento axial de rodillos a rotula;;4001283;1;Repuesto bomba;;324;GIW 10X10 LSA 32;Repuesto
+KSB;126;;Rodamiento radial rodillo;22226E1AK.M;4001329;2;Repuesto bomba;;322.50;GIW 10X10 LSA 32;Repuesto
+KSB;127;;Stuffing box;1014;4001561;1;Repuesto bomba;;451;GIW 10X10 LSA 32;Repuesto
+KSB;128;;Collar Split Thrust;;4001562;1;Repuesto bomba;;474;GIW 10X10 LSA 32;Repuesto
+KSB;129;;Gauge medidor de temperatura;;4001563;1;Repuesto bomba;;692;GIW 10X10 LSA 32;Repuesto
+KSB;130;;Spring Baumbach;;4001565;4;Repuesto bomba;;950.71;GIW 10X10 LSA 32;Repuesto
+KSB;131;;Anillo;435A;4001912;1;Repuesto bomba;;458;GIW 10X10 LSA 32;Repuesto
+KSB;132;;Anillo;600-8125P 00-01 RUP;4006793;1;Repuesto bomba;;40-2;GIW 10X10 LSA 32;Repuesto
+KSB;133;;Prensa;140058;4010049;1;Repuesto bomba;;99-24;GIW 10X10 LSA 32;Repuesto
+KSB;134;;Portarodamiento;650-0863D-02-0000A;4010932;1;Repuesto bomba;;99-25;GIW 10X10 LSA 32;Repuesto
+KSB;;;;;4121248;;;;;GIW 10X10 LSA 32;Repuesto
+KSB;135;;Camisa BBA GIW;;4059613;1;Repuesto bomba;;524;GIW 10X10 LSA 32;Repuesto
+KSB;136;;Wear Plate;0375A;4061409;1;Repuesto bomba;;135;GIW 10X10 LSA 32;Repuesto
+KSB;137;;Sello Mec;12.50/14.25X2.13 IN Z/4N0478P;4074779;1;Repuesto bomba;;40-1;GIW 10X10 LSA 32;Repuesto
+KSB;138;;Tapon carcasa;;;1;Repuesto bomba;;;GIW 10X10 LSA 32;Repuesto
+KSB;139;;GIW 12X10 LSA 36;;;2;Bomba;;;GIW 12X10 LSA 36;n
+KSB;140;;Gasket;R-126;4000355;1;Repuesto bomba;;40-2;GIW 12X10 LSA 36;Repuesto
+KSB;141;;Liner;310-0792B-00-0028G;4000356;1;Repuesto bomba;;13-19;GIW 12X10 LSA 36;Repuesto
+KSB;142;;Impulsor;DI-611100591-603;4000830;1;Repuesto bomba;;230;GIW 12X10 LSA 36;Repuesto
+KSB;143;;Placa;367-B;4000831;1;Repuesto bomba;;16.1;GIW 12X10 LSA 36;Repuesto
+KSB;144;;Wear Plate;0377-A;4000832;1;Repuesto bomba;;135;GIW 12X10 LSA 36;Repuesto
+KSB;145;;Camisa buje del eje;0266B;4000833;1;Repuesto bomba;;254;GIW 12X10 LSA 36;Repuesto
+KSB;146;;Eje;764B;4000834;1;Repuesto bomba;;210;GIW 12X10 LSA 36;Repuesto
+KSB;147;;Rodamiento axial de rodillos a rotula;;4001283;1;Repuesto bomba;;324;GIW 12X10 LSA 36;Repuesto
+KSB;148;;Rodamiento rodillo;22226E1AK.M;4001329;1;Repuesto bomba;;322;GIW 12X10 LSA 36;Repuesto
+KSB;149;;Carcasa;210-2055D-00-0028G;4005130;1;Repuesto bomba;;101;GIW 12X10 LSA 36;Repuesto
+KSB;150;;Anillo linterna;P/EJE 5-7/16;4010044;1;Repuesto bomba;;458;GIW 12X10 LSA 36;Repuesto
+KSB;;;;;4121241;;;;;GIW 12X10 LSA 36;Repuesto
+KSB;151;;Caja de prensa estopa;EJE 5-7/16 C BRIDA;4010050;1;Repuesto bomba;;451;GIW 12X10 LSA 36;Repuesto
+KSB;152;;Juego empaquetadura;;4010051;1;Repuesto bomba;;461;GIW 12X10 LSA 36;Repuesto
+KSB;153;;Portarodamiento;C/Eje 16x16 LSA-39;4010931;1;Repuesto bomba;;99-25;GIW 12X10 LSA 36;Repuesto
+KSB;155;;Sello Mec;12.50/14.25X2.13 IN Z/4N0478P;4074779;1;Repuesto bomba;;40-1;GIW 12X10 LSA 36;Repuesto
+KSB;156;;Pedestal soporte;;4074779;1;Repuesto bomba;;18.2;GIW 12X10 LSA 36;Repuesto
+KSB;157;;GIW 16X16 LSA39;;;2;Bomba;;;GIW 16X16 LSA39;n
+KSB;158;;Empaquetadura;600-8208P-00-01RUP;4000352;1;Repuesto bomba;;3;GIW 16X16 LSA39;Repuesto
+KSB;159;;O-Ring;618-0441A-00-03GAT;4000824;1;Repuesto bomba;;458;GIW 16X16 LSA39;Repuesto
+KSB;160;;Impulsor;410-2021D-02-0028G;4000825;1;Repuesto bomba;;5;GIW 16X16 LSA39;Repuesto
+KSB;161;;Coraza liner suction;16ME/RV39;4000826;1;Repuesto bomba;;2;GIW 16X16 LSA39;Repuesto
+KSB;162;;Placa Plate suction;;4000827;1;Repuesto bomba;;1;GIW 16X16 LSA39;Repuesto
+KSB;163;;Carcaza;210-8300D-02-0000A;4000829;1;Repuesto bomba;;4;GIW 16X16 LSA39;Repuesto
+KSB;164;;Wear Plate;0377-A;4000832;1;Repuesto bomba;;135;GIW 16X16 LSA39;Repuesto
+KSB;165;;Camisa buje del eje;0266B;4000833;1;Repuesto bomba;;17;GIW 16X16 LSA39;Repuesto
+KSB;166;;Eje;763B;4000834;1;Repuesto bomba;;13;GIW 16X16 LSA39;Repuesto
+KSB;167;;Rodamiento axial de rodillos a rotula;;4001283;2;Repuesto bomba;;324;GIW 16X16 LSA39;Repuesto
+KSB;168;;Rodamiento rodillo;22226E1AK.M;4001329;2;Repuesto bomba;;322.50/70;GIW 16X16 LSA39;Repuesto
+KSB;169;;Espaciador;710A;4001911;1;Repuesto bomba;;;GIW 16X16 LSA39;Repuesto
+KSB;170;;Anillo linterna;;4010044;1;Repuesto bomba;;458;GIW 16X16 LSA39;Repuesto
+KSB;;;;;4121241;;;;;GIW 16X16 LSA39;Repuesto
+KSB;171;;Caja de prensa estopa;;4010050;1;Repuesto bomba;;8;GIW 16X16 LSA39;Repuesto
+KSB;172;;Juego empaquetadura;;4010051;1;Repuesto bomba;;461;GIW 16X16 LSA39;Repuesto
+KSB;173;;Porta rodamiento;;4010931;1;Repuesto bomba;;12;GIW 16X16 LSA39;Repuesto
+KSB;;;;;4121247;;;;;GIW 16X16 LSA39;Repuesto
+KSB;174;;Sello Mec;12.50/14.25X2.13 IN Z/4N0478P;4074779;1;Repuesto bomba;;6A;GIW 16X16 LSA39;Repuesto
+KSB;175;;Pedestal soporte;;4099264;1;Repuesto bomba;;15;GIW 16X16 LSA39;Repuesto
+KSB;176;;Tapon carcasa;;4108430;1;Repuesto bomba;;;GIW 16X16 LSA39;Repuesto
+VOGT;1;;Bomba PE 827 IRS Eje SAE 4340;FBOPE827IR4OI;4041565;2;Bomba;;;Bomba PE 827 IRS Eje SAE 4340;n
+VOGT;2;;Impulsor;FIMPE827IN;4011157;1;Repuesto Bomba;;;Bomba PE 827 IRS Eje SAE 4340;Repuesto
+VOGT;3;;Cuerpo Bomba;FCBPE827AIN;;1;Repuesto Bomba;;;Bomba PE 827 IRS Eje SAE 4340;Repuesto
+VOGT;4;;Cuerpo Unión;FCUPE670M;;1;Repuesto Bomba;;;Bomba PE 827 IRS Eje SAE 4340;Repuesto
+VOGT;5;;Cuerpo Rodamiento;FCRPE676M;;1;Repuesto Bomba;;;Bomba PE 827 IRS Eje SAE 4340;Repuesto
+VOGT;6;;Tapa Cuerpo Rodamiento Lado Succión;FTCRP676G;;1;Repuesto Bomba;;;Bomba PE 827 IRS Eje SAE 4340;Repuesto
+VOGT;7;;Tapa Cuerpo Rodamiento;FTCRP676G;;1;Repuesto Bomba;;;Bomba PE 827 IRS Eje SAE 4340;Repuesto
+VOGT;8;;Eje;FEJPE827E;4011156;1;Repuesto Bomba;;;Bomba PE 827 IRS Eje SAE 4340;Repuesto
+VOGT;9;;Rodamiento Lado Bomba;PRONU312EC;4011165;1;Repuesto Bomba;;;Bomba PE 827 IRS Eje SAE 4340;Repuesto
+VOGT;10;;Rodamiento Lado Motor;PRO7312BECB;4011166;2;Repuesto Bomba;;;Bomba PE 827 IRS Eje SAE 4340;Repuesto
+VOGT;11;;Chaveta Impulsor;PCH14*09*90G;;1;Repuesto Bomba;;;Bomba PE 827 IRS Eje SAE 4340;Repuesto
+VOGT;12;;Chaveta Machón;SCH12x08x901;;2;Repuesto Bomba;;;Bomba PE 827 IRS Eje SAE 4340;Repuesto
+VOGT;13;;Pin de Arrastre;SPA3x101;;1;Repuesto Bomba;;;Bomba PE 827 IRS Eje SAE 4340;Repuesto
+VOGT;14;;Prisionero de Fijación Anillo de Desgaste;SPK1/4x1/4F1;;12;Repuesto Bomba;;;Bomba PE 827 IRS Eje SAE 4340;Repuesto
+VOGT;15;;Sello Mecanico;SVC100212SSVC;4011167;1;Repuesto Bomba;;;Bomba PE 827 IRS Eje SAE 4340;Repuesto
+VOGT;16;;Camisa Eje;FCEPE8271;4011162;1;Repuesto Bomba;;;Bomba PE 827 IRS Eje SAE 4340;Repuesto
+VOGT;17;;O-Ring Tapa Cuerpo Rodamiento;PORN2-389V;4011168;1;Repuesto Bomba;;;Bomba PE 827 IRS Eje SAE 4340;Repuesto
+VOGT;18;;O-Ring Tapa Cuerpo Bomba;PORN2-140V;4011169;1;Repuesto Bomba;;;Bomba PE 827 IRS Eje SAE 4340;Repuesto
+VOGT;19;;O-Ring Caja Cuerpo Rodamiento;PORN2-034V;4011170;1;Repuesto Bomba;;;Bomba PE 827 IRS Eje SAE 4340;Repuesto
+VOGT;20;;O-Ring Tapa Caja Cuerpo Rodamiento;PORN2-035V;4011171;1;Repuesto Bomba;;;Bomba PE 827 IRS Eje SAE 4340;Repuesto
+VOGT;21;;O-Ring Impulsor/Tuerca Eje;PORN2-050V;4011172;1;Repuesto Bomba;;;Bomba PE 827 IRS Eje SAE 4340;Repuesto
+VOGT;22;;O-Ring Impulsor/Camisa Eje;PORN2-050V;4011172;1;Repuesto Bomba;;;Bomba PE 827 IRS Eje SAE 4340;Repuesto
+VOGT;23;;O-Ring Eje/Camisa Eje;PORN2-162X;4011173;1;Repuesto Bomba;;;Bomba PE 827 IRS Eje SAE 4340;Repuesto
+VOGT;24;;O-Ring Disco Corta Agua Lado Bomba;PORN2-159X;4011174;1;Repuesto Bomba;;;Bomba PE 827 IRS Eje SAE 4340;Repuesto
+VOGT;25;;O-Ring Disco Corta Agua Lado Motor;PORN2-138V;4011175;1;Repuesto Bomba;;;Bomba PE 827 IRS Eje SAE 4340;Repuesto
+VOGT;26;;O-Ring Brida Sello;PORN2-034X;4011176;1;Repuesto Bomba;;;Bomba PE 827 IRS Eje SAE 4340;Repuesto
+VOGT;27;;Reten de Aceite Tapa Cuerpo Rodamiento;PRE587208;4013123;1;Repuesto Bomba;;;Bomba PE 827 IRS Eje SAE 4340;Repuesto
+VOGT;28;;Reten de Aceite Tapa Caja Porta Rodamiento;PRE567008;4013124;1;Repuesto Bomba;;;Bomba PE 827 IRS Eje SAE 4340;Repuesto
+VOGT;29;;Seguro Seegers;PSS1300-130;;1;Repuesto Bomba;;;Bomba PE 827 IRS Eje SAE 4340;Repuesto
+VOGT;30;;Perno Cuerpo Union;SPE1/2x13/4C1;;4;Repuesto Bomba;;;Bomba PE 827 IRS Eje SAE 4340;Repuesto
+VOGT;31;;Perno Tpa Cuerpo Rodamiento Lado Succión;PPE1/2x11/4C5;;4;Repuesto Bomba;;;Bomba PE 827 IRS Eje SAE 4340;Repuesto
+VOGT;32;;Perno Fijación Tapa Cuerpo Rodamiento;PPE5/16x1C5;;2;Repuesto Bomba;;;Bomba PE 827 IRS Eje SAE 4340;Repuesto
+VOGT;33;;Perno Brida Sello;PPE1/2x13/4C5;;4;Repuesto Bomba;;;Bomba PE 827 IRS Eje SAE 4340;Repuesto
+VOGT;34;;Perno Cuerpo Bomba/Tapa Cuerpo Bomba;PPE5/16x7/8C5;;6;Repuesto Bomba;;;Bomba PE 827 IRS Eje SAE 4340;Repuesto
+VOGT;35;;Perno Caja Porta Rodamiento;PPE3/8x11/4;;2;Repuesto Bomba;;;Bomba PE 827 IRS Eje SAE 4340;Repuesto
+VOGT;36;;Perno Fijación Tapa Caja Porta Rodamiento;PPE5/16x1C5;;2;Repuesto Bomba;;;Bomba PE 827 IRS Eje SAE 4340;Repuesto
+VOGT;37;;Perno Cuerpo Union/Tapa Cuerpo Bomba;SPE1/2x13/4C1;;4;Repuesto Bomba;;;Bomba PE 827 IRS Eje SAE 4340;Repuesto
+VOGT;38;;Tuerca Eje;FTEPE6701.446;;2;Repuesto Bomba;;;Bomba PE 827 IRS Eje SAE 4340;Repuesto
+VOGT;39;;Tuerca y Arandela de Fijación Rodamiento;STU5/16C1;;2;Repuesto Bomba;;;Bomba PE 827 IRS Eje SAE 4340;Repuesto
+VOGT;40;;Tuerca Niple;STU3/8C1;;4;Repuesto Bomba;;;Bomba PE 827 IRS Eje SAE 4340;Repuesto
+VOGT;41;;Arandela Plana Fijación Pata Cuerpo Rod.;PAAMB12;;1;Repuesto Bomba;;;Bomba PE 827 IRS Eje SAE 4340;Repuesto
+VOGT;42;;Tapón de Cebado Cuerpo Bomba;PTA3/8BSPB;;1;Repuesto Bomba;;;Bomba PE 827 IRS Eje SAE 4340;Repuesto
+VOGT;43;;Tapón de Drenaje Cuerpo Bomba;PTA1/4BSP1.44;;2;Repuesto Bomba;;;Bomba PE 827 IRS Eje SAE 4340;Repuesto
+VOGT;44;;Tapón Ventilación  de Cuerpo Rodamiento;PTA1BSP1.44;;1;Repuesto Bomba;;;Bomba PE 827 IRS Eje SAE 4340;Repuesto
+VOGT;45;;Tapón de Drenaje Cuerpo Rodamiento;PTAVENT20POL;;1;Repuesto Bomba;;;Bomba PE 827 IRS Eje SAE 4340;Repuesto
+VOGT;46;;Tapón para Conección Manómetro;PTA1/2BSP1.44;;1;Repuesto Bomba;;;Bomba PE 827 IRS Eje SAE 4340;Repuesto
+VOGT;47;;Mantenedor de Nivel de Aceite;PACL7581PL;;1;Repuesto Bomba;;;Bomba PE 827 IRS Eje SAE 4340;Repuesto
+VOGT;48;;Cañeria de Inyección;;;1;Repuesto Bomba;;;Bomba PE 827 IRS Eje SAE 4340;Repuesto
+VOGT;49;;Niple Recto;SNR1/4NPTI1;;1;Repuesto Bomba;;;Bomba PE 827 IRS Eje SAE 4340;Repuesto
+VOGT;50;;Disco Corta Agua Lado Bomba;FGCA58PE6761;4011158;1;Repuesto Bomba;;;Bomba PE 827 IRS Eje SAE 4340;Repuesto
+VOGT;51;;Disco Corta Agua Lado Motor;FGCAPP676A;4011159;1;Repuesto Bomba;;;Bomba PE 827 IRS Eje SAE 4340;Repuesto
+VOGT;52;;Tapa Cuerpo Bomba;FTCBPE827SSIN;;1;Repuesto Bomba;;;Bomba PE 827 IRS Eje SAE 4340;Repuesto
+VOGT;53;;Caja Porta Rodamiento;FCPRPE676M;;1;Repuesto Bomba;;;Bomba PE 827 IRS Eje SAE 4340;Repuesto
+VOGT;54;;Tapa Caja Porta Rodamiento;FTCPRP676G;;1;Repuesto Bomba;;;Bomba PE 827 IRS Eje SAE 4340;Repuesto
+VOGT;55;;Anillo de Desgaste Cuerpo Bomba;FADPE827IN;;1;Repuesto Bomba;;;Bomba PE 827 IRS Eje SAE 4340;Repuesto
+VOGT;56;;Anillo de Desgaste Tapa Cuerpo Bomba;FADPE827IN;;1;Repuesto Bomba;;;Bomba PE 827 IRS Eje SAE 4340;Repuesto
+VOGT;57;;Tope Cubeta Inferior Rodamiento de Rodillos;FTCIRRPE676G;;1;Repuesto Bomba;;;Bomba PE 827 IRS Eje SAE 4340;Repuesto
+VOGT;58;;Bomba PE 827 MRS Eje SAE 4340;FBOPE827MR4CB;4108756;2;Bomba;;;Bomba PE 827 MRS Eje SAE 4340;n
+VOGT;59;;Impulsor;FIMPE827M;4013119;1;Repuesto Bomba;;;Bomba PE 827 MRS Eje SAE 4340;Repuesto
+VOGT;60;;Cuerpo Bomba;FCBPE827M;;1;Repuesto Bomba;;;Bomba PE 827 MRS Eje SAE 4340;Repuesto
+VOGT;61;;Cuerpo Unión;FCUPE670M;;1;Repuesto Bomba;;;Bomba PE 827 MRS Eje SAE 4340;Repuesto
+VOGT;62;;Cuerpo Rodamiento;FCRPE676M;;1;Repuesto Bomba;;;Bomba PE 827 MRS Eje SAE 4340;Repuesto
+VOGT;63;;Tapa Cuerpo Rodamiento Lado Succión;FTCRP676G;;1;Repuesto Bomba;;;Bomba PE 827 MRS Eje SAE 4340;Repuesto
+VOGT;64;;Pata Cuerpo Rodamiento;FTCRP676G;;1;Repuesto Bomba;;;Bomba PE 827 MRS Eje SAE 4340;Repuesto
+VOGT;65;;Eje;FEJPE827E;4011156;1;Repuesto Bomba;;;Bomba PE 827 MRS Eje SAE 4340;Repuesto
+VOGT;66;;Rodamiento Lado Bomba;PRO7312BECBJD;;2;Repuesto Bomba;;;Bomba PE 827 MRS Eje SAE 4340;Repuesto
+VOGT;67;;Rodamiento Lado Motor;PRONU312ECJ;;1;Repuesto Bomba;;;Bomba PE 827 MRS Eje SAE 4340;Repuesto
+VOGT;68;;Chaveta Impulsor;PCH12x08x90A;;1;Repuesto Bomba;;;Bomba PE 827 MRS Eje SAE 4340;Repuesto
+VOGT;69;;Chaveta Machón;PCH14*09*90G;;1;Repuesto Bomba;;;Bomba PE 827 MRS Eje SAE 4340;Repuesto
+VOGT;70;;Pin de Arrastre;SPA3x101;;1;Repuesto Bomba;;;Bomba PE 827 MRS Eje SAE 4340;Repuesto
+VOGT;71;;Prisionero de Fijación Anillo de Desgaste;PPK1/4x1/4FA;;12;Repuesto Bomba;;;Bomba PE 827 MRS Eje SAE 4340;Repuesto
+VOGT;72;;Sello Mecanico;SVM200212CCVA;;1;Repuesto Bomba;;;Bomba PE 827 MRS Eje SAE 4340;Repuesto
+VOGT;73;;Brida Sello;FBSSMILA2212H;;1;Repuesto Bomba;;;Bomba PE 827 MRS Eje SAE 4340;Repuesto
+VOGT;74;;Distanciador Sello;FDSLA221/2A;;1;Repuesto Bomba;;;Bomba PE 827 MRS Eje SAE 4340;Repuesto
+VOGT;75;;Camisa Eje;FCEPE827A;4013121;1;Repuesto Bomba;;;Bomba PE 827 MRS Eje SAE 4340;Repuesto
+VOGT;76;;O-Ring Tapa Cuerpo Rodamiento;PORN2-050V;4011172;1;Repuesto Bomba;;;Bomba PE 827 MRS Eje SAE 4340;Repuesto
+VOGT;77;;O-Ring Tapa Cuerpo Bomba;PORN2-035V;4011171;3;Repuesto Bomba;;;Bomba PE 827 MRS Eje SAE 4340;Repuesto
+VOGT;78;;O-Ring Caja Cuerpo Rodamiento;PORN2-138V;4011175;2;Repuesto Bomba;;;Bomba PE 827 MRS Eje SAE 4340;Repuesto
+VOGT;79;;O-Ring Tapa Caja Cuerpo Rodamiento;PORN2-159V;4011174;1;Repuesto Bomba;;;Bomba PE 827 MRS Eje SAE 4340;Repuesto
+VOGT;80;;O-Ring Impulsor/Tuerca Eje;PORN2-162V;4011173;1;Repuesto Bomba;;;Bomba PE 827 MRS Eje SAE 4340;Repuesto
+VOGT;81;;O-Ring Impulsor/Camisa Eje;PORN2-389V;4011168;1;Repuesto Bomba;;;Bomba PE 827 MRS Eje SAE 4340;Repuesto
+VOGT;86;;Reten de Aceite Tapa Cuerpo Rodamiento;PRE587208;;1;Repuesto Bomba;;;Bomba PE 827 MRS Eje SAE 4340;Repuesto
+VOGT;87;;Reten de Aceite Tapa Caja Porta Rodamiento;PRE567008;;1;Repuesto Bomba;;;Bomba PE 827 MRS Eje SAE 4340;Repuesto
+VOGT;88;;Seguro Seegers;PSS1300-130;;1;Repuesto Bomba;;;Bomba PE 827 MRS Eje SAE 4340;Repuesto
+VOGT;89;;Perno Cuerpo Union;PPE3/8x1C;;2;Repuesto Bomba;;;Bomba PE 827 MRS Eje SAE 4340;Repuesto
+VOGT;90;;Perno Tpa Cuerpo Rodamiento Lado Succión;PPE1/2x13/4F5;;4;Repuesto Bomba;;;Bomba PE 827 MRS Eje SAE 4340;Repuesto
+VOGT;91;;Perno Fijación Tapa Cuerpo Rodamiento;PPE5/16x1C5;;4;Repuesto Bomba;;;Bomba PE 827 MRS Eje SAE 4340;Repuesto
+VOGT;92;;Perno Brida Sello;PPE3/4x2C5;;12;Repuesto Bomba;;;Bomba PE 827 MRS Eje SAE 4340;Repuesto
+VOGT;93;;Perno Cuerpo Bomba/Tapa Cuerpo Bomba;PPE1/2x11/4C5;;12;Repuesto Bomba;;;Bomba PE 827 MRS Eje SAE 4340;Repuesto
+VOGT;94;;Perno Caja Porta Rodamiento;PPE5/16x3/4A;;6;Repuesto Bomba;;;Bomba PE 827 MRS Eje SAE 4340;Repuesto
+VOGT;97;;Tuerca Eje;FTEPE670B;4013125;1;Repuesto Bomba;;;Bomba PE 827 MRS Eje SAE 4340;Repuesto
+VOGT;98;;Tuerca y Arandela de Fijación Rodamiento;PTU5/16A;;2;Repuesto Bomba;;;Bomba PE 827 MRS Eje SAE 4340;Repuesto
+VOGT;99;;Tuerca Niple;PTU3/8CA;;4;Repuesto Bomba;;;Bomba PE 827 MRS Eje SAE 4340;Repuesto
+VOGT;100;;Arandela Plana Fijación Pata Cuerpo Rod.;PAAMB12;;1;Repuesto Bomba;;;Bomba PE 827 MRS Eje SAE 4340;Repuesto
+VOGT;101;;Tapón de Cebado Cuerpo Bomba;PTAVENT20POL;;1;Repuesto Bomba;;;Bomba PE 827 MRS Eje SAE 4340;Repuesto
+VOGT;102;;Tapón de Drenaje Cuerpo Bomba;PTA1/4BSPB;;2;Repuesto Bomba;;;Bomba PE 827 MRS Eje SAE 4340;Repuesto
+VOGT;103;;Tapón Ventilación  de Cuerpo Rodamiento;PTA1/2BSPB;;1;Repuesto Bomba;;;Bomba PE 827 MRS Eje SAE 4340;Repuesto
+VOGT;104;;Tapón de Drenaje Cuerpo Rodamiento;PTA3/4BSPB;;1;Repuesto Bomba;;;Bomba PE 827 MRS Eje SAE 4340;Repuesto
+VOGT;105;;Tapón para Conección Manómetro;PTA1BSPB;;1;Repuesto Bomba;;;Bomba PE 827 MRS Eje SAE 4340;Repuesto
+VOGT;107;;Cañeria de Inyección;;;1;Repuesto Bomba;;;Bomba PE 827 MRS Eje SAE 4340;Repuesto
+VOGT;108;;Niple Recto;PNR1/4NPTB;;2;Repuesto Bomba;;;Bomba PE 827 MRS Eje SAE 4340;Repuesto
+VOGT;109;;Disco Corta Agua Lado Bomba;FGCAP676A;;1;Repuesto Bomba;;;Bomba PE 827 MRS Eje SAE 4340;Repuesto
+VOGT;110;;Disco Corta Agua Lado Motor;FGCAPP676A;4011159;1;Repuesto Bomba;;;Bomba PE 827 MRS Eje SAE 4340;Repuesto
+VOGT;112;;Caja Porta Rodamiento;FCPRPE676M;;1;Repuesto Bomba;;;Bomba PE 827 MRS Eje SAE 4340;Repuesto
+VOGT;113;;Tapa Caja Porta Rodamiento;FTCPRP676G;;1;Repuesto Bomba;;;Bomba PE 827 MRS Eje SAE 4340;Repuesto
+VOGT;114;;Anillo de Desgaste Cuerpo Bomba;FADPE827M;;1;Repuesto Bomba;;;Bomba PE 827 MRS Eje SAE 4340;Repuesto
+VOGT;115;;Anillo de Desgaste Tapa Cuerpo Bomba;FADPE827M;;1;Repuesto Bomba;;;Bomba PE 827 MRS Eje SAE 4340;Repuesto
+VOGT;116;;Tope Cubeta Inferior Rodamiento de Rodillos;FTCIRRPE676G;;1;Repuesto Bomba;;;Bomba PE 827 MRS Eje SAE 4340;Repuesto
+VOGT;117;;Bomba N670;;;;Bomba;;;Bomba N670;n
+VOGT;118;;Imulsor SR;;;;Repuesto Bomba;;;Bomba N670;Repuesto
+VOGT;119;;Cuerpo Bomba;;;;Repuesto Bomba;;;Bomba N670;Repuesto
+VOGT;120;;Cuerpo Union;;;;Repuesto Bomba;;;Bomba N670;Repuesto
+VOGT;121;;Cuerpo Rodamiento;;;;Repuesto Bomba;;;Bomba N670;Repuesto
+VOGT;122;;Tapa Cuerpo Rodamiento Lado Bomba;;;;Repuesto Bomba;;;Bomba N670;Repuesto
+VOGT;123;;Tapa Cuerpo Rodamiento Lado Motor;;;;Repuesto Bomba;;;Bomba N670;Repuesto
+VOGT;124;;Tapa Soporte Cuerpo Rodamiento;;;;Repuesto Bomba;;;Bomba N670;Repuesto
+VOGT;125;;Eje Cuerpo Rodamiento;;;;Repuesto Bomba;;;Bomba N670;Repuesto
+VOGT;126;;Eje Postizo;;;;Repuesto Bomba;;;Bomba N670;Repuesto
+VOGT;127;;Rodamiento Lado Bomba;;;;Repuesto Bomba;;;Bomba N670;Repuesto
+VOGT;128;;Rodamiento Lado Motor;;;;Repuesto Bomba;;;Bomba N670;Repuesto
+VOGT;129;;Chaveta Impulstor;;;;Repuesto Bomba;;;Bomba N670;Repuesto
+VOGT;130;;Chaveta Machon;;;;Repuesto Bomba;;;Bomba N670;Repuesto
+VOGT;131;;Sello Mecanico;;;;Repuesto Bomba;;;Bomba N670;Repuesto
+VOGT;132;;Anillo Cuerpo Union;;;;Repuesto Bomba;;;Bomba N670;Repuesto
+VOGT;133;;O-Ring Cuerpo Bomba/Cuerpo Union;;;;Repuesto Bomba;;;Bomba N670;Repuesto
+VOGT;134;;O-Ring Cuerpo Union/Anillo;;;;Repuesto Bomba;;;Bomba N670;Repuesto
+VOGT;135;;O-Ring Anillo/Cuerpo Bomba;;;;Repuesto Bomba;;;Bomba N670;Repuesto
+VOGT;136;;O-Ring Tapa Cuerpo Rodamiento;;;;Repuesto Bomba;;;Bomba N670;Repuesto
+VOGT;137;;Reten Aceite Tapa Cuerpo Rodamiento;;;;Repuesto Bomba;;;Bomba N670;Repuesto
+VOGT;138;;Abrazadera;;;;Repuesto Bomba;;;Bomba N670;Repuesto
+VOGT;139;;Perno Cuerpo Bomba/Cuerpo Union;;;;Repuesto Bomba;;;Bomba N670;Repuesto
+VOGT;140;;Perno Cuerpo Bomba/Cuerpo Rodamiento;;;;Repuesto Bomba;;;Bomba N670;Repuesto
+VOGT;141;;Perno Tapa Cuerpo Rodamiento;;;;Repuesto Bomba;;;Bomba N670;Repuesto
+VOGT;142;;Perno Tapa Soporte Cuerpo Rodamiento;;;;Repuesto Bomba;;;Bomba N670;Repuesto
+VOGT;143;;Perno Anillo /Cuerpo Bomba;;;;Repuesto Bomba;;;Bomba N670;Repuesto
+VOGT;144;;Perno Cuerpo Union/ Anillo;;;;Repuesto Bomba;;;Bomba N670;Repuesto
+VOGT;145;;Perno Abrazadera;;;;Repuesto Bomba;;;Bomba N670;Repuesto
+VOGT;146;;Tuerca Eje;;;;Repuesto Bomba;;;Bomba N670;Repuesto
+VOGT;147;;Golilla Presion Tapa Soporte CR;;;;Repuesto Bomba;;;Bomba N670;Repuesto
+VOGT;148;;Golilla Plana Perno Tapa Soporte CR;;;;Repuesto Bomba;;;Bomba N670;Repuesto
+VOGT;149;;Tapon Cebado;;;;Repuesto Bomba;;;Bomba N670;Repuesto
+VOGT;150;;Tapon Drenaje;;;;Repuesto Bomba;;;Bomba N670;Repuesto
+VOGT;151;;Tapon de Ventilacion Cuerpo Rodamiento;;;;Repuesto Bomba;;;Bomba N670;Repuesto
+VOGT;152;;Tapon Drenaje/Cuerpo Rodamiento;;;;Repuesto Bomba;;;Bomba N670;Repuesto
+VOGT;153;;Tapon Toma de Presion;;;;Repuesto Bomba;;;Bomba N670;Repuesto
+VOGT;154;;Mantenedor de Nivel de Aceite;;;;Repuesto Bomba;;;Bomba N670;Repuesto
+VOGT;155;;Colilla Corta Agua;;;;Repuesto Bomba;;;Bomba N670;Repuesto
+VOGT;156;;Bomba L 80 MRS 3 Eje AISI 420 M300 M100 SSV;FBOL8003MAOH;;5;Bomba;;;Bomba L 80 MRS 3 Eje AISI 420 M300 M100 SSV;n
+VOGT;157;;Impulsor;FIML80M;4013258;3;Repuesto Bomba;;;Bomba L 80 MRS 3 Eje AISI 420 M300 M100 SSV;Repuesto
+VOGT;158;;Cuerpo Bomba Succion;FCBSL80M;;1;Repuesto Bomba;;;Bomba L 80 MRS 3 Eje AISI 420 M300 M100 SSV;Repuesto
+VOGT;159;;Cuerpo Bomba Descarga;FCBDL80SM100M;;1;Repuesto Bomba;;;Bomba L 80 MRS 3 Eje AISI 420 M300 M100 SSV;Repuesto
+VOGT;160;;Cuerpo Etapa;FCCECDL80M;;2;Repuesto Bomba;;;Bomba L 80 MRS 3 Eje AISI 420 M300 M100 SSV;Repuesto
+VOGT;161;;Corona Directriz;;;;Repuesto Bomba;;;Bomba L 80 MRS 3 Eje AISI 420 M300 M100 SSV;Repuesto
+VOGT;162;;Corona Directriz Descarga;FCDDL80M;;1;Repuesto Bomba;;;Bomba L 80 MRS 3 Eje AISI 420 M300 M100 SSV;Repuesto
+VOGT;163;;Cuerpo Rodamiento;FCRL80M;;2;Repuesto Bomba;;;Bomba L 80 MRS 3 Eje AISI 420 M300 M100 SSV;Repuesto
+VOGT;164;;Tapa Perforada Cuerpo Rodamiento;FTPCRL80M;;1;Repuesto Bomba;;;Bomba L 80 MRS 3 Eje AISI 420 M300 M100 SSV;Repuesto
+VOGT;165;;Tapa Ciega Cuerpo Rodamiento;FTCCRL80M;;1;Repuesto Bomba;;;Bomba L 80 MRS 3 Eje AISI 420 M300 M100 SSV;Repuesto
+VOGT;166;;Eje;FEJL8003M100J;;1;Repuesto Bomba;;;Bomba L 80 MRS 3 Eje AISI 420 M300 M100 SSV;Repuesto
+VOGT;167;;Buje Sello Succion;FBSSL80M300A;;1;Repuesto Bomba;;;Bomba L 80 MRS 3 Eje AISI 420 M300 M100 SSV;Repuesto
+VOGT;168;;Buje Distanciador Succion;FBDLSL80M300A;;1;Repuesto Bomba;;;Bomba L 80 MRS 3 Eje AISI 420 M300 M100 SSV;Repuesto
+VOGT;169;;Buje Distanciador Impulsor;FBDLDL80SHA;;1;Repuesto Bomba;;;Bomba L 80 MRS 3 Eje AISI 420 M300 M100 SSV;Repuesto
+VOGT;170;;Camisa Sello Descarga;;;;Repuesto Bomba;;;Bomba L 80 MRS 3 Eje AISI 420 M300 M100 SSV;Repuesto
+VOGT;171;;Sello M100;;;;Repuesto Bomba;;;Bomba L 80 MRS 3 Eje AISI 420 M300 M100 SSV;Repuesto
+VOGT;172;;Brida Porta Estacionaria M300;FBSL80M300A;;1;Repuesto Bomba;;;Bomba L 80 MRS 3 Eje AISI 420 M300 M100 SSV;Repuesto
+VOGT;173;;Espárrago de Apriete;PESL8003G;;6;Repuesto Bomba;;;Bomba L 80 MRS 3 Eje AISI 420 M300 M100 SSV;Repuesto
+VOGT;174;;Espárrago de Apriete Corto;PESL8003GC;;2;Repuesto Bomba;;;Bomba L 80 MRS 3 Eje AISI 420 M300 M100 SSV;Repuesto
+VOGT;175;;Tope Anillo Partido L;FTAPL80A;;1;Repuesto Bomba;;;Bomba L 80 MRS 3 Eje AISI 420 M300 M100 SSV;Repuesto
+VOGT;176;;Anillo Partido;FAPL80A;;2;Repuesto Bomba;;;Bomba L 80 MRS 3 Eje AISI 420 M300 M100 SSV;Repuesto
+VOGT;177;;Seguro Seager;PSS1400-0450;;1;Repuesto Bomba;;;Bomba L 80 MRS 3 Eje AISI 420 M300 M100 SSV;Repuesto
+VOGT;178;;Rodamiento SKF NU 409;PRONU409;;1;Repuesto Bomba;;;Bomba L 80 MRS 3 Eje AISI 420 M300 M100 SSV;Repuesto
+VOGT;179;;Rodamiento SKF 6409;PRO6409;;1;Repuesto Bomba;;;Bomba L 80 MRS 3 Eje AISI 420 M300 M100 SSV;Repuesto
+VOGT;180;;Arandela De Retención;PAAMB9;;1;Repuesto Bomba;;;Bomba L 80 MRS 3 Eje AISI 420 M300 M100 SSV;Repuesto
+VOGT;181;;Tuerca De Fijación;PTSKM9;;1;Repuesto Bomba;;;Bomba L 80 MRS 3 Eje AISI 420 M300 M100 SSV;Repuesto
+VOGT;182;;Sello M300 55mm;SVM300M55SSVA;4013261;1;Repuesto Bomba;;;Bomba L 80 MRS 3 Eje AISI 420 M300 M100 SSV;Repuesto
+VOGT;183;;Sello M100 - 55mm;SVM100M55SSVA;4013260;1;Repuesto Bomba;;;Bomba L 80 MRS 3 Eje AISI 420 M300 M100 SSV;Repuesto
+VOGT;184;;O-Ring Nº 2-278;PORN2-278V;;3;Repuesto Bomba;;;Bomba L 80 MRS 3 Eje AISI 420 M300 M100 SSV;Repuesto
+VOGT;185;;O-Ring Nº 2-224;PORN2-224V;;1;Repuesto Bomba;;;Bomba L 80 MRS 3 Eje AISI 420 M300 M100 SSV;Repuesto
+VOGT;186;;Anillo en V -;PAVA55V;;2;Repuesto Bomba;;;Bomba L 80 MRS 3 Eje AISI 420 M300 M100 SSV;Repuesto
+VOGT;187;;Empaquetadura;PETNA10021/64;;2;Repuesto Bomba;;;Bomba L 80 MRS 3 Eje AISI 420 M300 M100 SSV;Repuesto
+VOGT;188;;Chaveta Impulsor;PCH12X08X754;;1;Repuesto Bomba;;;Bomba L 80 MRS 3 Eje AISI 420 M300 M100 SSV;Repuesto
+VOGT;189;;Chaveta Impulsor12x8;PCH12X08X904;;2;Repuesto Bomba;;;Bomba L 80 MRS 3 Eje AISI 420 M300 M100 SSV;Repuesto
+VOGT;190;;Chaveta;PCH14X09X100K;;1;Repuesto Bomba;;;Bomba L 80 MRS 3 Eje AISI 420 M300 M100 SSV;Repuesto
+VOGT;191;;"Espárrago 1/2"" UNF x 1/2"" UNC x 4 """;PES1/2X4CFA;;4;Repuesto Bomba;;;Bomba L 80 MRS 3 Eje AISI 420 M300 M100 SSV;Repuesto
+VOGT;192;;"Espárrago 1/2"" UNF x 1/2"" UNC x 4 1/2""";PES1/2X412CFA;;4;Repuesto Bomba;;;Bomba L 80 MRS 3 Eje AISI 420 M300 M100 SSV;Repuesto
+VOGT;193;;"Perno Hexagonal 5/16"" UNC x 1""";PPE5/16X1C5;;16;Repuesto Bomba;;;Bomba L 80 MRS 3 Eje AISI 420 M300 M100 SSV;Repuesto
+VOGT;194;;"Perno Hexagonal 1/2"" UNC x 1 1/4""";PPE1/2X11/4C5;;8;Repuesto Bomba;;;Bomba L 80 MRS 3 Eje AISI 420 M300 M100 SSV;Repuesto
+VOGT;195;;"Tuerca Hexagonal 7/8"" UNC";PTU7/8C5;;16;Repuesto Bomba;;;Bomba L 80 MRS 3 Eje AISI 420 M300 M100 SSV;Repuesto
+VOGT;196;;Grasera 1/8;PGR1/8BSP45;;2;Repuesto Bomba;;;Bomba L 80 MRS 3 Eje AISI 420 M300 M100 SSV;Repuesto
+VOGT;197;;Niple;;;;Repuesto Bomba;;;Bomba L 80 MRS 3 Eje AISI 420 M300 M100 SSV;Repuesto
+VOGT;198;;Niple;;;;Repuesto Bomba;;;Bomba L 80 MRS 3 Eje AISI 420 M300 M100 SSV;Repuesto
+VOGT;199;;Niple Recto;;;;Repuesto Bomba;;;Bomba L 80 MRS 3 Eje AISI 420 M300 M100 SSV;Repuesto
+VOGT;200;;Cañeria de Compensacion;;;;Repuesto Bomba;;;Bomba L 80 MRS 3 Eje AISI 420 M300 M100 SSV;Repuesto
+VOGT;201;;Pasador;FP10X30A;;1;Repuesto Bomba;;;Bomba L 80 MRS 3 Eje AISI 420 M300 M100 SSV;Repuesto
+VOGT;202;;Placa ID;;;;Repuesto Bomba;;;Bomba L 80 MRS 3 Eje AISI 420 M300 M100 SSV;Repuesto
+VULCO;4;6x4 E-AH;TK FILTRO;PUMP6X4E-AHCS00;4050614;2;Bomba;;;6x4 E-AH;n
+VULCO;4;6x4 E-AH;TK FILTRO;PUMP6X4E-AHCS00;4121260;2;Bomba;;;6x4 E-AH;n
+VULCO;51;6x4 E-AH;Portarodamiento;EAM005M;4010533;1;Repuesto bomba;;;6x4 E-AH;Repuesto
+VULCO;52;6x4 E-AH;Portarodamiento;EAM005M;4004548;1;Repuesto bomba;;;6x4 E-AH;Repuesto
+VULCO;53;6x4 E-AH;Portarodamiento;EAM005M;4121245;1;Repuesto bomba;;;6x4 E-AH;Repuesto
+VULCO;54;6x4 E-AH;Portarodamiento;EAM005M;4121227;1;Repuesto bomba;;;6x4 E-AH;Repuesto
+VULCO;52;6x4 E-AH;Clamp bolt - 1 nut;E012ME62;4010284;4;Repuesto bomba;;;6x4 E-AH;Repuesto
+VULCO;53;6x4 E-AH;Clamp washer;E011E63;4010283;4;Repuesto bomba;;;6x4 E-AH;Repuesto
+VULCO;54;6x4 E-AH;warning plate-bursting;SC73C22;Pendiente;1;Repuesto bomba;;;6x4 E-AH;Repuesto
+VULCO;55;6x4 E-AH;warning plate-lifting;SC80C22;Pendiente;1;Repuesto bomba;;;6x4 E-AH;Repuesto
+VULCO;56;6x4 E-AH;name plate rivet;-;Pendiente;10;Repuesto bomba;;;6x4 E-AH;Repuesto
+VULCO;57;6x4 E-AH;shaft sleeve o-ring;E109S10;4074716;1;Repuesto bomba;;;6x4 E-AH;Repuesto
+VULCO;58;6x4 E-AH;extra large washer;M10-22-Z;4019521;4;Repuesto bomba;;;6x4 E-AH;Repuesto
+VULCO;59;6x4 E-AH;frame plate liner insert stud;M10Z3-125ZL;4092064;4;Repuesto bomba;;;6x4 E-AH;Repuesto
+VULCO;60;6x4 E-AH;nut - thin self locking;M10Z3-125ZL;4092064;4;Repuesto bomba;;;6x4 E-AH;Repuesto
+VULCO;61;6x4 E-AH;volute liner seal;E4124S01;4004162;2;Repuesto bomba;;;6x4 E-AH;Repuesto
+VULCO;62;6x4 E-AH;volute liner seal;E4124S01;4092065;2;Repuesto bomba;;;6x4 E-AH;Repuesto
+VULCO;62;6x4 E-AH;frame plate;E4032PRD21;4061746;1;Repuesto bomba;;;6x4 E-AH;Repuesto
+VULCO;63;6x4 E-AH;impeller;E4058A05;4005758;1;Repuesto bomba;;;6x4 E-AH;Repuesto
+VULCO;64;6x4 E-AH;discharge joint ring;E4132LS01;4004163;1;Repuesto bomba;;;6x4 E-AH;Repuesto
+VULCO;65;6x4 E-AH;discharge joint ring;E4132LS01;4092066;1;Repuesto bomba;;;6x4 E-AH;Repuesto
+VULCO;65;6x4 E-AH;cover plate;E4013D21;4010970;1;Repuesto bomba;;;6x4 E-AH;Repuesto
+VULCO;66;6x4 E-AH;volute liner;E4110A05;4005756;1;Repuesto bomba;;;6x4 E-AH;Repuesto
+VULCO;67;6x4 E-AH;disco succion;E4083A05;4004167;1;Repuesto bomba;;;6x4 E-AH;Repuesto
+VULCO;68;6x4 E-AH;warning plate impeller removal;-;Pendiente;1;Repuesto bomba;;;6x4 E-AH;Repuesto
+VULCO;69;6x4 E-AH;cotter;E4085E02;4092068;2;Repuesto bomba;;;6x4 E-AH;Repuesto
+VULCO;70;6x4 E-AH;intake flange spacer;-;Pendiente;1;Repuesto bomba;;;6x4 E-AH;Repuesto
+VULCO;71;6x4 E-AH;intake joint ring;E4060S01;4004033;1;Repuesto bomba;;;6x4 E-AH;Repuesto
+VULCO;72;6x4 E-AH;guard caution label;-;Pendiente;1;Repuesto bomba;;;6x4 E-AH;Repuesto
+VULCO;73;6x4 E-AH;pedestal;E003MD21;4044843;1;Repuesto bomba;;;6x4 E-AH;Repuesto
+VULCO;74;6x4 E-AH;nameplate;-;Pendiente;1;Repuesto bomba;;;6x4 E-AH;Repuesto
+VULCO;75;6x4 E-AH;adjusting screw - 3 thin nuts-2 washers;E001XLME62;4092070;1;Repuesto bomba;;;6x4 E-AH;Repuesto
+VULCO;76;6x4 E-AH;set screw seal guard bottom;-;Pendiente;2;Repuesto bomba;;;6x4 E-AH;Repuesto
+VULCO;77;6x4 E-AH;nut- hexagon seal guard bottom;-;Pendiente;2;Repuesto bomba;;;6x4 E-AH;Repuesto
+VULCO;78;6x4 E-AH;seal guard bottom;EAM485B2C23;4092053;1;Repuesto bomba;;;6x4 E-AH;Repuesto
+VULCO;79;6x4 E-AH;O-ring impulsor;F064S10;4004169;1;Repuesto bomba;;;6x4 E-AH;Repuesto
+VULCO;80;6x4 E-AH;frame plate stud - 2 nuts;E039ME62;4092054;3;Repuesto bomba;;;6x4 E-AH;Repuesto
+VULCO;81;6x4 E-AH;Disco prensa;E4041HS1A05;4092073;1;Repuesto bomba;;;6x4 E-AH;Repuesto
+VULCO;82;6x4 E-AH;cover plate bolt - 2 nuts;E4015ME63;4092075;4;Repuesto bomba;;;6x4 E-AH;Repuesto
+VULCO;83;6x4 E-AH;keeper plate;E4081E62;4092077;2;Repuesto bomba;;;6x4 E-AH;Repuesto
+VULCO;84;6x4 E-AH;seal guard top;EAM485T9C23;4092056;1;Repuesto bomba;;;6x4 E-AH;Repuesto
+VULCO;85;6x4 E-AH;set screw seal guard top;-;Pendiente;22;Repuesto bomba;;;6x4 E-AH;Repuesto
+VULCO;86;6x4 E-AH;washer seal guard top ;-;Pendiente;1;Repuesto bomba;;;6x4 E-AH;Repuesto
+VULCO;87;6x4 E-AH;grease cup;WP4L84-L;4044853;1;Repuesto bomba;;;6x4 E-AH;Repuesto
+VULCO;88;6x4 E-AH;grease cup adaptor;D138-1E62;4010308;1;Repuesto bomba;;;6x4 E-AH;Repuesto
+VULCO;89;6x4 E-AH;clamp plate;E4022HS1E62;4092057;1;Repuesto bomba;;;6x4 E-AH;Repuesto
+VULCO;90;6x4 E-AH;set screw clamp plate;M10H2-16S;Pendiente;1;Repuesto bomba;;;6x4 E-AH;Repuesto
+VULCO;91;6x4 E-AH;expeller;E028HS1A05;4092058;1;Repuesto bomba;;;6x4 E-AH;Repuesto
+VULCO;92;6x4 E-AH;expeller ring;E029HS1A05;4092076;1;Repuesto bomba;;;6x4 E-AH;Repuesto
+VULCO;93;6x4 E-AH;expeller ring o - ring;35T330N279;4092059;1;Repuesto bomba;;;6x4 E-AH;Repuesto
+VULCO;94;6x4 E-AH;shaft sleeve;E075C23;4098933;1;Repuesto bomba;;;6x4 E-AH;Repuesto
+VULCO;95;6x4 E-AH;gland ( 2 piece);E044D-1C23;4092074;1;Repuesto bomba;;;6x4 E-AH;Repuesto
+VULCO;96;6x4 E-AH;gland bolt - 1 nut - 1 washer;E045MC23;4092060;2;Repuesto bomba;;;6x4 E-AH;Repuesto
+VULCO;97;6x4 E-AH;gland bolt - 1 nut - 1 washer;E045MC23;4010305;2;Repuesto bomba;;;6x4 E-AH;Repuesto
+VULCO;97;6x4 E-AH;lantern ring;E063HS1C23;4099265;1;Repuesto bomba;;;6x4 E-AH;Repuesto
+VULCO;98;6x4 E-AH;packing;E111Q22-SET;4004168;2;Repuesto bomba;;;6x4 E-AH;Repuesto
+VULCO;99;6x4 E-AH;shaft sleeve o-ring;E109S10;4004164;1;Repuesto bomba;;;6x4 E-AH;Repuesto
+VULCO;100;6x4 E-AH;gland seal ring;E496-1P05;4092061;1;Repuesto bomba;;;6x4 E-AH;Repuesto
+VULCO;1;8x6 EE-AH;Molino 7;PUMP8X6EE-AHCS00;4050615;2;Bomba;;;8x6 EE-AH;n
+VULCO;1;8x6 EE-AH;Molino 7;PUMP8X6EE-AHCS00;4121261;2;Bomba;;;8x6 EE-AH;n
+VULCO;3;8x6 EE-AH;Celda columna;PUMP8X6EE-AHCS00;4050615;2;Bomba;;;8x6 EE-AH;n
+VULCO;3;8x6 EE-AH;Celda columna;PUMP8X6EE-AHCS00;4121261;2;Bomba;;;8x6 EE-AH;n
+VULCO;135;8x6 EE-AH;Portarodamiento ;-;4121225;1;Repuesto bomba;;;8x6 EE-AH;Repuesto
+VULCO;136;8x6 EE-AH;Clamp washer;E011E63;4010283;4;Repuesto bomba;;;8x6 EE-AH;Repuesto
+VULCO;137;8x6 EE-AH;Clamp bolt - 1 unit;E012ME62;4010284;4;Repuesto bomba;;;8x6 EE-AH;Repuesto
+VULCO;138;8x6 EE-AH;Warning plate - bursting;SC73;Pendiente;1;Repuesto bomba;;;8x6 EE-AH;Repuesto
+VULCO;139;8x6 EE-AH;Warning plate - lifting;SC80;Pendiente;1;Repuesto bomba;;;8x6 EE-AH;Repuesto
+VULCO;140;8x6 EE-AH;nameplate rivet;-;Pendiente;10;Repuesto bomba;;;8x6 EE-AH;Repuesto
+VULCO;141;8x6 EE-AH;O-ring camisa de eje;E109;4004164;1;Repuesto bomba;;;8x6 EE-AH;Repuesto
+VULCO;142;8x6 EE-AH;Frame plate liner insert stud;M12Z3-135Z;Pendiente;4;Repuesto bomba;;;8x6 EE-AH;Repuesto
+VULCO;143;8x6 EE-AH;Nut - thin self locking;M12H12-Z;Pendiente;4;Repuesto bomba;;;8x6 EE-AH;Repuesto
+VULCO;144;8x6 EE-AH;extra large washer;M12-22-Z;Pendiente;4;Repuesto bomba;;;8x6 EE-AH;Repuesto
+VULCO;145;8x6 EE-AH;Voluta;F6110A05;4005095;1;Repuesto bomba;;;8x6 EE-AH;Repuesto
+VULCO;146;8x6 EE-AH;Carcasa de prensa;EAM6032PR;Pendiente;1;Repuesto bomba;;;8x6 EE-AH;Repuesto
+VULCO;147;8x6 EE-AH;Discharge joint ring;F6132LS01;4039001;1;Repuesto bomba;;;8x6 EE-AH;Repuesto
+VULCO;148;8x6 EE-AH;Sello voluta;F8124S01;4004725;2;Repuesto bomba;;;8x6 EE-AH;Repuesto
+VULCO;149;8x6 EE-AH;Warning plate -impeller removal;SC83;4019550;1;Repuesto bomba;;;8x6 EE-AH;Repuesto
+VULCO;150;8x6 EE-AH;Carcasa de succion;F6013;Pendiente;1;Repuesto bomba;;;8x6 EE-AH;Repuesto
+VULCO;151;8x6 EE-AH;Disco de succion;F6083A05;4005094;1;Repuesto bomba;;;8x6 EE-AH;Repuesto
+VULCO;152;8x6 EE-AH;Cotter;F6085E02;4010529;2;Repuesto bomba;;;8x6 EE-AH;Repuesto
+VULCO;153;8x6 EE-AH;Intake flange spacer;F6183MT;Pendiente;1;Repuesto bomba;;;8x6 EE-AH;Repuesto
+VULCO;154;8x6 EE-AH;Intake joint ring;F6060S01;4039002;1;Repuesto bomba;;;8x6 EE-AH;Repuesto
+VULCO;155;8x6 EE-AH;Guard caution label;LBL102;Pendiente;1;Repuesto bomba;;;8x6 EE-AH;Repuesto
+VULCO;156;8x6 EE-AH;Nameplate;C6;4019530;1;Repuesto bomba;;;8x6 EE-AH;Repuesto
+VULCO;157;8x6 EE-AH;Pedestal;E003M;Pendiente;1;Repuesto bomba;;;8x6 EE-AH;Repuesto
+VULCO;158;8x6 EE-AH;adjusting screw - 3 nuts - 2 washers;E001ME62;4010291;1;Repuesto bomba;;;8x6 EE-AH;Repuesto
+VULCO;159;8x6 EE-AH;frame plate bolt - 1 nut;E034ME62;4098932;3;Repuesto bomba;;;8x6 EE-AH;Repuesto
+VULCO;160;8x6 EE-AH;set screw (seal guard - bottom);M12H2-40S;Pendiente;2;Repuesto bomba;;;8x6 EE-AH;Repuesto
+VULCO;161;8x6 EE-AH;Nut - hexagon (seal guard - bottom);M12H5-S;Pendiente;2;Repuesto bomba;;;8x6 EE-AH;Repuesto
+VULCO;162;8x6 EE-AH;seal guard - bottom;EAM485B1;Pendiente;1;Repuesto bomba;;;8x6 EE-AH;Repuesto
+VULCO;163;8x6 EE-AH;Disco prensa;F6041MA05;4005092;1;Repuesto bomba;;;8x6 EE-AH;Repuesto
+VULCO;164;8x6 EE-AH;Impulsor;F6147A05;4005093;1;Repuesto bomba;;;8x6 EE-AH;Repuesto
+VULCO;165;8x6 EE-AH;Cover plate  bolt - 2 nuts;F6015MC23;4098937;6;Repuesto bomba;;;8x6 EE-AH;Repuesto
+VULCO;166;8x6 EE-AH;Keeper plate;F6081E62;4010530;3;Repuesto bomba;;;8x6 EE-AH;Repuesto
+VULCO;167;8x6 EE-AH;Grease cup;WP4L84-L;Pendiente;1;Repuesto bomba;;;8x6 EE-AH;Repuesto
+VULCO;168;8x6 EE-AH;seal guard - top ;EAM485T4;Pendiente;1;Repuesto bomba;;;8x6 EE-AH;Repuesto
+VULCO;169;8x6 EE-AH;set screw (seal guard - top);M10H2-20S;4019521;2;Repuesto bomba;;;8x6 EE-AH;Repuesto
+VULCO;170;8x6 EE-AH;washer (seal guard - top);M10-11-S;4019527;2;Repuesto bomba;;;8x6 EE-AH;Repuesto
+VULCO;171;8x6 EE-AH;clamp plate;EAM022;Pendiente;1;Repuesto bomba;;;8x6 EE-AH;Repuesto
+VULCO;172;8x6 EE-AH;set screw (clamp plate);M10H2-20S;4019521;1;Repuesto bomba;;;8x6 EE-AH;Repuesto
+VULCO;173;8x6 EE-AH;washer(clamp plate);M10-11-S;4019527;1;Repuesto bomba;;;8x6 EE-AH;Repuesto
+VULCO;174;8x6 EE-AH;grease cup adaptor;D138-1E62;Pendiente;1;Repuesto bomba;;;8x6 EE-AH;Repuesto
+VULCO;175;8x6 EE-AH;expeller ring o-ring;EAM029A05;4001604;1;Repuesto bomba;;;8x6 EE-AH;Repuesto
+VULCO;176;8x6 EE-AH;packing;E111Q05-SET;4010309;2;Repuesto bomba;;;8x6 EE-AH;Repuesto
+VULCO;177;8x6 EE-AH;expeller;EAM028A05;4001601;1;Repuesto bomba;;;8x6 EE-AH;Repuesto
+VULCO;178;8x6 EE-AH;impeller seal o-ring;F109;4044832;1;Repuesto bomba;;;8x6 EE-AH;Repuesto
+VULCO;179;8x6 EE-AH;camisa de eje;E075C23;4098933;1;Repuesto bomba;;;8x6 EE-AH;Repuesto
+VULCO;180;8x6 EE-AH;gland bolt - 1 nut - 1 washer;E045MC23;4010305;2;Repuesto bomba;;;8x6 EE-AH;Repuesto
+VULCO;181;8x6 EE-AH;gland (2 piece);E044D-1;4092074;1;Repuesto bomba;;;8x6 EE-AH;Repuesto
+VULCO;182;8x6 EE-AH;lantern ring;E063P50;4005544;1;Repuesto bomba;;;8x6 EE-AH;Repuesto
+VULCO;183;8x6 EE-AH;expeller ring o-ring;EAM029A05;4001604;1;Repuesto bomba;;;8x6 EE-AH;Repuesto
+VULCO;184;8x6 EE-AH;shaft sleeve o -ring;E109S10;4004164;1;Repuesto bomba;;;8x6 EE-AH;Repuesto
+VULCO;185;8x6 EE-AH;gland seal ring;E496-1;4092061;1;Repuesto bomba;;;8x6 EE-AH;Repuesto
+VULCO;11;4x6 BGH;Espesador cobre 1;B040700012;4121274;2;Bomba;;;4x6 BGH;n
+VULCO;11;4x6 BGH;Espesador cobre 1;B040700012;4060800;2;Bomba;;;4x6 BGH;n
+VMS;1;4250PU3010 BOMBA ALIMENTAC.FILTRO 2;Bomba 4x3-D - HD;;4124068;;Bomba;;;4250PU3010 BOMBA ALIMENTAC.FILTRO 2;n
+VMS;2;Bomba 4x3-D - HD;Portarodamiento Armado;VMSBASSYA536500D;4124069;1;Repuesto Bomba;;;4250PU3010 BOMBA ALIMENTAC.FILTRO 2;Repuesto
+VMS;3;Bomba 4x3-D - HD;Golilla Fijación;VMSCWS1030110D;4099943;4;Repuesto Bomba;;;4250PU3010 BOMBA ALIMENTAC.FILTRO 2;Repuesto
+VMS;4;Bomba 4x3-D - HD;Perno Fijación Portarodamiento;VMSCBB633210D;4099944;4;Repuesto Bomba;;;4250PU3010 BOMBA ALIMENTAC.FILTRO 2;Repuesto
+VMS;5;Bomba 4x3-D - HD;Sello Caja Prensa;VMSSSBEPDM221D;4092042;1;Repuesto Bomba;;;4250PU3010 BOMBA ALIMENTAC.FILTRO 2;Repuesto
+VMS;6;Bomba 4x3-D - HD;Sello Voluta;VMSVCSEPDM5213D;4071642;1;Repuesto Bomba;;;4250PU3010 BOMBA ALIMENTAC.FILTRO 2;Repuesto
+VMS;7;Bomba 4x3-D - HD;Impulsor;VMSI5CA5367413D;4071639;1;Repuesto Bomba;;;4250PU3010 BOMBA ALIMENTAC.FILTRO 2;Repuesto
+VMS;8;Bomba 4x3-D - HD;Junta Flange Descarga;VMSDJREPDML2313D;4071647;1;Repuesto Bomba;;;4250PU3010 BOMBA ALIMENTAC.FILTRO 2;Repuesto
+VMS;9;Bomba 4x3-D - HD;Revestimiento Voluta;VMSVLA5320113D;4071638;1;Repuesto Bomba;;;4250PU3010 BOMBA ALIMENTAC.FILTRO 2;Repuesto
+VMS;10;Bomba 4x3-D - HD;Carcasa Lado Succión;VMSCPA5363103D;4092043;1;Repuesto Bomba;;;4250PU3010 BOMBA ALIMENTAC.FILTRO 2;Repuesto
+VMS;11;Bomba 4x3-D - HD;Junta Flange Succión;VMSIJREPDM603D;4071648;1;Repuesto Bomba;;;4250PU3010 BOMBA ALIMENTAC.FILTRO 2;Repuesto
+VMS;12;Bomba 4x3-D - HD;Perno Ajuste Portarodamiento;VMSASB633100D;4099945;1;Repuesto Bomba;;;4250PU3010 BOMBA ALIMENTAC.FILTRO 2;Repuesto
+VMS;13;Bomba 4x3-D - HD;Base Portarodamiento;VMSBAA536300D;4099946;1;Repuesto Bomba;;;4250PU3010 BOMBA ALIMENTAC.FILTRO 2;Repuesto
+VMS;14;Bomba 4x3-D - HD;Esparrago Carcasa - 2 Tuercas;VMSFPSS1030930D;4099947;3;Repuesto Bomba;;;4250PU3010 BOMBA ALIMENTAC.FILTRO 2;Repuesto
+VMS;15;Bomba 4x3-D - HD;O-ring Camisa;VMSSSONBR901D;4071646;2;Repuesto Bomba;;;4250PU3010 BOMBA ALIMENTAC.FILTRO 2;Repuesto
+VMS;16;Bomba 4x3-D - HD;Camisa de Eje;VMSSSLA420570D;4071640;1;Repuesto Bomba;;;4250PU3010 BOMBA ALIMENTAC.FILTRO 2;Repuesto
+VMS;17;Bomba 4x3-D - HD;Carcasa Lado Prensa;VMSFPA5362303D;4092044;1;Repuesto Bomba;;;4250PU3010 BOMBA ALIMENTAC.FILTRO 2;Repuesto
+VMS;18;Bomba 4x3-D - HD;Esparrago Carcasa - 2 Tuercas;VMSCPBS1030510D;4099948;4;Repuesto Bomba;;;4250PU3010 BOMBA ALIMENTAC.FILTRO 2;Repuesto
+VMS;19;Bomba 4x3-D - HD;Disco Prensa;VMSFPLIA5321403D;4071643;1;Repuesto Bomba;;;4250PU3010 BOMBA ALIMENTAC.FILTRO 2;Repuesto
+VMS;20;Bomba 4x3-D - HD;Prensa Estopa;VMSGLAA48440D;4092045;1;Repuesto Bomba;;;4250PU3010 BOMBA ALIMENTAC.FILTRO 2;Repuesto
+VMS;21;Bomba 4x3-D - HD;Perno Abrazadera Prensa Estopa;VMSGCBA316621D;4099956;2;Repuesto Bomba;;;4250PU3010 BOMBA ALIMENTAC.FILTRO 2;Repuesto
+VMS;22;Bomba 4x3-D - HD;Empaquetadura;VMSPKPTFEFV111D;4099957;4;Repuesto Bomba;;;4250PU3010 BOMBA ALIMENTAC.FILTRO 2;Repuesto
+VMS;23;Bomba 4x3-D - HD;Anillo Restrictor;VMSLRA420811D;4099950;1;Repuesto Bomba;;;4250PU3010 BOMBA ALIMENTAC.FILTRO 2;Repuesto
+VMS;24;Bomba 4x3-D - HD;Caja Prensa;VMSSBA532870D;4099951;1;Repuesto Bomba;;;4250PU3010 BOMBA ALIMENTAC.FILTRO 2;Repuesto
+VMS;25;Bomba 4x3-D - HD;O-Ring Impulsor;VMSORGNBR460D;4071645;1;Repuesto Bomba;;;4250PU3010 BOMBA ALIMENTAC.FILTRO 2;Repuesto
+VMS;26;Bomba 4x3-D - HD;Camisa Espaciadora;VMSSSPA420711D;4099952;1;Repuesto Bomba;;;4250PU3010 BOMBA ALIMENTAC.FILTRO 2;Repuesto
+VMS;27;Bomba 4x3-D - HD;Perno Prensa Estopa;VMSGRA48540D;4099949;2;Repuesto Bomba;;;4250PU3010 BOMBA ALIMENTAC.FILTRO 2;Repuesto
+VMS;28;Bomba 4x3-D - HD;Grasera de Copa;VMSGRCL-28L4PW;4099954;1;Repuesto Bomba;;;4250PU3010 BOMBA ALIMENTAC.FILTRO 2;Repuesto
+VMS;29;Bomba 4x3-D - HD;Extensión Engrasadora de Copa;VMSGRCAB633831D;4099955;1;Repuesto Bomba;;;4250PU3010 BOMBA ALIMENTAC.FILTRO 2;Repuesto
+VMS;30;Bomba 4x3-D - HD;Perno Prensa Estopa;VMSGBA48540D;4099949;2;Repuesto Bomba;;;4250PU3010 BOMBA ALIMENTAC.FILTRO 2;Repuesto
+VMS;31;Bomba 4x3-D - HD;Empaquetadura;VMSPKPTFEFV111D;4099957;2;Repuesto Bomba;;;4250PU3010 BOMBA ALIMENTAC.FILTRO 2;Repuesto
+VMS;32;Bomba 4x3-D - HD;Anillo de Fondo;VMSNRA316760D;4071649;1;Repuesto Bomba;;;4250PU3010 BOMBA ALIMENTAC.FILTRO 2;Repuesto
+VMS;33;Bomba 4x3-D - HD;O-Ring Impulsor;VMSORGNBR460D;4071645;1;Repuesto Bomba;;;4250PU3010 BOMBA ALIMENTAC.FILTRO 2;Repuesto
+VMS;34;Bomba 4x3-D - HD;Prensa Estopa;VMSGLAA48440D;4092045;1;Repuesto Bomba;;;4250PU3010 BOMBA ALIMENTAC.FILTRO 2;Repuesto
+VMS;35;Bomba 4x3-D - HD;Perno Abrazadera Prensa Estopa;VMSGCBA316621D;4099953;2;Repuesto Bomba;;;4250PU3010 BOMBA ALIMENTAC.FILTRO 2;Repuesto
+VMS;36;Bomba 4x3-D - HD;Anillo Linterna;VMSLRA420360D;4071644;1;Repuesto Bomba;;;4250PU3010 BOMBA ALIMENTAC.FILTRO 2;Repuesto
+VMS;37;Bomba 4x3-D - HD;Caja Expulsor;VMSEXRA532920D;4071651;1;Repuesto Bomba;;;4250PU3010 BOMBA ALIMENTAC.FILTRO 2;Repuesto
+VMS;38;Bomba 4x3-D - HD;Expulsor;VMSEXA532820D;4071650;1;Repuesto Bomba;;;4250PU3010 BOMBA ALIMENTAC.FILTRO 2;Repuesto
+ERAL;1;Bomba Espesador PP613;BOMBA ER 3/2 C-H/A05/GLAND;EDBOER0302CHSG;4072870;;Bomba;;;Bomba Espesador PP613;n
+ERAL;2;BOMBA ER 3/2 C-H/A05/GLAND;CAÑONERA;EC005M;;1;Repuesto Bomba;;;Bomba Espesador PP613;Repuesto
+ERAL;3;BOMBA ER 3/2 C-H/A05/GLAND;FORRO CARCASA LADO EJE INSERTO;EC2041-A05;4176098;1;Repuesto Bomba;;;Bomba Espesador PP613;Repuesto
+ERAL;4;BOMBA ER 3/2 C-H/A05/GLAND;FORRO VOLUTA;EC2110-A05;4176097;1;Repuesto Bomba;;;Bomba Espesador PP613;Repuesto
+ERAL;5;BOMBA ER 3/2 C-H/A05/GLAND;IMPULSOR;EC2147-A05;4176096;1;Repuesto Bomba;;;Bomba Espesador PP613;Repuesto
+ERAL;6;BOMBA ER 3/2 C-H/A05/GLAND;ANILLO IMPULSOR;EC217-S10;4176100;1;Repuesto Bomba;;;Bomba Espesador PP613;Repuesto
+ERAL;7;BOMBA ER 3/2 C-H/A05/GLAND;ESPACIADOR CASQUILLO EJE;EC117-C21;;1;Repuesto Bomba;;;Bomba Espesador PP613;Repuesto
+ERAL;8;BOMBA ER 3/2 C-H/A05/GLAND;SELLO CAJA PRENSA ESTOPA - SELLO EXPULSOR;EC122-S01;;1;Repuesto Bomba;;;Bomba Espesador PP613;Repuesto
+ERAL;9;BOMBA ER 3/2 C-H/A05/GLAND;CAJA PRENSA ESTOPA;EC078-A05;;1;Repuesto Bomba;;;Bomba Espesador PP613;Repuesto
+ERAL;10;BOMBA ER 3/2 C-H/A05/GLAND;ANILLO CASQUILLO EJE;EC109-S10;;1;Repuesto Bomba;;;Bomba Espesador PP613;Repuesto
+ERAL;11;BOMBA ER 3/2 C-H/A05/GLAND;CASQUILLO EJE;EC075-J05;;1;Repuesto Bomba;;;Bomba Espesador PP613;Repuesto
+ERAL;12;BOMBA ER 3/2 C-H/A05/GLAND;ANILLO CASQUILLO EJE;EC109-S10;;1;Repuesto Bomba;;;Bomba Espesador PP613;Repuesto
+ERAL;13;BOMBA ER 3/2 C-H/A05/GLAND;ANILLO TOPE LINTERNA;EC118-C23;;1;Repuesto Bomba;;;Bomba Espesador PP613;Repuesto
+ERAL;14;BOMBA ER 3/2 C-H/A05/GLAND;EMPAQUETADURA;EC111-Q21;;4;Repuesto Bomba;;;Bomba Espesador PP613;Repuesto
+ERAL;15;BOMBA ER 3/2 C-H/A05/GLAND;CONJUNTO PRENSAESTOPAS;EC044-D21;;1;Repuesto Bomba;;;Bomba Espesador PP613;Repuesto
+ERAL;16;BOMBA ER 3/2 C-H/A05/GLAND;SELLO VOLUTA;EC2125-S01;;1;Repuesto Bomba;;;Bomba Espesador PP613;Repuesto
+ERAL;17;BOMBA ER 3/2 C-H/A05/GLAND;JUNTA DESCARGA;EC2132L-S01;;1;Repuesto Bomba;;;Bomba Espesador PP613;Repuesto
+ERAL;18;BOMBA ER 3/2 C-H/A05/GLAND;JUNTA ENTRADA;EC2060-S01;;1;Repuesto Bomba;;;Bomba Espesador PP613;Repuesto
+ERAL;19;Bomba Concentrado Cobre + Bomba Muestreo de Relaves;BOMBA ER 3/2 C-H/A05/EXPELLER;EDBOER0302CHSE;4072870;;Bomba;;;Bomba Concentrado Cobre + Bomba Muestreo de Relaves;n
+ERAL;20;BOMBA ER 3/2 C-H/A05/EXPELLER;CAÑONERA;RBOERC005M;4179161;1;Repuesto Bomba;;;Bomba Concentrado Cobre + Bomba Muestreo de Relaves;Repuesto
+ERAL;21;BOMBA ER 3/2 C-H/A05/EXPELLER;FORRO CARCASA LADO EJE INSERTO;RBOERC2041A05;4176098;1;Repuesto Bomba;;;Bomba Concentrado Cobre + Bomba Muestreo de Relaves;Repuesto
+ERAL;22;BOMBA ER 3/2 C-H/A05/EXPELLER;FORRO VOLUTA;RBOERC2110A05;4176097;1;Repuesto Bomba;;;Bomba Concentrado Cobre + Bomba Muestreo de Relaves;Repuesto
+ERAL;23;BOMBA ER 3/2 C-H/A05/EXPELLER;IMPULSOR;RBOERC2147A05;4176096;1;Repuesto Bomba;;;Bomba Concentrado Cobre + Bomba Muestreo de Relaves;Repuesto
+ERAL;24;BOMBA ER 3/2 C-H/A05/EXPELLER;ANILLO IMPULSOR;RBOERC217S10;4176107;1;Repuesto Bomba;;;Bomba Concentrado Cobre + Bomba Muestreo de Relaves;Repuesto
+ERAL;25;BOMBA ER 3/2 C-H/A05/EXPELLER;EXPULSOR;RBOERC028A05;4176099;1;Repuesto Bomba;;;Bomba Concentrado Cobre + Bomba Muestreo de Relaves;Repuesto
+ERAL;26;BOMBA ER 3/2 C-H/A05/EXPELLER;ANILLO EXPULSOR;RBOERC029A05;4176100;1;Repuesto Bomba;;;Bomba Concentrado Cobre + Bomba Muestreo de Relaves;Repuesto
+ERAL;27;BOMBA ER 3/2 C-H/A05/EXPELLER;SELLO EXPULSOR;RBOERC122S01;4176101;1;Repuesto Bomba;;;Bomba Concentrado Cobre + Bomba Muestreo de Relaves;Repuesto
+ERAL;28;BOMBA ER 3/2 C-H/A05/EXPELLER;ANILLO CASQUILLO EJE;RBOERC109S10;4176106;1;Repuesto Bomba;;;Bomba Concentrado Cobre + Bomba Muestreo de Relaves;Repuesto
+ERAL;29;BOMBA ER 3/2 C-H/A05/EXPELLER;CASQUILLO EJE;RBOERC075J05;4176105;1;Repuesto Bomba;;;Bomba Concentrado Cobre + Bomba Muestreo de Relaves;Repuesto
+ERAL;30;BOMBA ER 3/2 C-H/A05/EXPELLER;ANILLO CASQUILLO EJE;RBOERC109S10;4176106;1;Repuesto Bomba;;;Bomba Concentrado Cobre + Bomba Muestreo de Relaves;Repuesto
+ERAL;31;BOMBA ER 3/2 C-H/A05/EXPELLER;ANILLO CUELLO;RBOERC067C23;4176103;1;Repuesto Bomba;;;Bomba Concentrado Cobre + Bomba Muestreo de Relaves;Repuesto
+ERAL;32;BOMBA ER 3/2 C-H/A05/EXPELLER;EMPAQUETADURA;RBOERC111Q21;4176104;2;Repuesto Bomba;;;Bomba Concentrado Cobre + Bomba Muestreo de Relaves;Repuesto
+ERAL;33;BOMBA ER 3/2 C-H/A05/EXPELLER;ANILLO LINTERNA;RBOERC063C23;4176102;1;Repuesto Bomba;;;Bomba Concentrado Cobre + Bomba Muestreo de Relaves;Repuesto
+ERAL;34;BOMBA ER 3/2 C-H/A05/EXPELLER;CONJUNTO PRENSAESTOPAS;RBOERC044D21;4176111;1;Repuesto Bomba;;;Bomba Concentrado Cobre + Bomba Muestreo de Relaves;Repuesto
+ERAL;;BOMBA ER 3/2 C-H/A05/EXPELLER;BASE;EC003M-D21;4176114;1;Repuesto Bomba;;;Bomba Concentrado Cobre + Bomba Muestreo de Relaves;Repuesto
+ERAL;;BOMBA ER 3/2 C-H/A05/EXPELLER;KIT DE REPUESTOS HUMEDOS;;;;;;;Bomba Concentrado Cobre + Bomba Muestreo de Relaves;Repuesto
+ERAL;35;Bomba Precarga + Bomba Tanque EIMCO;BOMBA ER 6/4 D-H/A05/EXPELLER;EDBOER0604DHSE;4175518;;Bomba;;;Bomba Precarga + Bomba Tanque EIMCO;n
+ERAL;36;BOMBA ER 6/4 D-H/A05/EXPELLER;CAÑONERA;RBOERDAM005M;4175520;1;Repuesto Bomba;;;Bomba Precarga + Bomba Tanque EIMCO;Repuesto
+ERAL;37;BOMBA ER 6/4 D-H/A05/EXPELLER;FORRO CARCASA LADO EJE INSERTO;RBOERE4041A05;;1;Repuesto Bomba;;;Bomba Precarga + Bomba Tanque EIMCO;Repuesto
+ERAL;38;BOMBA ER 6/4 D-H/A05/EXPELLER;FORRO VOLUTA;RBOERE4110A05;;1;Repuesto Bomba;;;Bomba Precarga + Bomba Tanque EIMCO;Repuesto
+ERAL;39;BOMBA ER 6/4 D-H/A05/EXPELLER;IMPULSOR;RBOERE4147A05;;1;Repuesto Bomba;;;Bomba Precarga + Bomba Tanque EIMCO;Repuesto
+ERAL;40;BOMBA ER 6/4 D-H/A05/EXPELLER;FORRO INLET;RBOERE4083A05;;1;Repuesto Bomba;;;Bomba Precarga + Bomba Tanque EIMCO;Repuesto
+ERAL;41;BOMBA ER 6/4 D-H/A05/EXPELLER;ANILLO IMPULSOR;;4074717;1;Repuesto Bomba;;;Bomba Precarga + Bomba Tanque EIMCO;Repuesto
+ERAL;42;BOMBA ER 6/4 D-H/A05/EXPELLER;EXPULSOR;RBOEREAM028A05;4074709;1;Repuesto Bomba;;;Bomba Precarga + Bomba Tanque EIMCO;Repuesto
+ERAL;43;BOMBA ER 6/4 D-H/A05/EXPELLER;ANILLO EXPULSOR;RBOEREAM029A05;4074710;1;Repuesto Bomba;;;Bomba Precarga + Bomba Tanque EIMCO;Repuesto
+ERAL;44;BOMBA ER 6/4 D-H/A05/EXPELLER;SELLO EXPULSOR;RBOERF122S01;4074711;1;Repuesto Bomba;;;Bomba Precarga + Bomba Tanque EIMCO;Repuesto
+ERAL;45;BOMBA ER 6/4 D-H/A05/EXPELLER;ANILLO CASQUILLO EJE;RBOERE109S10;4074716;1;Repuesto Bomba;;;Bomba Precarga + Bomba Tanque EIMCO;Repuesto
+ERAL;46;BOMBA ER 6/4 D-H/A05/EXPELLER;CASQUILLO EJE;RBOERE075J05;4074715;1;Repuesto Bomba;;;Bomba Precarga + Bomba Tanque EIMCO;Repuesto
+ERAL;47;BOMBA ER 6/4 D-H/A05/EXPELLER;ANILLO CASQUILLO EJE;RBOERE109S10;4074716;1;Repuesto Bomba;;;Bomba Precarga + Bomba Tanque EIMCO;Repuesto
+ERAL;48;BOMBA ER 6/4 D-H/A05/EXPELLER;ANILLO CUELLO;RBOERE067C23;;1;Repuesto Bomba;;;Bomba Precarga + Bomba Tanque EIMCO;Repuesto
+ERAL;49;BOMBA ER 6/4 D-H/A05/EXPELLER;EMPAQUETADURA;RBOERE111Q21;;2;Repuesto Bomba;;;Bomba Precarga + Bomba Tanque EIMCO;Repuesto
+ERAL;50;BOMBA ER 6/4 D-H/A05/EXPELLER;ANILLO LINTERNA;RBOERE063C23;;1;Repuesto Bomba;;;Bomba Precarga + Bomba Tanque EIMCO;Repuesto
+ERAL;51;BOMBA ER 6/4 D-H/A05/EXPELLER;EMPAQUETADURA;RBOERE111Q21;;1;Repuesto Bomba;;;Bomba Precarga + Bomba Tanque EIMCO;Repuesto
+ERAL;52;BOMBA ER 6/4 D-H/A05/EXPELLER;CONJUNTO PRENSAESTOPAS;RBOERE044G01;;1;Repuesto Bomba;;;Bomba Precarga + Bomba Tanque EIMCO;Repuesto
+ERAL;53;BOMBA ER 6/4 D-H/A05/EXPELLER;JUNTA DESCARGA;RBOERF6132LS01;;1;Repuesto Bomba;;;Bomba Precarga + Bomba Tanque EIMCO;Repuesto
+ERAL;54;BOMBA ER 6/4 D-H/A05/EXPELLER;JUNTA ENTRADA;RBOERF6060S01;;1;Repuesto Bomba;;;Bomba Precarga + Bomba Tanque EIMCO;Repuesto
+ERAL;55;Bomba Impulsión Concentrado Celda Columna + Bomba Precarga Relaves;BOMBA ER 8/6 E-H/A05/EXPELLER;EDBOER0806EHSE;4124055;;Bomba;;;Bomba Impulsión Concentrado Celda Columna + Bomba Precarga Relaves;n
+ERAL;;;;;4108768;;;;;Bomba Impulsión Concentrado Celda Columna + Bomba Precarga Relaves;Repuesto
+ERAL;56;BOMBA ER 8/6 E-H/A05/EXPELLER;CAÑONERA;RBOEREAM005M;4175494;1;Repuesto Bomba;;;Bomba Impulsión Concentrado Celda Columna + Bomba Precarga Relaves;Repuesto
+ERAL;57;BOMBA ER 8/6 E-H/A05/EXPELLER;FORRO CARCASA LADO EJE INSERTO;RBOERF6041A05;4074707;1;Repuesto Bomba;;;Bomba Impulsión Concentrado Celda Columna + Bomba Precarga Relaves;Repuesto
+ERAL;58;BOMBA ER 8/6 E-H/A05/EXPELLER;FORRO VOLUTA;RBOERF6110A05;4074706;1;Repuesto Bomba;;;Bomba Impulsión Concentrado Celda Columna + Bomba Precarga Relaves;Repuesto
+ERAL;59;BOMBA ER 8/6 E-H/A05/EXPELLER;IMPULSOR;RBOERF6147A05;4074705;1;Repuesto Bomba;;;Bomba Impulsión Concentrado Celda Columna + Bomba Precarga Relaves;Repuesto
+ERAL;60;BOMBA ER 8/6 E-H/A05/EXPELLER;FORRO INLET;RBOERF6083A05;4074708;1;Repuesto Bomba;;;Bomba Impulsión Concentrado Celda Columna + Bomba Precarga Relaves;Repuesto
+ERAL;61;BOMBA ER 8/6 E-H/A05/EXPELLER;ANILLO IMPULSOR;RBOERF109S10;4074717;1;Repuesto Bomba;;;Bomba Impulsión Concentrado Celda Columna + Bomba Precarga Relaves;Repuesto
+ERAL;62;BOMBA ER 8/6 E-H/A05/EXPELLER;EXPULSOR;RBOEREAM028A05;4074709;1;Repuesto Bomba;;;Bomba Impulsión Concentrado Celda Columna + Bomba Precarga Relaves;Repuesto
+ERAL;63;BOMBA ER 8/6 E-H/A05/EXPELLER;ANILLO EXPULSOR;RBOEREAM029A05;4074710;1;Repuesto Bomba;;;Bomba Impulsión Concentrado Celda Columna + Bomba Precarga Relaves;Repuesto
+ERAL;64;BOMBA ER 8/6 E-H/A05/EXPELLER;SELLO EXPULSOR;RBOERF122S01;4074711;1;Repuesto Bomba;;;Bomba Impulsión Concentrado Celda Columna + Bomba Precarga Relaves;Repuesto
+ERAL;65;BOMBA ER 8/6 E-H/A05/EXPELLER;ANILLO CASQUILLO EJE;RBOERE109S10;4074716;1;Repuesto Bomba;;;Bomba Impulsión Concentrado Celda Columna + Bomba Precarga Relaves;Repuesto
+ERAL;66;BOMBA ER 8/6 E-H/A05/EXPELLER;CASQUILLO EJE;RBOERE075J05;4074715;1;Repuesto Bomba;;;Bomba Impulsión Concentrado Celda Columna + Bomba Precarga Relaves;Repuesto
+ERAL;67;BOMBA ER 8/6 E-H/A05/EXPELLER;ANILLO CASQUILLO EJE;RBOERE109S10;4074716;1;Repuesto Bomba;;;Bomba Impulsión Concentrado Celda Columna + Bomba Precarga Relaves;Repuesto
+ERAL;68;BOMBA ER 8/6 E-H/A05/EXPELLER;ANILLO CUELLO;RBOERE067C23;4074713;1;Repuesto Bomba;;;Bomba Impulsión Concentrado Celda Columna + Bomba Precarga Relaves;Repuesto
+ERAL;69;BOMBA ER 8/6 E-H/A05/EXPELLER;EMPAQUETADURA;RBOERE111Q21;4074714;2;Repuesto Bomba;;;Bomba Impulsión Concentrado Celda Columna + Bomba Precarga Relaves;Repuesto
+ERAL;70;BOMBA ER 8/6 E-H/A05/EXPELLER;ANILLO LINTERNA;RBOERE063C23;4074712;1;Repuesto Bomba;;;Bomba Impulsión Concentrado Celda Columna + Bomba Precarga Relaves;Repuesto
+ERAL;71;BOMBA ER 8/6 E-H/A05/EXPELLER;EMPAQUETADURA;RBOERE111Q21;4074714;1;Repuesto Bomba;;;Bomba Impulsión Concentrado Celda Columna + Bomba Precarga Relaves;Repuesto
+ERAL;72;BOMBA ER 8/6 E-H/A05/EXPELLER;CONJUNTO PRENSAESTOPAS;RBOERE044G01;4105258;1;Repuesto Bomba;;;Bomba Impulsión Concentrado Celda Columna + Bomba Precarga Relaves;Repuesto
+ERAL;73;BOMBA ER 8/6 E-H/A05/EXPELLER;JUNTA DESCARGA;RBOERF6132LS01;4074719;1;Repuesto Bomba;;;Bomba Impulsión Concentrado Celda Columna + Bomba Precarga Relaves;Repuesto
+ERAL;74;BOMBA ER 8/6 E-H/A05/EXPELLER;JUNTA ENTRADA;RBOERF6060S01;4074720;1;Repuesto Bomba;;;Bomba Impulsión Concentrado Celda Columna + Bomba Precarga Relaves;Repuesto
+TECFLUID;1;EUROFLO;BOMBA CENTRÍFUGA AUTOCEBANTE EJS80-140;EJS80-140-10;4066671;;Bomba;;;BOMBA CENTRÍFUGA AUTOCEBANTE EJS80-140;n
+TECFLUID;2;BOMBA CENTRÍFUGA AUTOCEBANTE EJS80-140;CAJA;;;1;Repuesto Bomba;;;BOMBA CENTRÍFUGA AUTOCEBANTE EJS80-140;Repuesto
+TECFLUID;3;BOMBA CENTRÍFUGA AUTOCEBANTE EJS80-140;PLACA DE DESGASTE;;;1;Repuesto Bomba;;;BOMBA CENTRÍFUGA AUTOCEBANTE EJS80-140;Repuesto
+TECFLUID;4;BOMBA CENTRÍFUGA AUTOCEBANTE EJS80-140;IMPULSOR;;;1;Repuesto Bomba;;;BOMBA CENTRÍFUGA AUTOCEBANTE EJS80-140;Repuesto
+TECFLUID;5;BOMBA CENTRÍFUGA AUTOCEBANTE EJS80-140;CARTUCHO DE RODAMIENTO;;;1;Repuesto Bomba;;;BOMBA CENTRÍFUGA AUTOCEBANTE EJS80-140;Repuesto
+TECFLUID;5;BOMBA CENTRÍFUGA AUTOCEBANTE EJS80-140;SOPORTE DE BASE DEL ALOJAMIENTO DEL RODAMIENTO;;;1;Repuesto Bomba;;;BOMBA CENTRÍFUGA AUTOCEBANTE EJS80-140;Repuesto
+TECFLUID;6;BOMBA CENTRÍFUGA AUTOCEBANTE EJS80-140;ARANDELA;;;2;Repuesto Bomba;;;BOMBA CENTRÍFUGA AUTOCEBANTE EJS80-140;Repuesto
+TECFLUID;7;BOMBA CENTRÍFUGA AUTOCEBANTE EJS80-140;TORNILLO M12X20;;;2;Repuesto Bomba;;;BOMBA CENTRÍFUGA AUTOCEBANTE EJS80-140;Repuesto
+TECFLUID;8;BOMBA CENTRÍFUGA AUTOCEBANTE EJS80-140;EJE;;;1;Repuesto Bomba;;;BOMBA CENTRÍFUGA AUTOCEBANTE EJS80-140;Repuesto
+TECFLUID;9;BOMBA CENTRÍFUGA AUTOCEBANTE EJS80-140;CUBIERTA DE BOLAS;;;1;Repuesto Bomba;;;BOMBA CENTRÍFUGA AUTOCEBANTE EJS80-140;Repuesto
+TECFLUID;10;BOMBA CENTRÍFUGA AUTOCEBANTE EJS80-140;"FLANGES DE SUCCIÓN 3""";;;1;Repuesto Bomba;;;BOMBA CENTRÍFUGA AUTOCEBANTE EJS80-140;Repuesto
+TECFLUID;11;BOMBA CENTRÍFUGA AUTOCEBANTE EJS80-140;"CHEQUE DE GOMA  3""";;;1;Repuesto Bomba;;;BOMBA CENTRÍFUGA AUTOCEBANTE EJS80-140;Repuesto
+TECFLUID;12;BOMBA CENTRÍFUGA AUTOCEBANTE EJS80-140;PLACA FRONTAL - VÁLVULA DE RETENCIÓN;;;1;Repuesto Bomba;;;BOMBA CENTRÍFUGA AUTOCEBANTE EJS80-140;Repuesto
+TECFLUID;13;BOMBA CENTRÍFUGA AUTOCEBANTE EJS80-140;PLACA TRASERA - VÁLVULA DE RETENCIÓN;;;1;Repuesto Bomba;;;BOMBA CENTRÍFUGA AUTOCEBANTE EJS80-140;Repuesto
+TECFLUID;14;BOMBA CENTRÍFUGA AUTOCEBANTE EJS80-140;TORNILLO M6X20;;;1;Repuesto Bomba;;;BOMBA CENTRÍFUGA AUTOCEBANTE EJS80-140;Repuesto
+TECFLUID;15;BOMBA CENTRÍFUGA AUTOCEBANTE EJS80-140;TUERCA M6;;;1;Repuesto Bomba;;;BOMBA CENTRÍFUGA AUTOCEBANTE EJS80-140;Repuesto
+TECFLUID;16;BOMBA CENTRÍFUGA AUTOCEBANTE EJS80-140;"CUBIERTA 2""";;;1;Repuesto Bomba;;;BOMBA CENTRÍFUGA AUTOCEBANTE EJS80-140;Repuesto
+TECFLUID;17;BOMBA CENTRÍFUGA AUTOCEBANTE EJS80-140;"JUNTA 2""";;;1;Repuesto Bomba;;;BOMBA CENTRÍFUGA AUTOCEBANTE EJS80-140;Repuesto
+TECFLUID;18;BOMBA CENTRÍFUGA AUTOCEBANTE EJS80-140;CARCASA;;;1;Repuesto Bomba;;;BOMBA CENTRÍFUGA AUTOCEBANTE EJS80-140;Repuesto
+TECFLUID;19;BOMBA CENTRÍFUGA AUTOCEBANTE EJS80-140;FLANGES DE DESCARGA;;;1;Repuesto Bomba;;;BOMBA CENTRÍFUGA AUTOCEBANTE EJS80-140;Repuesto
+TECFLUID;20;BOMBA CENTRÍFUGA AUTOCEBANTE EJS80-140;JUNTA DE DESCARGA;;;1;Repuesto Bomba;;;BOMBA CENTRÍFUGA AUTOCEBANTE EJS80-140;Repuesto
+TECFLUID;21;BOMBA CENTRÍFUGA AUTOCEBANTE EJS80-140;"CUBIERTA 2""";;;1;Repuesto Bomba;;;BOMBA CENTRÍFUGA AUTOCEBANTE EJS80-140;Repuesto
+TECFLUID;22;BOMBA CENTRÍFUGA AUTOCEBANTE EJS80-140;"JUNTA 2""";;;1;Repuesto Bomba;;;BOMBA CENTRÍFUGA AUTOCEBANTE EJS80-140;Repuesto
+TECFLUID;23;BOMBA CENTRÍFUGA AUTOCEBANTE EJS80-140;MANGA DE EJE 30X92;;;1;Repuesto Bomba;;;BOMBA CENTRÍFUGA AUTOCEBANTE EJS80-140;Repuesto
+TECFLUID;24;BOMBA CENTRÍFUGA AUTOCEBANTE EJS80-140;SELLO ACEITE;B030050;;1;Repuesto Bomba;;;BOMBA CENTRÍFUGA AUTOCEBANTE EJS80-140;Repuesto
+TECFLUID;25;BOMBA CENTRÍFUGA AUTOCEBANTE EJS80-140;SELLO MECANICO;CM301-30;;1;Repuesto Bomba;;;BOMBA CENTRÍFUGA AUTOCEBANTE EJS80-140;Repuesto
+TECFLUID;26;BOMBA CENTRÍFUGA AUTOCEBANTE EJS80-140;"CUBIERTA 3""";;;1;Repuesto Bomba;;;BOMBA CENTRÍFUGA AUTOCEBANTE EJS80-140;Repuesto
+TECFLUID;27;BOMBA CENTRÍFUGA AUTOCEBANTE EJS80-140;"JUNTA 3""";;;1;Repuesto Bomba;;;BOMBA CENTRÍFUGA AUTOCEBANTE EJS80-140;Repuesto
+TECFLUID;28;BOMBA CENTRÍFUGA AUTOCEBANTE EJS80-140;TUERCA DEL IMPULSOR;;;1;Repuesto Bomba;;;BOMBA CENTRÍFUGA AUTOCEBANTE EJS80-140;Repuesto
+TECFLUID;29;BOMBA CENTRÍFUGA AUTOCEBANTE EJS80-140;DEFLECTOR DE AGUA;;;1;Repuesto Bomba;;;BOMBA CENTRÍFUGA AUTOCEBANTE EJS80-140;Repuesto
+TECFLUID;30;BOMBA CENTRÍFUGA AUTOCEBANTE EJS80-140;JUNTA DE CASQUILLO;;;1;Repuesto Bomba;;;BOMBA CENTRÍFUGA AUTOCEBANTE EJS80-140;Repuesto
+TECFLUID;31;BOMBA CENTRÍFUGA AUTOCEBANTE EJS80-140;TORNILLO M8X40;;;4;Repuesto Bomba;;;BOMBA CENTRÍFUGA AUTOCEBANTE EJS80-140;Repuesto
+TECFLUID;32;BOMBA CENTRÍFUGA AUTOCEBANTE EJS80-140;TUERCA M8;;;4;Repuesto Bomba;;;BOMBA CENTRÍFUGA AUTOCEBANTE EJS80-140;Repuesto
+TECFLUID;33;BOMBA CENTRÍFUGA AUTOCEBANTE EJS80-140;PERNO PRISIONERO M8X20A;;;8;Repuesto Bomba;;;BOMBA CENTRÍFUGA AUTOCEBANTE EJS80-140;Repuesto
+TECFLUID;34;BOMBA CENTRÍFUGA AUTOCEBANTE EJS80-140;PERNO PRISIONERO M10X25A;;;8;Repuesto Bomba;;;BOMBA CENTRÍFUGA AUTOCEBANTE EJS80-140;Repuesto
+TECFLUID;35;BOMBA CENTRÍFUGA AUTOCEBANTE EJS80-140;PERNO PRISIONERO M10X25A;;;4;Repuesto Bomba;;;BOMBA CENTRÍFUGA AUTOCEBANTE EJS80-140;Repuesto
+TECFLUID;36;BOMBA CENTRÍFUGA AUTOCEBANTE EJS80-140;TUERCA M8;;;8;Repuesto Bomba;;;BOMBA CENTRÍFUGA AUTOCEBANTE EJS80-140;Repuesto
+TECFLUID;37;BOMBA CENTRÍFUGA AUTOCEBANTE EJS80-140;TUERCA M10;;;8;Repuesto Bomba;;;BOMBA CENTRÍFUGA AUTOCEBANTE EJS80-140;Repuesto
+TECFLUID;38;BOMBA CENTRÍFUGA AUTOCEBANTE EJS80-140;TUERCA M10;;;2;Repuesto Bomba;;;BOMBA CENTRÍFUGA AUTOCEBANTE EJS80-140;Repuesto
+TECFLUID;39;BOMBA CENTRÍFUGA AUTOCEBANTE EJS80-140;TUERCA M10;;;2;Repuesto Bomba;;;BOMBA CENTRÍFUGA AUTOCEBANTE EJS80-140;Repuesto
+TECFLUID;40;BOMBA CENTRÍFUGA AUTOCEBANTE EJS80-140;TUERCA M10;;;2;Repuesto Bomba;;;BOMBA CENTRÍFUGA AUTOCEBANTE EJS80-140;Repuesto
+TECFLUID;41;BOMBA CENTRÍFUGA AUTOCEBANTE EJS80-140;PERNO PRISIONERO M10X25A;;;2;Repuesto Bomba;;;BOMBA CENTRÍFUGA AUTOCEBANTE EJS80-140;Repuesto
+TECFLUID;42;BOMBA CENTRÍFUGA AUTOCEBANTE EJS80-140;PERNO PRISIONERO M6X15A;;;4;Repuesto Bomba;;;BOMBA CENTRÍFUGA AUTOCEBANTE EJS80-140;Repuesto
+TECFLUID;43;BOMBA CENTRÍFUGA AUTOCEBANTE EJS80-140;TORNILLO M8X10;;;4;Repuesto Bomba;;;BOMBA CENTRÍFUGA AUTOCEBANTE EJS80-140;Repuesto
+TECFLUID;44;BOMBA CENTRÍFUGA AUTOCEBANTE EJS80-140;RODAMIENTO DE BOLAS;6306ZZ;;1;Repuesto Bomba;;;BOMBA CENTRÍFUGA AUTOCEBANTE EJS80-140;Repuesto
+TECFLUID;45;BOMBA CENTRÍFUGA AUTOCEBANTE EJS80-140;RODAMIENTO DE BOLAS;62206ZZ;;1;Repuesto Bomba;;;BOMBA CENTRÍFUGA AUTOCEBANTE EJS80-140;Repuesto
+TECFLUID;46;BOMBA CENTRÍFUGA AUTOCEBANTE EJS80-140;LLAVE A8X20;;;1;Repuesto Bomba;;;BOMBA CENTRÍFUGA AUTOCEBANTE EJS80-140;Repuesto
+TECFLUID;47;BOMBA CENTRÍFUGA AUTOCEBANTE EJS80-140;LLAVE A8X50;;;1;Repuesto Bomba;;;BOMBA CENTRÍFUGA AUTOCEBANTE EJS80-140;Repuesto
+TECFLUID;48;BOMBA CENTRÍFUGA AUTOCEBANTE EJS80-140;ANILLO EXTERNO 30;;;1;Repuesto Bomba;;;BOMBA CENTRÍFUGA AUTOCEBANTE EJS80-140;Repuesto
+TECFLUID;49;BOMBA CENTRÍFUGA AUTOCEBANTE EJS80-140;ARANDELA 20;;;1;Repuesto Bomba;;;BOMBA CENTRÍFUGA AUTOCEBANTE EJS80-140;Repuesto
+TECFLUID;50;BOMBA CENTRÍFUGA AUTOCEBANTE EJS80-140;NIPPLE DE ENGRASE;;;1;Repuesto Bomba;;;BOMBA CENTRÍFUGA AUTOCEBANTE EJS80-140;Repuesto
+TECFLUID;51;BOMBA CENTRÍFUGA AUTOCEBANTE EJS80-140;JUNTA 30;;;1;Repuesto Bomba;;;BOMBA CENTRÍFUGA AUTOCEBANTE EJS80-140;Repuesto
+TECFLUID;52;MONOFLO;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;C2XAC11RMA/E412;4065024;;Bomba;;;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;n
+TECFLUID;53;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;CUERPO;CF E012 0100;;1;Repuesto Bomba;;;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;Repuesto
+TECFLUID;54;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;PERNO HEXAGONAL ST.STL. M5 X 35;K111260F;;1;Repuesto Bomba;;;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;Repuesto
+TECFLUID;55;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;ARANDELA  M5;W111052F;;1;Repuesto Bomba;;;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;Repuesto
+TECFLUID;56;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;PERNO HEXAGONAL M8X50;K113302F;;4;Repuesto Bomba;;;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;Repuesto
+TECFLUID;57;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;TUERCA HEXAGONAL M8;N113102F;;4;Repuesto Bomba;;;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;Repuesto
+TECFLUID;58;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;ARANDELA M8;W113052F;;8;Repuesto Bomba;;;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;Repuesto
+TECFLUID;59;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;ESPARRAGOS M8;W113252F;;4;Repuesto Bomba;;;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;Repuesto
+TECFLUID;60;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;ESPARRAGOS M8;W111252F;;1;Repuesto Bomba;;;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;Repuesto
+TECFLUID;61;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;TUERCA HEXAGONAL M5;N111102F;;1;Repuesto Bomba;;;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;Repuesto
+TECFLUID;62;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;PRENSA ESTOPA SELLO E012;122474;;1;Repuesto Bomba;;;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;Repuesto
+TECFLUID;63;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;"TAPON DE ENCHUFE 1/4""";P150210T;;2;Repuesto Bomba;;;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;Repuesto
+TECFLUID;64;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;"TAPON DE ENCHUFE 1/8""";P150110T;;2;Repuesto Bomba;;;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;Repuesto
+TECFLUID;65;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;SELLO;M032139G;;1;Repuesto Bomba;;;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;Repuesto
+TECFLUID;66;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;SELLO MECANICO;CD E012 6565;;1;Repuesto Bomba;;;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;Repuesto
+TECFLUID;67;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;ANILLO DE APOYO  32MM;SF AA1 6650;;1;Repuesto Bomba;;;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;Repuesto
+TECFLUID;68;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;ROTOR C0X1;BD C0X1 2525;;1;Repuesto Bomba;;;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;Repuesto
+TECFLUID;69;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;BARRA DE ACOPLAMIENTO;MQ C0XK 2600;;1;Repuesto Bomba;;;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;Repuesto
+TECFLUID;70;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;EJE DE TRANSMISIÓN;SX C0XK 3250;;1;Repuesto Bomba;;;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;Repuesto
+TECFLUID;71;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;ANILLO SELLO TORL 0345-30 BK NITR;S110720P;;2;Repuesto Bomba;;;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;Repuesto
+TECFLUID;72;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;ANILLO RETENEDOR ESPIRAL S.S. 40MM EJE;C107402P;;2;Repuesto Bomba;;;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;Repuesto
+TECFLUID;73;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;EMPAQUETADURA;T101052P;;2;Repuesto Bomba;;;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;Repuesto
+TECFLUID;74;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;CUBIERTA DE SELLADO;RR B031 2810;;2;Repuesto Bomba;;;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;Repuesto
+TECFLUID;75;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;PIN DE VARILLA DE ACOPLAMIENTO;TH B031 2900;;2;Repuesto Bomba;;;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;Repuesto
+TECFLUID;76;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;CLAVO CON SURCO A LA MITAD 6MMX32;P704252F;;1;Repuesto Bomba;;;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;Repuesto
+TECFLUID;77;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;LANZADOR;RR D40 4200;;1;Repuesto Bomba;;;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;Repuesto
+TECFLUID;78;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;MANGUITO (EJE DEL ROTOR);SF B031 7500;;2;Repuesto Bomba;;;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;Repuesto
+TECFLUID;79;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;SUC/DEL PTS ANSI C2XAC/E;126709;;1;Repuesto Bomba;;;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;Repuesto
+TECFLUID;80;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;SUCN.CÁMARA ANSI B16.1 CL125;CD E034 2330;;1;Repuesto Bomba;;;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;Repuesto
+TECFLUID;81;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;CUBIERTA FINAL CI ANSI B16.1 CL125;CD E0X1 2430;;1;Repuesto Bomba;;;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;Repuesto
+TECFLUID;82;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;"TAPON CÓNICO DE CARBONO 1/2"" NPT";P150470S;;1;Repuesto Bomba;;;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;Repuesto
+TECFLUID;83;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;"TAPÓN CONICO SÓLIDO DE ENCHUFE 1/2"" BSP";P100432S;;1;Repuesto Bomba;;;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;Repuesto
+TECFLUID;84;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;"TAPON CÓNICO DE CARBONO 1/2"" NPT";P150470S;;3;Repuesto Bomba;;;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;Repuesto
+TECFLUID;85;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;STL.HEX.HD.BOLT M8X50;K113302F;;4;Repuesto Bomba;;;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;Repuesto
+TECFLUID;86;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;TUERCA HEXAGONAL  M8;N113102F;;4;Repuesto Bomba;;;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;Repuesto
+TECFLUID;87;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;ANILLO SELLO TORL 0895-30 BK NITR;S110880P;;1;Repuesto Bomba;;;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;Repuesto
+TECFLUID;88;FTI;BOMBA CETRIFUGA TERMOPLÁSTICA FTI;106783 R19;4054436;;Bomba;;;BOMBA CETRIFUGA TERMOPLÁSTICA FTI;n
+TECFLUID;89;BOMBA CETRIFUGA TERMOPLÁSTICA FTI;CARCASA;;;1;Repuesto Bomba;;;BOMBA CETRIFUGA TERMOPLÁSTICA FTI;Repuesto
+TECFLUID;90;BOMBA CETRIFUGA TERMOPLÁSTICA FTI;TAPA DE LLENADO / DRENAJE;;;2;Repuesto Bomba;;;BOMBA CETRIFUGA TERMOPLÁSTICA FTI;Repuesto
+TECFLUID;91;BOMBA CETRIFUGA TERMOPLÁSTICA FTI;JUNTA TÓRICA DEL TAPÓN DE LLENADO/ DRENAJE;;;2;Repuesto Bomba;;;BOMBA CETRIFUGA TERMOPLÁSTICA FTI;Repuesto
+TECFLUID;92;BOMBA CETRIFUGA TERMOPLÁSTICA FTI;ANILLO TORICO DE DESCARGA;;;1;Repuesto Bomba;;;BOMBA CETRIFUGA TERMOPLÁSTICA FTI;Repuesto
+TECFLUID;93;BOMBA CETRIFUGA TERMOPLÁSTICA FTI;O-RING VOLUTA INTERNA;;;1;Repuesto Bomba;;;BOMBA CETRIFUGA TERMOPLÁSTICA FTI;Repuesto
+TECFLUID;94;BOMBA CETRIFUGA TERMOPLÁSTICA FTI;PLACA SEPARADORA;;;1;Repuesto Bomba;;;BOMBA CETRIFUGA TERMOPLÁSTICA FTI;Repuesto
+TECFLUID;95;BOMBA CETRIFUGA TERMOPLÁSTICA FTI;VOLUTA INTERNA;;;1;Repuesto Bomba;;;BOMBA CETRIFUGA TERMOPLÁSTICA FTI;Repuesto
+TECFLUID;96;BOMBA CETRIFUGA TERMOPLÁSTICA FTI;"SELLO VOLUTA 16-1/8""";;;1;Repuesto Bomba;;;BOMBA CETRIFUGA TERMOPLÁSTICA FTI;Repuesto
+TECFLUID;97;BOMBA CETRIFUGA TERMOPLÁSTICA FTI;"SELLO VOLUTA 8""";;;1;Repuesto Bomba;;;BOMBA CETRIFUGA TERMOPLÁSTICA FTI;Repuesto
+TECFLUID;98;BOMBA CETRIFUGA TERMOPLÁSTICA FTI;CONJUNTO IMPULSOR;;;1;Repuesto Bomba;;;BOMBA CETRIFUGA TERMOPLÁSTICA FTI;Repuesto
+TECFLUID;99;BOMBA CETRIFUGA TERMOPLÁSTICA FTI;ANILLO DE EMPUJE;;;1;Repuesto Bomba;;;BOMBA CETRIFUGA TERMOPLÁSTICA FTI;Repuesto
+TECFLUID;100;BOMBA CETRIFUGA TERMOPLÁSTICA FTI;CONJUNTO TRANSMISION DEL IMPULSOR;;;1;Repuesto Bomba;;;BOMBA CETRIFUGA TERMOPLÁSTICA FTI;Repuesto
+TECFLUID;101;BOMBA CETRIFUGA TERMOPLÁSTICA FTI;BUJE IMPUSLSOR;;;1;Repuesto Bomba;;;BOMBA CETRIFUGA TERMOPLÁSTICA FTI;Repuesto
+TECFLUID;102;BOMBA CETRIFUGA TERMOPLÁSTICA FTI;EJE DEL IMPULSOR;;;1;Repuesto Bomba;;;BOMBA CETRIFUGA TERMOPLÁSTICA FTI;Repuesto
+TECFLUID;103;BOMBA CETRIFUGA TERMOPLÁSTICA FTI;O-RING CARCASA;;;1;Repuesto Bomba;;;BOMBA CETRIFUGA TERMOPLÁSTICA FTI;Repuesto
+TECFLUID;104;BOMBA CETRIFUGA TERMOPLÁSTICA FTI;BARRERA;;;1;Repuesto Bomba;;;BOMBA CETRIFUGA TERMOPLÁSTICA FTI;Repuesto
+TECFLUID;105;BOMBA CETRIFUGA TERMOPLÁSTICA FTI;ADAPTADOR DE MOTOR;;;1;Repuesto Bomba;;;BOMBA CETRIFUGA TERMOPLÁSTICA FTI;Repuesto
+TECFLUID;106;BOMBA CETRIFUGA TERMOPLÁSTICA FTI;O-RING ADAPTADOR DE MOTOR DELANTERO;;;1;Repuesto Bomba;;;BOMBA CETRIFUGA TERMOPLÁSTICA FTI;Repuesto
+TECFLUID;107;BOMBA CETRIFUGA TERMOPLÁSTICA FTI;O-RING ADAPTADOR DE MOTOR TRASERO;;;1;Repuesto Bomba;;;BOMBA CETRIFUGA TERMOPLÁSTICA FTI;Repuesto
+TECFLUID;108;BOMBA CETRIFUGA TERMOPLÁSTICA FTI;IMAN DE DRIVE EXT;;;1;Repuesto Bomba;;;BOMBA CETRIFUGA TERMOPLÁSTICA FTI;Repuesto
+TECFLUID;109;BOMBA CETRIFUGA TERMOPLÁSTICA FTI;ANILLO DE RETENCION;;;1;Repuesto Bomba;;;BOMBA CETRIFUGA TERMOPLÁSTICA FTI;Repuesto
+TECFLUID;110;BOMBA CETRIFUGA TERMOPLÁSTICA FTI;SET TORNILLOS DE AJUSTE;;;2;Repuesto Bomba;;;BOMBA CETRIFUGA TERMOPLÁSTICA FTI;Repuesto
+TECFLUID;111;BOMBA CETRIFUGA TERMOPLÁSTICA FTI;BRIDA DEL ADAPTADOR;;;1;Repuesto Bomba;;;BOMBA CETRIFUGA TERMOPLÁSTICA FTI;Repuesto
+TECFLUID;112;BOMBA CETRIFUGA TERMOPLÁSTICA FTI;O-RING BRIDA DEL ADAPTADOR;;;1;Repuesto Bomba;;;BOMBA CETRIFUGA TERMOPLÁSTICA FTI;Repuesto
+TECFLUID;113;BOMBA CETRIFUGA TERMOPLÁSTICA FTI;PERNO CARCASA;;;10;Repuesto Bomba;;;BOMBA CETRIFUGA TERMOPLÁSTICA FTI;Repuesto
+TECFLUID;114;BOMBA CETRIFUGA TERMOPLÁSTICA FTI;ARANDELA DE SEGURIDAD;;;10;Repuesto Bomba;;;BOMBA CETRIFUGA TERMOPLÁSTICA FTI;Repuesto
+TECFLUID;115;BOMBA CETRIFUGA TERMOPLÁSTICA FTI;ARANDELA PLANA;;;10;Repuesto Bomba;;;BOMBA CETRIFUGA TERMOPLÁSTICA FTI;Repuesto
+TECFLUID;116;BOMBA CETRIFUGA TERMOPLÁSTICA FTI;PERNO DEL MOTOR ADAPTADOR;;;4;Repuesto Bomba;;;BOMBA CETRIFUGA TERMOPLÁSTICA FTI;Repuesto
+TECFLUID;117;BOMBA CETRIFUGA TERMOPLÁSTICA FTI;ARANDELA DE SEGURIDAD MA;;;4;Repuesto Bomba;;;BOMBA CETRIFUGA TERMOPLÁSTICA FTI;Repuesto
+TECFLUID;118;BOMBA CETRIFUGA TERMOPLÁSTICA FTI;ARANDELA PLANA MA;;;4;Repuesto Bomba;;;BOMBA CETRIFUGA TERMOPLÁSTICA FTI;Repuesto
+TECFLUID;119;BOMBA CETRIFUGA TERMOPLÁSTICA FTI;PERNO CONDUCTOR;;;1;Repuesto Bomba;;;BOMBA CETRIFUGA TERMOPLÁSTICA FTI;Repuesto
+TECFLUID;120;BOMBA CETRIFUGA TERMOPLÁSTICA FTI;ARANDELA DE SEGURIDAD C;;;1;Repuesto Bomba;;;BOMBA CETRIFUGA TERMOPLÁSTICA FTI;Repuesto
+TECFLUID;121;BOMBA CETRIFUGA TERMOPLÁSTICA FTI;ARANDELA PLANA C;;;1;Repuesto Bomba;;;BOMBA CETRIFUGA TERMOPLÁSTICA FTI;Repuesto
+TECFLUID;122;BOMBA CETRIFUGA TERMOPLÁSTICA FTI;PERNO DEL MOTOR ADAPTADOR;;;4;Repuesto Bomba;;;BOMBA CETRIFUGA TERMOPLÁSTICA FTI;Repuesto
+TECFLUID;123;BOMBA CETRIFUGA TERMOPLÁSTICA FTI;ARANDELA DE SEGURIDAD MA;;;4;Repuesto Bomba;;;BOMBA CETRIFUGA TERMOPLÁSTICA FTI;Repuesto
+TECFLUID;124;BOMBA CETRIFUGA TERMOPLÁSTICA FTI;ARANDELA PLANA MA;;;4;Repuesto Bomba;;;BOMBA CETRIFUGA TERMOPLÁSTICA FTI;Repuesto
+TECFLUID;125;MONOFLO;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;CGH233R1X;4001529;;Bomba;;;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;n
+TECFLUID;126;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;CARCASA;;;1;Repuesto Bomba;;;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;Repuesto
+TECFLUID;127;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;PORTARODAMIENTO;;;1;Repuesto Bomba;;;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;Repuesto
+TECFLUID;128;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;PLACA NOMBRE;;;1;Repuesto Bomba;;;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;Repuesto
+TECFLUID;129;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;GLAND EMPAQUETADURA;;;2;Repuesto Bomba;;;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;Repuesto
+TECFLUID;130;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;ANILLO DE EMPAQUE;;;4;Repuesto Bomba;;;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;Repuesto
+TECFLUID;131;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;BARRIL;;;1;Repuesto Bomba;;;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;Repuesto
+TECFLUID;132;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;ESTATOR;;;1;Repuesto Bomba;;;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;Repuesto
+TECFLUID;133;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;CUBIERTA FINAL;;;1;Repuesto Bomba;;;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;Repuesto
+TECFLUID;134;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;ROTOR;;;1;Repuesto Bomba;;;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;Repuesto
+TECFLUID;135;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;ENGANCHE;;;1;Repuesto Bomba;;;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;Repuesto
+TECFLUID;136;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;EJE;;;1;Repuesto Bomba;;;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;Repuesto
+TECFLUID;137;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;LANZADOR;;;1;Repuesto Bomba;;;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;Repuesto
+TECFLUID;138;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;PROTECTOR DEL LANZADOR;;;2;Repuesto Bomba;;;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;Repuesto
+TECFLUID;139;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;SECCIÓN GLAND;;;1;Repuesto Bomba;;;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;Repuesto
+TECFLUID;140;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;SELLO CARCASA;;;1;Repuesto Bomba;;;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;Repuesto
+TECFLUID;141;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;COLLAR DE SELLO;;;1;Repuesto Bomba;;;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;Repuesto
+TECFLUID;142;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;TORNILLO HEX;;;2;Repuesto Bomba;;;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;Repuesto
+TECFLUID;143;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;TORNILLO HEX;;;4;Repuesto Bomba;;;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;Repuesto
+TECFLUID;144;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;TORNILLO HEX;;;4;Repuesto Bomba;;;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;Repuesto
+TECFLUID;145;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;RODAMIENTO DE BOLAS;;;1;Repuesto Bomba;;;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;Repuesto
+TECFLUID;146;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;RODAMIENTO DE BOLAS;;;1;Repuesto Bomba;;;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;Repuesto
+TECFLUID;147;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;ANILLO DE SEGURIDAD;;;1;Repuesto Bomba;;;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;Repuesto
+TECFLUID;148;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;PERNO HEX;;;4;Repuesto Bomba;;;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;Repuesto
+TECFLUID;149;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;SELLO MECANICO;;;1;Repuesto Bomba;;;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;Repuesto
+TECFLUID;150;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;TUERCA HEX;;;2;Repuesto Bomba;;;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;Repuesto
+TECFLUID;151;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;TUERCA HEX;;;4;Repuesto Bomba;;;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;Repuesto
+TECFLUID;152;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;TAPON CONICO;;;1;Repuesto Bomba;;;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;Repuesto
+TECFLUID;153;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;TORNILLO DE PROTECCIÓN DEL LANZADOR;;;2;Repuesto Bomba;;;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;Repuesto
+TECFLUID;154;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;TORNILLO DE ARRASTRE;;;2;Repuesto Bomba;;;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;Repuesto
+TECFLUID;155;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;STUD;;;2;Repuesto Bomba;;;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;Repuesto
+TECFLUID;156;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;ANILLO DE SELLADO TOROIDAL;;;1;Repuesto Bomba;;;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;Repuesto
+TECFLUID;157;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;ARANDELA;;;2;Repuesto Bomba;;;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;Repuesto
+TECFLUID;158;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;ARANDELA DE RESORTE;;;4;Repuesto Bomba;;;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;Repuesto
+TECFLUID;159;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;ARANDELA;;;1;Repuesto Bomba;;;BOMBA DE CAVIDAD PROGRESIVA 2HP/439 RPM;Repuesto
+TECFLUID;160;;Bomba ABEL Esférica de Membrana HMQ-2000-U;81592;;1;Bomba;;;Bomba ABEL Esférica de Membrana HMQ-2000-U;n
+TECFLUID;161;Bomba ABEL Esférica de Membrana HMQ-2000-U;Lado Reductor;81947;;1;Repuesto Bomba;;;Bomba ABEL Esférica de Membrana HMQ-2000-U;Repuesto
+TECFLUID;162;Bomba ABEL Esférica de Membrana HMQ-2000-U;Aceitado;81793;;1;Repuesto Bomba;;;Bomba ABEL Esférica de Membrana HMQ-2000-U;Repuesto
+TECFLUID;163;Bomba ABEL Esférica de Membrana HMQ-2000-U;Bomba hidráulica;81824;;1;Repuesto Bomba;;;Bomba ABEL Esférica de Membrana HMQ-2000-U;Repuesto
+TECFLUID;164;Bomba ABEL Esférica de Membrana HMQ-2000-U;Piezas de montaje Caja de cambios;75471;;1;Repuesto Bomba;;;Bomba ABEL Esférica de Membrana HMQ-2000-U;Repuesto
+TECFLUID;165;Bomba ABEL Esférica de Membrana HMQ-2000-U;Lado cilindro HMD-1000;81595;;1;Repuesto Bomba;;;Bomba ABEL Esférica de Membrana HMQ-2000-U;Repuesto
+TECFLUID;166;Bomba ABEL Esférica de Membrana HMQ-2000-U;Valvula Seguridad;81605;;8;Repuesto Bomba;;;Bomba ABEL Esférica de Membrana HMQ-2000-U;Repuesto
+TECFLUID;167;Bomba ABEL Esférica de Membrana HMQ-2000-U;Lado producto HMT;81113;;4;Repuesto Bomba;;;Bomba ABEL Esférica de Membrana HMQ-2000-U;Repuesto
+TECFLUID;168;Bomba ABEL Esférica de Membrana HMQ-2000-U;Tornillo de cabeza hexagonal;79380;;4;Repuesto Bomba;;;Bomba ABEL Esférica de Membrana HMQ-2000-U;Repuesto
+TECFLUID;169;Bomba ABEL Esférica de Membrana HMQ-2000-U;Arandela;921-207;;4;Repuesto Bomba;;;Bomba ABEL Esférica de Membrana HMQ-2000-U;Repuesto
+TECFLUID;170;Bomba ABEL Esférica de Membrana HMQ-2000-U;Lado hidráulico;81594;;4;Repuesto Bomba;;;Bomba ABEL Esférica de Membrana HMQ-2000-U;Repuesto
+TECFLUID;171;Bomba ABEL Esférica de Membrana HMQ-2000-U;Indicador de control de membrana;79343;;2;Repuesto Bomba;;;Bomba ABEL Esférica de Membrana HMQ-2000-U;Repuesto
+TECFLUID;172;Bomba ABEL Esférica de Membrana HMQ-2000-U;Indicador de control de membrana;79344;;2;Repuesto Bomba;;;Bomba ABEL Esférica de Membrana HMQ-2000-U;Repuesto
+TECFLUID;173;Bomba ABEL Esférica de Membrana HMQ-2000-U;Lado Conducir;81667;;1;Repuesto Bomba;;;Bomba ABEL Esférica de Membrana HMQ-2000-U;Repuesto
+TECFLUID;174;Bomba ABEL Esférica de Membrana HMQ-2000-U;Motor AC 710 kW, 1490 1/min 380 V,TEFC, ISO F, 50 Hz;81600;;1;Repuesto Bomba;;;Bomba ABEL Esférica de Membrana HMQ-2000-U;Repuesto
+TECFLUID;175;Bomba ABEL Esférica de Membrana HMQ-2000-U;Tornillo de cabeza hexagonal;901-524;;4;Repuesto Bomba;;;Bomba ABEL Esférica de Membrana HMQ-2000-U;Repuesto
+TECFLUID;176;Bomba ABEL Esférica de Membrana HMQ-2000-U;Arandela;921-037;;4;Repuesto Bomba;;;Bomba ABEL Esférica de Membrana HMQ-2000-U;Repuesto
+TECFLUID;177;Bomba ABEL Esférica de Membrana HMQ-2000-U;Convertidor de frecuencia 710 KW;81602;;1;Repuesto Bomba;;;Bomba ABEL Esférica de Membrana HMQ-2000-U;Repuesto
+TECFLUID;178;Bomba ABEL Esférica de Membrana HMQ-2000-U;Acoplamiento;81682;;1;Repuesto Bomba;;;Bomba ABEL Esférica de Membrana HMQ-2000-U;Repuesto
+TECFLUID;179;Bomba ABEL Esférica de Membrana HMQ-2000-U;Proteccion acoplamiento;78523;;1;Repuesto Bomba;;;Bomba ABEL Esférica de Membrana HMQ-2000-U;Repuesto
+TECFLUID;180;Bomba ABEL Esférica de Membrana HMQ-2000-U;Tornillo hexagonal de cabeza hueca;902-016;;4;Repuesto Bomba;;;Bomba ABEL Esférica de Membrana HMQ-2000-U;Repuesto
+TECFLUID;181;Bomba ABEL Esférica de Membrana HMQ-2000-U;Arandela;921-012;;4;Repuesto Bomba;;;Bomba ABEL Esférica de Membrana HMQ-2000-U;Repuesto
+TECFLUID;182;Bomba ABEL Esférica de Membrana HMQ-2000-U;Arandela elastica;921-056;;4;Repuesto Bomba;;;Bomba ABEL Esférica de Membrana HMQ-2000-U;Repuesto
+TECFLUID;183;Bomba ABEL Esférica de Membrana HMQ-2000-U;Elementos de fijación lado producto;81656;;1;Repuesto Bomba;;;Bomba ABEL Esférica de Membrana HMQ-2000-U;Repuesto
+TECFLUID;184;Bomba ABEL Esférica de Membrana HMQ-2000-U;Conexión de succión;81690;;2;Repuesto Bomba;;;Bomba ABEL Esférica de Membrana HMQ-2000-U;Repuesto
+TECFLUID;185;Bomba ABEL Esférica de Membrana HMQ-2000-U;Reductor A;81693;;1;Repuesto Bomba;;;Bomba ABEL Esférica de Membrana HMQ-2000-U;Repuesto
+TECFLUID;186;Bomba ABEL Esférica de Membrana HMQ-2000-U;Reductor B;81694;;1;Repuesto Bomba;;;Bomba ABEL Esférica de Membrana HMQ-2000-U;Repuesto
+TECFLUID;187;Bomba ABEL Esférica de Membrana HMQ-2000-U;Tornillo cierre;72718;;2;Repuesto Bomba;;;Bomba ABEL Esférica de Membrana HMQ-2000-U;Repuesto
+TECFLUID;188;Bomba ABEL Esférica de Membrana HMQ-2000-U;Amortiguador de pulsacion;81756;;1;Repuesto Bomba;;;Bomba ABEL Esférica de Membrana HMQ-2000-U;Repuesto
+TECFLUID;189;Bomba ABEL Esférica de Membrana HMQ-2000-U;Tornillo Hex;70908;;12;Repuesto Bomba;;;Bomba ABEL Esférica de Membrana HMQ-2000-U;Repuesto
+TECFLUID;190;Bomba ABEL Esférica de Membrana HMQ-2000-U;Tuerca Hex;63627;;12;Repuesto Bomba;;;Bomba ABEL Esférica de Membrana HMQ-2000-U;Repuesto
+TECFLUID;191;Bomba ABEL Esférica de Membrana HMQ-2000-U;Junta Plana;73159;;2;Repuesto Bomba;;;Bomba ABEL Esférica de Membrana HMQ-2000-U;Repuesto
+TECFLUID;192;Bomba ABEL Esférica de Membrana HMQ-2000-U;Bordón;81802;;1;Repuesto Bomba;;;Bomba ABEL Esférica de Membrana HMQ-2000-U;Repuesto
+TECFLUID;193;Bomba ABEL Esférica de Membrana HMQ-2000-U;Soporte;78528;;3;Repuesto Bomba;;;Bomba ABEL Esférica de Membrana HMQ-2000-U;Repuesto
+TECFLUID;194;Bomba ABEL Esférica de Membrana HMQ-2000-U;Transformador P/E;74552;;1;Repuesto Bomba;;;Bomba ABEL Esférica de Membrana HMQ-2000-U;Repuesto
+TECFLUID;195;Bomba ABEL Esférica de Membrana HMQ-2000-U;Conector;62387;;1;Repuesto Bomba;;;Bomba ABEL Esférica de Membrana HMQ-2000-U;Repuesto
+TECFLUID;196;Bomba ABEL Esférica de Membrana HMQ-2000-U;Manómetro;79251;;1;Repuesto Bomba;;;Bomba ABEL Esférica de Membrana HMQ-2000-U;Repuesto
+TECFLUID;197;Bomba ABEL Esférica de Membrana HMQ-2000-U;Amortiguador de succión;81618;;1;Repuesto Bomba;;;Bomba ABEL Esférica de Membrana HMQ-2000-U;Repuesto
+TECFLUID;198;Bomba ABEL Esférica de Membrana HMQ-2000-U;Tornillo Hex;901-358;;8;Repuesto Bomba;;;Bomba ABEL Esférica de Membrana HMQ-2000-U;Repuesto
+TECFLUID;199;Bomba ABEL Esférica de Membrana HMQ-2000-U;Tuerca Hex;901-051;;8;Repuesto Bomba;;;Bomba ABEL Esférica de Membrana HMQ-2000-U;Repuesto
+TECFLUID;200;Bomba ABEL Esférica de Membrana HMQ-2000-U;Junta plana;46034;;1;Repuesto Bomba;;;Bomba ABEL Esférica de Membrana HMQ-2000-U;Repuesto
+TECFLUID;201;Bomba ABEL Esférica de Membrana HMQ-2000-U;Sistema de carga de aire de aspiración Valvula Solenoid;79342;;1;Repuesto Bomba;;;Bomba ABEL Esférica de Membrana HMQ-2000-U;Repuesto
+TECFLUID;202;Bomba ABEL Esférica de Membrana HMQ-2000-U;Manómetro;79252;;1;Repuesto Bomba;;;Bomba ABEL Esférica de Membrana HMQ-2000-U;Repuesto
+TECFLUID;203;Bomba ABEL Esférica de Membrana HMQ-2000-U;Transformador P/E;73893;;1;Repuesto Bomba;;;Bomba ABEL Esférica de Membrana HMQ-2000-U;Repuesto
+TECFLUID;204;Bomba ABEL Esférica de Membrana HMQ-2000-U;Conector;62387;;1;Repuesto Bomba;;;Bomba ABEL Esférica de Membrana HMQ-2000-U;Repuesto
+TECFLUID;205;Bomba ABEL Esférica de Membrana HMQ-2000-U;Soporte cilindro;69735;;2;Repuesto Bomba;;;Bomba ABEL Esférica de Membrana HMQ-2000-U;Repuesto
+TECFLUID;206;Bomba ABEL Esférica de Membrana HMQ-2000-U;Soporte cilindro;67786;;4;Repuesto Bomba;;;Bomba ABEL Esférica de Membrana HMQ-2000-U;Repuesto
+TECFLUID;207;Bomba ABEL Esférica de Membrana HMQ-2000-U;Bancada;77768;;1;Repuesto Bomba;;;Bomba ABEL Esférica de Membrana HMQ-2000-U;Repuesto
+TECFLUID;208;Bomba ABEL Esférica de Membrana HMQ-2000-U;Bancada;81687;;1;Repuesto Bomba;;;Bomba ABEL Esférica de Membrana HMQ-2000-U;Repuesto
+TECFLUID;209;Bomba ABEL Esférica de Membrana HMQ-2000-U;Caja de Bornes;81963;;1;Repuesto Bomba;;;Bomba ABEL Esférica de Membrana HMQ-2000-U;Repuesto
+TECFLUID;210;Bomba ABEL Esférica de Membrana HMQ-2000-U;Sujetadores;80531;;1;Repuesto Bomba;;;Bomba ABEL Esférica de Membrana HMQ-2000-U;Repuesto
+TECFLUID;211;Bomba ABEL Esférica de Membrana HMQ-2000-U;Señaleticas de información;14922;;1;Repuesto Bomba;;;Bomba ABEL Esférica de Membrana HMQ-2000-U;Repuesto
+TECFLUID;212;Bomba ABEL Esférica de Membrana HMQ-2000-U;Pintura;39105;;1;Repuesto Bomba;;;Bomba ABEL Esférica de Membrana HMQ-2000-U;Repuesto
+TECFLUID;213;Bomba ABEL Esférica de Membrana HMQ-2000-U;Armario de control;81603;;1;Repuesto Bomba;;;Bomba ABEL Esférica de Membrana HMQ-2000-U;Repuesto
+TECFLUID;214;Bomba ABEL Esférica de Membrana HMQ-2000-U;Set de sellos A;82063;;1;Repuesto Bomba;;;Bomba ABEL Esférica de Membrana HMQ-2000-U;Repuesto
+TECFLUID;215;Bomba ABEL Esférica de Membrana HMQ-2000-U;Set de sellos B;82076;;1;Repuesto Bomba;;;Bomba ABEL Esférica de Membrana HMQ-2000-U;Repuesto
+TECFLUID;216;Bomba ABEL Esférica de Membrana HMQ-2000-U;Material de fijación;72801;;1;Repuesto Bomba;;;Bomba ABEL Esférica de Membrana HMQ-2000-U;Repuesto
+TECFLUID;217;Bomba ABEL Esférica de Membrana HMQ-2000-U;Etiqueta;72765;;4;Repuesto Bomba;;;Bomba ABEL Esférica de Membrana HMQ-2000-U;Repuesto
+TECFLUID;218;Bomba ABEL Esférica de Membrana HMQ-2000-U;Placa Nombre;58303;;2;Repuesto Bomba;;;Bomba ABEL Esférica de Membrana HMQ-2000-U;Repuesto
+TECFLUID;219;Bomba ABEL Esférica de Membrana HMQ-2000-U;Etiqueta ABEL;78075;;3;Repuesto Bomba;;;Bomba ABEL Esférica de Membrana HMQ-2000-U;Repuesto
+TECFLUID;220;Bomba ABEL Esférica de Membrana HMQ-2000-U;Etiqueta ABEL-Pump Technology;72283;;1;Repuesto Bomba;;;Bomba ABEL Esférica de Membrana HMQ-2000-U;Repuesto
