@@ -4,7 +4,7 @@
 // - Carga automática desde data/bom.csv
 // - Edición local: editar/agregar/quitar, borrar y renombrar bombas (todo localStorage)
 // - Export/Import: bom_local_changes.json
-const CSV_VER = "32"; // cambia este número cuando actualices la base
+const CSV_VER = "33"; // cambia este número cuando actualices la base
 const els = {
   status: document.getElementById("status"),
   themeBtn: document.getElementById("themeBtn"),
@@ -765,7 +765,8 @@ async function loadBOMFromRepoCSV() {
 
   try {
 
-const res = await fetch("./data/bom.csv?v=" + CSV_VER, { cache: "no-store" });
+const res = await fetch(`./data/bom.csv?v=${CSV_VER}`, { cache: "reload" });
+
 
 
 
@@ -930,6 +931,7 @@ if (els.status) els.status.textContent = "Cargando BOM…";
 if (els.dataHint) els.dataHint.textContent = "Cargando automáticamente…";
 
 loadBOMFromRepoCSV();
+
 
 
 
