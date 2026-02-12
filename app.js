@@ -921,16 +921,20 @@ if ("serviceWorker" in navigator) {
   });
 }
 
-// ===== Init =====
+// ==== Init ====
 initTheme();
 setDataLoadedUI(false);
 updateEditUI();
 renderBOM();
 
-if (els.status) els.status.textContent = "Cargando BOM…";
-if (els.dataHint) els.dataHint.textContent = "Cargando automáticamente…";
+if (els.status) els.status.textContent = "Cargando BOM...";
+if (els.dataHint) els.dataHint.textContent = "Cargando automáticamente...";
 
-loadBOMFromRepoCSV();
+document.addEventListener("DOMContentLoaded", () => {
+  loadBOMFromRepoCSV();
+});
+
+
 
 
 
