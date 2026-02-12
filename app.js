@@ -914,12 +914,6 @@ if (els.btnAddPump) {
 if (els.btnDelPump) els.btnDelPump.addEventListener("click", deleteSelectedPump);
 if (els.btnRenamePump) els.btnRenamePump.addEventListener("click", renameSelectedPump);
 
-// ===== Service Worker (opcional) =====
-if ("serviceWorker" in navigator) {
-  window.addEventListener("load", () => {
-    navigator.serviceWorker.register("./service-worker.js").catch(() => {});
-  });
-}
 
 // ==== Init ====
 initTheme();
@@ -933,6 +927,7 @@ if (els.dataHint) els.dataHint.textContent = "Cargando automáticamente...";
 document.addEventListener("DOMContentLoaded", () => {
   loadBOMFromRepoCSV();
 });
+
 
 
 
